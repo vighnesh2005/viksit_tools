@@ -108,10 +108,11 @@ export default function BDMQualificationPage() {
     const pkg = PACKAGES[pkgNum];
     const modLabels = ['A · Financial Profile', 'B · Compliance Status', 'C · Accounting & Technology', 'D · Business Complexity', 'E · Growth Intent'];
     const modKeys = ['a','b','c','d','e'];
-    const html = `<h1>Viksit Management Consultancy</h1>
-<h2>Client Qualification Report</h2>
+    const html = `<div class="page-break"><h1>Viksit Management Consultancy</h1>
+<h2 style="border:none;text-align:center;text-transform:none;letter-spacing:0;font-weight:normal;">Kurnool Delivery Centre</h2>
+<div class="section-hdr">Client Qualification Report</div>
 <table><tr><th colspan="2">Assessment Summary</th></tr>
-<tr><td>Client Name</td><td>${cName}</td></tr>
+<tr><td style="width:200pt;">Client Name</td><td><b>${cName}</b></td></tr>
 <tr><td>BDM</td><td>${client.bdmName || '—'}</td></tr>
 <tr><td>Date</td><td>${client.date || new Date().toLocaleDateString('en-IN')}</td></tr>
 <tr><td>Lead Source</td><td>${client.leadSource || '—'}</td></tr>
@@ -119,18 +120,27 @@ export default function BDMQualificationPage() {
 <tr><td>Tier</td><td><b>${tierChip}</b></td></tr>
 <tr><td>Recommended Package</td><td><b>${pkg.name}</b></td></tr>
 <tr><td>Monthly Retainer</td><td>${pkg.price}</td></tr>
-</table>
-<h2>Module Breakdown</h2>
-<table><tr><th>Module</th><th>Score</th></tr>${modKeys.map((k, i) => `<tr><td>${modLabels[i]}</td><td>${scores[k as keyof typeof scores]} / 6</td></tr>`).join('')}<tr><td><b>Total</b></td><td><b>${totalScore} / 30</b></td></tr></table>
-<h2>Recommended Package: ${pkg.name}</h2>
-<p>${pkg.ideal}</p>
-<p><b>Monthly Retainer:</b> ${pkg.price}</p>
-<h3>Services Included</h3><ul>${pkg.services.map(s => `<li>${s}</li>`).join('')}</ul>
-<h3>Monthly Deliverables</h3><ul>${pkg.deliverables.map(d => `<li>${d}</li>`).join('')}</ul>
-<h3>Recommended Add-ons</h3><ul>${pkg.addons.map(a => `<li>${a}</li>`).join('')}</ul>
-<h2>Engagement Flags</h2>${flags.length ? `<ul>${flags.map(f => `<li>${f.icon} ${f.text}</li>`).join('')}</ul>` : '<p>No flags identified.</p>'}
-<h2>Next Steps</h2>
-<ol><li>Log this assessment in CRM</li><li>Prepare proposal using ${pkg.name} template</li><li>Route draft proposal for internal review</li><li>Dispatch within 24 hours. Follow up on Day 3.</li></ol>`;
+</table></div>
+
+<div class="page-break">
+<div class="section-hdr">Module-wise Score Breakdown</div>
+<table><tr><th>Module</th><th style="width:120pt;">Score</th></tr>${modKeys.map((k, i) => `<tr><td>${modLabels[i]}</td><td>${scores[k as keyof typeof scores]} / 6</td></tr>`).join('')}<tr style="font-weight:bold;"><td>Total</td><td>${totalScore} / 30</td></tr></table></div>
+
+<div class="page-break">
+<div class="section-hdr">Recommended Engagement Package</div>
+<h2 style="text-align:center;border:none;font-size:14pt;">${pkg.name}</h2>
+<div class="scope-box"><p><b>Ideal For:</b> ${pkg.ideal}</p>
+<p><b>Monthly Retainer:</b> ${pkg.price}</p></div>
+<div class="section-sub">Services Included</div><ul>${pkg.services.map(s => `<li>${s}</li>`).join('')}</ul>
+<div class="section-sub">Monthly Deliverables</div><ul>${pkg.deliverables.map(d => `<li>${d}</li>`).join('')}</ul>
+<div class="section-sub">Recommended Add-ons</div><ul>${pkg.addons.map(a => `<li>${a}</li>`).join('')}</ul></div>
+
+<div class="page-break">
+<div class="section-hdr">Engagement Flags &amp; Opportunities</div>
+${flags.length ? `<ul>${flags.map(f => `<li>${f.icon} ${f.text}</li>`).join('')}</ul>` : '<p>No flags identified.</p>'}
+<div class="section-hdr">Recommended Next Steps</div>
+<ol><li>Log this assessment in CRM. Attach this report.</li><li>Prepare proposal using ${pkg.name} template.</li><li>Route draft proposal for internal review.</li><li>Dispatch within 24 hours. Follow up on Day 3.</li></ol>
+<p style="margin-top:24pt;text-align:center;color:#666;font-size:10pt;"><i>Confidential — For Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
     downloadDoc(html, `BDM_Qualification_${cName.replace(/\s+/g, '_')}`);
   };
 
@@ -248,7 +258,7 @@ export default function BDMQualificationPage() {
           </div>
           {openSections[mod.id] && (
             <div className="p-6">
-              {mod.qs.map(q => renderQ(q.id, q.label, q.hint, q.opts as [string, number][]))}
+              {mod.qs.map(q => <div key={q.id} className="contents">{renderQ(q.id, q.label, q.hint, q.opts as [string, number][])}</div>)}
             </div>
           )}
         </div>

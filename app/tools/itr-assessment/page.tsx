@@ -167,34 +167,47 @@ export default function ITRAssessmentPage() {
   }, [answers, client]);
 
   const downloadReport = () => {
-    const html = `<h1>VIKSIT CONSULTING — KURNOOL DELIVERY CENTRE</h1>
-<h2>ITR Assessment Report — AY 2026-27</h2>
-<table><tr><th colspan="2">Document Control</th></tr>
-<tr><td>Client Name</td><td>${client.name || '—'}</td></tr>
+    const html = `<div class="page-break"><h1>Viksit Consulting</h1>
+<h2 style="border:none;text-align:center;text-transform:none;letter-spacing:0;font-weight:normal;">Kurnool Delivery Centre — Internal Tax Assessment Tool</h2>
+<div class="section-hdr">ITR Assessment Report — AY 2026-27</div>
+<div class="section-sub">Document Control</div>
+<table><tr><th colspan="2">Assessment Details</th></tr>
+<tr><td style="width:180pt;">Client Name</td><td>${client.name || '—'}</td></tr>
 <tr><td>PAN</td><td>${client.pan || '—'}</td></tr>
 <tr><td>Entity Type</td><td>${client.entityType || '—'}</td></tr>
 <tr><td>Residential Status</td><td>${client.residentialStatus || '—'}</td></tr>
 <tr><td>Assessed By</td><td>${login.name} (${login.empId})</td></tr>
-</table>
-<h2>ITR Form Determination</h2>
-<div class="itr-box"><h1 style="color:#fff">${itrResult || '—'}</h1></div>
+</table></div>
+
+<div class="page-break">
+<div class="section-hdr">ITR Form Determination</div>
+<div class="itr-box"><h1>${itrResult || '—'}</h1></div>
 <p>${itrReason}</p>
-<h2>Scores</h2>
-<table><tr><th>Indicator</th><th>Value</th></tr>
-<tr><td>Filing Readiness</td><td>${readiness}%</td></tr>
-<tr><td>Risk Score</td><td>${riskScore}/10</td></tr>
-<tr><td>Escalations</td><td>${escalations.length}</td></tr>
-<tr><td>Income Heads</td><td>${heads.length}</td></tr>
-</table>
-<h2>Income Heads</h2>${heads.length ? `<ul>${heads.map(h => `<li>${h}</li>`).join('')}</ul>` : '<p>None identified.</p>'}
-${escalations.length ? `<h2>Escalation Alerts</h2>${escalations.map(e => `<div class="alert-crit"><b>ESCALATION:</b> ${e}</div>`).join('')}` : ''}
-${risks.length ? `<h2>Risk Flags</h2><ul>${risks.map(r => `<li>${r}</li>`).join('')}</ul>` : ''}
-<h2>Document Requirements</h2>
-${mandatoryDocs.length ? `<b>Mandatory</b><ul>${mandatoryDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
-${conditionalDocs.length ? `<b>Conditional</b><ul>${conditionalDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
-<h2>Filing Action Plan</h2>
+<div class="section-sub">Assessment Scores</div>
+<table><tr><th>Indicator</th><th style="width:100pt;">Value</th></tr>
+<tr><td>Filing Readiness</td><td><b>${readiness}%</b></td></tr>
+<tr><td>Risk Score</td><td><b>${riskScore}/10</b></td></tr>
+<tr><td>Escalation Alerts</td><td>${escalations.length}</td></tr>
+<tr><td>Income Heads Identified</td><td>${heads.length}</td></tr>
+</table></div>
+
+<div class="page-break">
+<div class="section-hdr">Income Heads Identified</div>
+${heads.length ? `<ul>${heads.map(h => `<li>${h}</li>`).join('')}</ul>` : '<p>None identified.</p>'}
+${escalations.length ? `<div class="section-sub">Escalation Alerts</div>${escalations.map(e => `<div class="alert-crit"><b>ESCALATION:</b> ${e}</div>`).join('')}` : ''}
+${risks.length ? `<div class="section-sub">Risk Flags</div><ul>${risks.map(r => `<li>${r}</li>`).join('')}</ul>` : ''}
+</div>
+
+<div class="page-break">
+<div class="section-hdr">Document Requirement List</div>
+${mandatoryDocs.length ? `<div class="section-sub">Mandatory Documents</div><ul>${mandatoryDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
+${conditionalDocs.length ? `<div class="section-sub">Conditional / Situation-Specific</div><ul>${conditionalDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
+</div>
+
+<div class="page-break">
+<div class="section-hdr">Filing Action Plan</div>
 <ol><li>Collect all mandatory documents</li><li>Download AIS + Form 26AS</li><li>Reconcile AIS with all documents</li><li>Compute income head-by-head</li><li>Verify TDS against 26AS</li><li>Prepare ITR draft on portal</li><li>Submit to Checker (L2) with complete file</li><li>Obtain client written approval</li><li>Pay outstanding tax via Challan 280</li><li>File and e-verify via Aadhaar OTP</li></ol>
-<p><i>Confidential — Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p>`;
+<p style="margin-top:24pt;text-align:center;color:#666;font-size:10pt;"><i>Confidential — Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
     downloadDoc(html, `ITR_Assessment_${client.name.replace(/\s+/g, '_')}_AY2627`);
   };
 

@@ -172,11 +172,15 @@ export default function PartnershipDeedPage() {
     const capText = capitalRate === 'As mutually decided' ? 'as mutually decided' : capitalRate + '% per annum or as prescribed';
     const allOrd = ps.map((_, i) => ordinal(i)).join(', ');
 
-    const html = `<h1>PARTNERSHIP DEED</h1>
+    const html = `<div class="page-break"><h1>PARTNERSHIP DEED</h1>
 <p>This Partnership Deed is entered and executed on this ${dateComm} out of free will and mutual consent by and between:</p>
+<div class="section-hdr">Parties to the Deed</div>
 <div class="doc-parties">${partyParas}</div>
 <p>All ${numWords(n)} Parties herein called parties of the ${allOrd} as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"${firmName}"</b> to ${bizNature}.</p>
-<div class="initials-row">${initRow}</div>
+<div class="initials-row">${initRow}</div></div>
+
+<div class="page-break">
+<div class="section-hdr">Deed of Partnership — Terms &amp; Conditions</div>
 <p><b>Now this deed witness is as follows: —</b></p>
 <ol class="deed-ol">
 <li><b>Name and Nature of the Firm:</b> That the business of the Partnership Shall be to ${bizNature}. The name of the firm shall be <b>${firmName}</b>.</li>
@@ -203,12 +207,15 @@ export default function PartnershipDeedPage() {
 <li><b>Amendments:</b> Any terms may be altered with mutual consent of all parties. The Indian Partnership Act, 1932 shall apply to matters not expressly provided herein.</li>
 <li><b>Drawings:</b> Partners may withdraw capital only with others' consent but may freely draw their share of profits credited to their accounts annually.</li>
 <li><b>Dissolution:</b> The Partnership is at will and may be dissolved by mutual decision. On dissolution, net assets excluding goodwill shall be shared after adjusting excess investments.</li>
-</ol>
+</ol></div>
+
+<div class="page-break">
+<div class="section-hdr">Execution &amp; Signatures</div>
 <div class="deed-place">In witness whereof the said partners put their hands to this deed of partnership at ${placeExecution}.</div>
-<table class="sig-table"><tr>
-  <td><b>Signature of the Witnesses:</b><br><br>${witBlock}</td>
-  <td><b>Signature of the Partners:</b><br><br>${ps.map((p, i) => `<div style="margin-bottom:22px;">${i+1}. <span class="sig-line"></span><br>&nbsp;&nbsp;&nbsp;${p.name}</div>`).join('')}</td>
-</tr></table>`;
+<table style="margin-top:16pt;"><tr>
+  <td style="width:50%;"><b>Signature of the Witnesses:</b><br><br>${witBlock}</td>
+  <td style="width:50%;"><b>Signature of the Partners:</b><br><br>${ps.map((p, i) => `<div style="margin-bottom:22pt;">${i+1}. <span class="sig-line"></span><br><span style="margin-left:8pt;">${p.name}</span></div>`).join('')}</td>
+</tr></table></div>`;
 
     setDocHtml(html);
     setDocTitle('⚖ Partnership Deed — ' + firmName);
@@ -222,7 +229,8 @@ export default function PartnershipDeedPage() {
     if (!deponent?.name) { alert('Fill partner details first.'); return; }
     if (!affData.officeAddr || !affData.signDate) { alert('Fill Office Address and Sign Date.'); return; }
     const cpList = ps.slice(1).filter(p => p.name);
-    const html = `<h1>AFFIDAVIT</h1>
+    const html = `<div class="page-break"><h1>AFFIDAVIT</h1>
+<div class="section-hdr">Deponent Statement</div>
 <p>I, <b>${deponent.name}</b>, <b>${deponent.rel} ${deponent.father}</b>, aged <b>${deponent.age} years</b> residing at ${deponent.address} do hereby affirm and state as follows:</p>
 <ul>
   <li>I, <b>${deponent.name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm.firmName}"</b>.</li>
@@ -230,8 +238,11 @@ export default function PartnershipDeedPage() {
   ${affData.reg === 'yes' ? `<li>The said firm has applied for Registration to the Registrar of Firms, ${firm.placeExecution}.</li>` : ''}
   ${affData.premises === 'owner' ? `<li>I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li>I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
 </ul>
-<p style="margin-top:16px;">Solemnly affirm and state that the above statement is true and fair to the best of my knowledge and signed at ${firm.placeExecution} on ${formatDateShort(affData.signDate)}.</p>
-<div style="text-align:right;margin-top:36px;"><span class="sign-line"></span><br><b>DEPONENT</b></div>`;
+<div class="signature-area">
+<div><span class="sig-line"></span><br><b>DEPONENT</b></div>
+</div>
+<div class="station-row"><span>Place: ${firm.placeExecution}</span><span>Date: ${formatDateShort(affData.signDate)}</span></div>
+<p style="margin-top:12pt;">Solemnly affirmed at ${firm.placeExecution} on this day ${formatDateShort(affData.signDate)}.</p></div>`;
     downloadDoc(html, 'Affidavit_' + firm.firmName);
   };
 
@@ -243,23 +254,26 @@ export default function PartnershipDeedPage() {
     const sigs = ps2.map(p => `<li style="margin-bottom:6px;">${p.name}</li>`).join('');
     const decls = ps2.map(p => `<div class="decl-block"><p>I, <b>${p.name}</b>, <b>${p.rel} ${p.father}</b>, aged <b>${p.age} Years</b> do hereby declare that the above statement is true and correct to the best of my knowledge and belief.</p><div class="station-row"><span>Date: ${formatDateShort(f1Data.date)}</span><span>Signature: <span class="sign-line" style="width:130px;"></span></span></div></div>`).join('');
     const sn = ps2.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
-    const html = `<h1>FORM NO.1</h1><h2>THE INDIAN PARTNERSHIP ACT 1932</h2>
+    const html = `<div class="page-break"><h1>FORM NO.1</h1>
+<div class="section-hdr">The Indian Partnership Act, 1932 — Registration u/s 58</div>
 <p>Application for the registration of firm by the name <b>"${firm.firmName}"</b> presented to the Registrar of Firms by <b>${f1Data.presentedBy}</b>.</p>
-<p>We, the undersigned, being the partners of the firm "<b>${firm.firmName}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
-<table style="border:none;margin:10px 0;">
-  <tr><td style="border:none;width:240px;"><b>The Firm's Name</b></td><td style="border:none;">:&nbsp;&nbsp;<b>${firm.firmName}</b></td></tr>
+<p>We, the undersigned, being the partners of the firm "<b>${firm.firmName}"</b>, hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
+<div class="section-sub">Firm Particulars</div>
+<table style="border:none;margin:8pt 0;">
+  <tr><td style="border:none;width:220pt;"><b>The Firm's Name</b></td><td style="border:none;">:&nbsp;&nbsp;<b>${firm.firmName}</b></td></tr>
   <tr><td style="border:none;" colspan="2"><b>Place of Business:</b></td></tr>
-  <tr><td style="border:none;padding-left:22px;">(a) Principal Place:</td><td style="border:none;">:&nbsp;&nbsp;${firm.placeOfBiz}</td></tr>
-  <tr><td style="border:none;padding-left:22px;">(b) Other Places:</td><td style="border:none;">:&nbsp;&nbsp;${f1Data.otherPlaces || '———'}</td></tr>
+  <tr><td style="border:none;padding-left:22pt;">(a) Principal Place:</td><td style="border:none;">:&nbsp;&nbsp;${firm.placeOfBiz}</td></tr>
+  <tr><td style="border:none;padding-left:22pt;">(b) Other Places:</td><td style="border:none;">:&nbsp;&nbsp;${f1Data.otherPlaces || '———'}</td></tr>
   <tr><td style="border:none;"><b>Nature of Business</b></td><td style="border:none;">:&nbsp;&nbsp;${firm.bizNature}</td></tr>
+  <tr><td style="border:none;"><b>Duration of the Firm</b></td><td style="border:none;">:&nbsp;&nbsp;${f1Data.duration}</td></tr>
 </table>
-<p style="margin-left:24px;">${sn}</p>
-<table><thead><tr><th style="width:45px;">S.No</th><th>Name</th><th style="width:120px;">Date of Joining</th><th>Permanent Address</th></tr></thead><tbody>${tRows}</tbody></table>
-<p><b>Duration of the Firm:</b>&nbsp;&nbsp;${f1Data.duration}</p>
-<p style="margin-top:18px;font-weight:bold;">DECLARATION</p>
+<p style="margin-left:24pt;">${sn}</p>
+<div class="section-sub">Partners Details</div>
+<table><thead><tr><th style="width:45pt;">S.No</th><th>Name</th><th style="width:120pt;">Date of Joining</th><th>Permanent Address</th></tr></thead><tbody>${tRows}</tbody></table>
+<div class="page-break"><div class="section-hdr">Declaration by Partners</div>
 <p>We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
-<div class="station-row"><div><p>Station: ${firm.placeExecution}</p><p>Date: ${formatDateShort(f1Data.date)}</p></div><div><b>Signature of the Partners:</b><ul style="list-style:none;margin-top:8px;">${sigs}</ul></div></div>
-<div style="margin-top:24px;">${decls}</div>`;
+<div class="station-row"><div><p>Station: ${firm.placeExecution}</p><p>Date: ${formatDateShort(f1Data.date)}</p></div><div><b>Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
+<div style="margin-top:24pt;">${decls}</div></div></div>`;
     downloadDoc(html, 'Form_No_1_' + firm.firmName);
   };
 
@@ -269,13 +283,13 @@ export default function PartnershipDeedPage() {
     if (!ps.length) { alert('No partners to include.'); return; }
     const pRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}.</td><td><b>${p.name}, ${p.rel} ${p.father}</b></td><td>${p.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
     const wRows = ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
-    const html = `<div class="firm-hdr">${firm.firmName}</div><div class="firm-addr">${firm.placeOfBiz}</div>
-<div class="section-hdr">PARTNERS LIST WITH PHOTO, SIGNATURE AND LEFT THUMB IMPRESSION</div>
-<table><thead><tr><th style="width:46px;">S.No</th><th>Partners Name &amp; Father Name</th><th>Address</th><th style="width:96px;">Photo</th><th style="width:126px;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
-<div style="margin-top:32px;"></div>
-<div class="firm-hdr">${firm.firmName}</div><div class="firm-addr">${firm.placeOfBiz}</div>
-<div class="section-hdr">WITNESS LIST WITH PHOTO, SIGNATURE AND LEFT THUMB IMPRESSION</div>
-<table><thead><tr><th style="width:46px;">S.No</th><th>Witness Name</th><th>Address</th><th style="width:96px;">Photo</th><th style="width:126px;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table>`;
+    const html = `<div class="page-break"><div class="firm-hdr">${firm.firmName}</div><div class="firm-addr">${firm.placeOfBiz}</div>
+<div class="section-hdr">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
+<table><thead><tr><th style="width:46pt;">S.No</th><th>Partners Name &amp; Father Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
+</div>
+<div class="page-break"><div class="firm-hdr">${firm.firmName}</div><div class="firm-addr">${firm.placeOfBiz}</div>
+<div class="section-hdr">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
+<table><thead><tr><th style="width:46pt;">S.No</th><th>Witness Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
     downloadDoc(html, 'Photo_Form_' + firm.firmName);
   };
 

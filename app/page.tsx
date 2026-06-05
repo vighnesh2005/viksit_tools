@@ -26,11 +26,11 @@ const tools = [
     color: 'navy',
   },
   {
-    title: 'Society Registration',
-    desc: 'Generate all documents for society registration under Act 35 of 2001 — Cover Letter, Resolution, Memorandum of Association, and President + NOC Affidavits.',
+    title: 'Document Suite',
+    desc: 'Generate firm registration documents (Affidavit, Form No. 1, Photo Form) and society registration paperwork (Cover Letter, Resolution, MoA, Affidavits).',
     href: '/tools/document-suite',
     icon: '📁',
-    tags: ['Societies Act', '4 Documents', 'DOC Download'],
+    tags: ['Firm Docs', 'Society Reg', 'DOC Download'],
     color: 'society',
   },
 ];

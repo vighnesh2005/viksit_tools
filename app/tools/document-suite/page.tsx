@@ -1,13 +1,388 @@
 'use client';
 import { useState } from 'react';
-import { formatDateShort } from '@/lib/utils';
+import { formatDateShort, formatDateLong, cls } from '@/lib/utils';
 import { downloadDoc } from '@/lib/doc-generator';
 import { SOC_DESIGS } from '@/lib/constants';
 
+interface CoPartner { name: string; }
+interface Form1Partner { name: string; rel: string; father: string; age: string; address: string; joining: string; }
+interface PhotoEntry { name: string; rel: string; father: string; address: string; }
 interface SocMember { name: string; rel: string; father: string; age: string; addr: string; desig: string; }
 interface SocWitness { name: string; rel: string; father: string; addr: string; }
 
-export default function SocietyRegistrationPage() {
+const inputClass = "w-full p-2.5 border border-[#d6c9a0] rounded-lg text-sm bg-white outline-none focus:border-[#b8860b] focus:ring-3 focus:ring-[#b8860b]/10";
+
+function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <label className="text-[11px] font-semibold text-[#7a6e5a] uppercase tracking-wider">{label}{required && <span className="text-[#8b2020] ml-0.5">*</span>}</label>
+      {children}
+    </div>
+  );
+}
+
+export default function DocumentSuitePage() {
+  const [activeModule, setActiveModule] = useState('firm_docs');
+
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-8">
+      <div className="mb-6">
+        <h1 className="font-serif text-3xl font-semibold text-[#1a1209]">Document Suite</h1>
+        <p className="text-sm text-[#7a6e5a] mt-1">Generate firm registration documents and society registration paperwork under one roof.</p>
+      </div>
+
+      <div className="flex gap-0 border-b-2 border-[#b8860b] bg-[#1a1209] rounded-t-xl overflow-hidden mb-8">
+        {[
+          { key: 'firm_docs', label: 'Firm Docs', tag: 'Registration' },
+          { key: 'society', label: 'Society Registration', tag: 'Act 35/2001' },
+        ].map(m => (
+          <button key={m.key} onClick={() => setActiveModule(m.key)}
+            className={cls(
+              'px-5 py-3 text-xs font-medium transition-all cursor-pointer whitespace-nowrap flex items-center gap-2',
+              activeModule === m.key ? 'text-[#b8860b] border-b-3 border-[#b8860b] bg-[#1a1209]' : 'text-[#7a6e5a] hover:text-[#f5e9c8]'
+            )}>
+            {m.label}
+            <span className="text-[10px] bg-[#b8860b]/20 text-[#b8860b] px-2 py-0.5 rounded-full">{m.tag}</span>
+          </button>
+        ))}
+      </div>
+
+      {activeModule === 'firm_docs' && <FirmDocsModule />}
+      {activeModule === 'society' && <SocietyModule />}
+    </div>
+  );
+}
+
+// ─── FIRM DOCS MODULE ───────────────────────────────────────────
+function FirmDocsModule() {
+  const [activeDoc, setActiveDoc] = useState('affidavit');
+  const [cpCount, setCpCount] = useState(2);
+  const [f1Count, setF1Count] = useState(2);
+  const [pfPC, setPfPC] = useState(2);
+  const [pfWC, setPfWC] = useState(1);
+
+  const showDoc = (title: string, html: string) => {
+    downloadDoc(html, title.replace(/[^a-zA-Z0-9]/g, '_'));
+  };
+
+  return (
+    <div>
+      <div className="text-sm text-[#7a6e5a] mb-6">Generate supporting documents required for Partnership Firm Registration.</div>
+      <div className="grid grid-cols-3 gap-3 mb-8">
+        {[
+          { key: 'affidavit', icon: '📜', label: 'Affidavit', desc: "Owner's premises", badge: 'Section 1' },
+          { key: 'form1', icon: '📋', label: 'Form No. 1', desc: 'Registration u/s 58', badge: 'IPA 1932' },
+          { key: 'photoform', icon: '🪪', label: 'Photo Form', desc: 'Partners & Witnesses KYC', badge: 'KYC' },
+        ].map(d => (
+          <button key={d.key} onClick={() => setActiveDoc(d.key)}
+            className={`relative border-2 rounded-xl p-4 cursor-pointer text-center transition-all ${activeDoc === d.key ? 'border-[#2c4a1e] bg-[#2c4a1e] text-white' : 'border-[#d6c9a0] bg-white hover:border-[#b8860b] hover:bg-[#f5e9c8]'}`}>
+            <span className="absolute -top-2.5 right-2 bg-[#b8860b] text-[#1a1209] text-[9px] font-bold px-1.5 py-0.5 rounded-full">{d.badge}</span>
+            <div className="text-2xl mb-1">{d.icon}</div>
+            <div className="font-serif font-semibold text-sm">{d.label}</div>
+            <div className="text-[10px] mt-1 opacity-65">{d.desc}</div>
+          </button>
+        ))}
+      </div>
+      {activeDoc === 'affidavit' && <AffidavitPanel cpCount={cpCount} setCpCount={setCpCount} showDoc={showDoc} />}
+      {activeDoc === 'form1' && <Form1Panel f1Count={f1Count} setF1Count={setF1Count} showDoc={showDoc} />}
+      {activeDoc === 'photoform' && <PhotoFormPanel pfPC={pfPC} setPfPC={setPfPC} pfWC={pfWC} setPfWC={setPfWC} showDoc={showDoc} />}
+    </div>
+  );
+}
+
+function AffidavitPanel({ cpCount, setCpCount, showDoc }: { cpCount: number; setCpCount: (n: number) => void; showDoc: (t: string, h: string) => void }) {
+  const [data, setData] = useState({ name: '', rel: 'S/o', father: '', age: '', address: '', firm: '', dateComm: '', officeAddr: '', station: '', signDate: '', premises: 'owner', reg: 'yes' });
+  const [cp, setCp] = useState<CoPartner[]>([]);
+  const u = (k: string, v: string) => setData(d => ({ ...d, [k]: v }));
+  const updateCp = (i: number, v: string) => {
+    setCp(c => { const n = [...c]; while (n.length <= i) n.push({ name: '' }); n[i] = { name: v }; return n; });
+  };
+
+  const generate = () => {
+    const { name, rel, father, age, address, firm, dateComm, officeAddr, station, signDate, premises, reg } = data;
+    if (!name || !father || !age || !address || !firm || !dateComm || !officeAddr || !station || !signDate) { alert('Fill all required fields.'); return; }
+    const cpList = cp.slice(0, cpCount);
+    for (let i = 0; i < cpList.length; i++) { if (!cpList[i]?.name) { alert(`Enter name for Co-Partner ${i + 1}.`); return; } }
+    const isOwner = premises === 'owner';
+    const hasReg = reg === 'yes';
+    const html = `<div class="page-break"><h1>AFFIDAVIT</h1>
+<div class="section-hdr">Deponent Statement</div>
+<p>I, <b>${name}</b>, <b>${rel} ${father}</b>, aged <b>${age} years</b> residing at ${address} do hereby affirm and state as follows:</p>
+<ul>
+  <li>I, <b>${name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm}"</b>.</li>
+  <li>The said Firm commenced the business from ${formatDateLong(dateComm)} and the office of the firm is situated at ${officeAddr} and the said premises belong to me.</li>
+  ${hasReg ? `<li>The said firm has applied for Registration to the Registrar of Firms, ${station}.</li>` : ''}
+  ${isOwner ? `<li>I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li>I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
+</ul>
+<div class="signature-area"><div><span class="sig-line"></span><br><b>DEPONENT</b></div></div>
+<div class="station-row"><span>Place: ${station}</span><span>Date: ${formatDateShort(signDate)}</span></div>
+<p style="margin-top:12pt;">Solemnly affirmed at ${station} on this day ${formatDateShort(signDate)}.</p></div>`;
+    showDoc('Affidavit_' + firm, html);
+  };
+
+  return (
+    <div>
+      <div className="bg-[#f5e9c8] border border-[#b8860b] rounded-lg px-4 py-3 text-xs text-[#5a4a00] mb-6">
+        This affidavit is made by the <b>property owner-partner</b> declaring the firm's office premises and consent for its use.
+      </div>
+      <div className="bg-white border-2 border-[#d6c9a0] rounded-xl p-8">
+        <h2 className="font-serif text-xl font-semibold text-[#1a1209] pb-3 border-b-2 border-[#f5e9c8] mb-6">📜 Affidavit</h2>
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Deponent<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="md:col-span-3"><Field label="Full Name" required><input className={inputClass} value={data.name} onChange={e => u('name', e.target.value)} /></Field></div>
+          <Field label="Relationship">
+            <select className={inputClass} value={data.rel} onChange={e => u('rel', e.target.value)}><option value="S/o">S/o</option><option value="D/o">D/o</option><option value="W/o">W/o</option></select>
+          </Field>
+          <Field label="Father / Husband Name" required><input className={inputClass} value={data.father} onChange={e => u('father', e.target.value)} /></Field>
+          <Field label="Age" required><input type="number" className={inputClass} value={data.age} onChange={e => u('age', e.target.value)} min={18} max={99} /></Field>
+          <div className="md:col-span-3"><Field label="Residential Address" required><textarea className={`${inputClass} min-h-[60px]`} value={data.address} onChange={e => u('address', e.target.value)} rows={2} /></Field></div>
+        </div>
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Firm Details<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="grid md:grid-cols-2 gap-4">
+          <Field label="Firm Name" required><input className={inputClass} value={data.firm} onChange={e => u('firm', e.target.value)} /></Field>
+          <Field label="Date of Commencement" required><input type="date" className={inputClass} value={data.dateComm} onChange={e => u('dateComm', e.target.value)} /></Field>
+          <div className="md:col-span-2"><Field label="Office / Premises Address" required><input className={inputClass} value={data.officeAddr} onChange={e => u('officeAddr', e.target.value)} /></Field></div>
+        </div>
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Co-Partners<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="flex items-center gap-3 mb-4">
+          <button onClick={() => setCpCount(Math.max(1, cpCount - 1))} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">−</button>
+          <span className="font-serif text-xl font-semibold text-[#2c4a1e] min-w-[28px] text-center">{cpCount}</span>
+          <button onClick={() => setCpCount(cpCount + 1)} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">+</button>
+          <span className="text-xs text-[#7a6e5a]">other partners besides the deponent</span>
+        </div>
+        {Array.from({ length: cpCount }).map((_, i) => (
+          <div key={i} className="border border-[#f5e9c8] rounded-lg p-4 mb-3 bg-gradient-to-br from-[#fffef8] to-[#faf7f0]">
+            <div className="font-serif font-semibold text-[#2c4a1e] mb-3 flex items-center gap-2">
+              <span className="w-6 h-6 rounded-full bg-[#2c4a1e] text-white flex items-center justify-center text-[10px] font-bold">{i + 1}</span>
+              Co-Partner {i + 1}
+            </div>
+            <Field label="Full Name" required><input className={inputClass} value={cp[i]?.name || ''} onChange={e => updateCp(i, e.target.value)} /></Field>
+          </div>
+        ))}
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Premises &amp; Affirmation<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="md:col-span-2">
+            <Field label="Does the deponent own the premises?">
+              <div className="flex flex-wrap gap-3">
+                {['owner', 'tenant'].map(v => (
+                  <label key={v} className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm cursor-pointer ${data.premises === v ? 'border-[#2c4a1e] bg-[#f5e9c8] font-semibold' : 'border-[#d6c9a0] bg-white'}`}>
+                    <input type="radio" name="aff_premises" value={v} checked={data.premises === v} onChange={() => u('premises', v)} className="accent-[#2c4a1e]" />
+                    {v === 'owner' ? 'Yes — Owner (no rent)' : 'No — Rented / Other'}
+                  </label>
+                ))}
+              </div>
+            </Field>
+          </div>
+          <Field label="Signed at (Place)" required><input className={inputClass} value={data.station} onChange={e => u('station', e.target.value)} /></Field>
+          <Field label="Date of Signing" required><input type="date" className={inputClass} value={data.signDate} onChange={e => u('signDate', e.target.value)} /></Field>
+          <div className="md:col-span-2">
+            <Field label="Firm applied for Registration to Registrar of Firms?">
+              <div className="flex flex-wrap gap-3">
+                {['yes', 'no'].map(v => (
+                  <label key={v} className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm cursor-pointer ${data.reg === v ? 'border-[#2c4a1e] bg-[#f5e9c8] font-semibold' : 'border-[#d6c9a0] bg-white'}`}>
+                    <input type="radio" name="aff_reg" value={v} checked={data.reg === v} onChange={() => u('reg', v)} className="accent-[#2c4a1e]" />
+                    {v === 'yes' ? 'Yes' : 'No'}
+                  </label>
+                ))}
+              </div>
+            </Field>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-end mt-6"><Button variant="gold" onClick={generate}>📜 Generate Affidavit</Button></div>
+    </div>
+  );
+}
+
+function Form1Panel({ f1Count, setF1Count, showDoc }: { f1Count: number; setF1Count: (n: number) => void; showDoc: (t: string, h: string) => void }) {
+  const [data, setData] = useState({ firm: '', presentedBy: '', principalPlace: '', otherPlaces: '', nature: '', duration: 'At will', station: '', date: '' });
+  const [partners, setPartners] = useState<Form1Partner[]>([]);
+  const u = (k: string, v: string) => setData(d => ({ ...d, [k]: v }));
+  const updatePartner = (i: number, k: string, v: string) => {
+    setPartners(p => { const n = [...p]; while (n.length <= i) n.push({ name: '', rel: 'S/o', father: '', age: '', address: '', joining: '' }); n[i] = { ...n[i], [k]: v }; return n; });
+  };
+
+  const generate = () => {
+    const { firm, presentedBy, principalPlace, nature, station, date } = data;
+    if (!firm || !presentedBy || !principalPlace || !nature || !station || !date) { alert('Fill all required firm fields.'); return; }
+    const ps = partners.slice(0, f1Count);
+    for (let i = 0; i < ps.length; i++) { if (!ps[i].name || !ps[i].father || !ps[i].age || !ps[i].address || !ps[i].joining) { alert(`Fill all fields for Partner ${i + 1}.`); return; } }
+    const tRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}</td><td>${p.name}</td><td>${formatDateShort(p.joining)}</td><td>${p.address}</td></tr>`).join('');
+    const sigs = ps.map(p => `<li style="margin-bottom:6px;">${p.name}</li>`).join('');
+    const decls = ps.map(p => `<div class="decl-block"><p>I, <b>${p.name}</b>, <b>${p.rel || 'S/o'} ${p.father}</b>, aged <b>${p.age} Years</b> do hereby declare that the above statement is true and correct to the best of my knowledge and belief.</p><div class="station-row"><span>Date: ${formatDateShort(date)}</span><span>Signature: <span class="sign-line" style="width:130px;"></span></span></div></div>`).join('');
+    const sn = ps.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
+    const html = `<div class="page-break"><h1>FORM NO.1</h1>
+<div class="section-hdr">The Indian Partnership Act, 1932 — Registration u/s 58</div>
+<p>Application for the registration of firm by the name <b>"${firm}"</b> presented to the Registrar of Firms by <b>${presentedBy}</b>.</p>
+<p>We, the undersigned, being the partners of the firm "<b>${firm}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
+<div class="section-sub">Firm Particulars</div>
+<table style="border:none;margin:8pt 0;">
+  <tr><td style="border:none;width:220pt;"><b>The Firm's Name</b></td><td style="border:none;">:&nbsp;&nbsp;<b>${firm}</b></td></tr>
+  <tr><td style="border:none;" colspan="2"><b>Place of Business:</b></td></tr>
+  <tr><td style="border:none;padding-left:22pt;">(a) Principal Place:</td><td style="border:none;">:&nbsp;&nbsp;${principalPlace}</td></tr>
+  <tr><td style="border:none;padding-left:22pt;">(b) Other Places:</td><td style="border:none;">:&nbsp;&nbsp;${data.otherPlaces || '———'}</td></tr>
+  <tr><td style="border:none;"><b>Nature of Business</b></td><td style="border:none;">:&nbsp;&nbsp;${nature}</td></tr>
+  <tr><td style="border:none;"><b>Duration of the Firm</b></td><td style="border:none;">:&nbsp;&nbsp;${data.duration}</td></tr>
+</table>
+<p style="margin-left:24pt;">${sn}</p>
+<div class="section-sub">Partners Details</div>
+<table><thead><tr><th style="width:45pt;">S.No</th><th>Name</th><th style="width:120pt;">Date of Joining</th><th>Permanent Address</th></tr></thead><tbody>${tRows}</tbody></table>
+<div class="page-break"><div class="section-hdr">Declaration by Partners</div>
+<p>We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
+<div class="station-row"><div><p>Station: ${station}</p><p>Date: ${formatDateShort(date)}</p></div><div><b>Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
+<div style="margin-top:24pt;">${decls}</div></div></div>`;
+    showDoc('Form_No_1_' + firm, html);
+  };
+
+  return (
+    <div>
+      <div className="bg-[#f5e9c8] border border-[#b8860b] rounded-lg px-4 py-3 text-xs text-[#5a4a00] mb-6">
+        <b>Form No. 1</b> under The Indian Partnership Act, 1932 (Section 58) — Application for Firm Registration.
+      </div>
+      <div className="bg-white border-2 border-[#d6c9a0] rounded-xl p-8">
+        <h2 className="font-serif text-xl font-semibold text-[#1a1209] pb-3 border-b-2 border-[#f5e9c8] mb-6">📋 Form No. 1</h2>
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Firm Information<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="grid md:grid-cols-2 gap-4">
+          <Field label="Firm Name" required><input className={inputClass} value={data.firm} onChange={e => u('firm', e.target.value)} /></Field>
+          <Field label="Presented By" required><input className={inputClass} value={data.presentedBy} onChange={e => u('presentedBy', e.target.value)} /></Field>
+          <div className="md:col-span-2"><Field label="Principal Place of Business" required><input className={inputClass} value={data.principalPlace} onChange={e => u('principalPlace', e.target.value)} /></Field></div>
+          <div className="md:col-span-2"><Field label="Other Places of Business"><input className={inputClass} value={data.otherPlaces} onChange={e => u('otherPlaces', e.target.value)} /></Field></div>
+          <div className="md:col-span-2"><Field label="Nature of Business" required><textarea className={`${inputClass} min-h-[70px]`} value={data.nature} onChange={e => u('nature', e.target.value)} rows={3} /></Field></div>
+          <Field label="Duration" required>
+            <select className={inputClass} value={data.duration} onChange={e => u('duration', e.target.value)}><option value="At will">At will</option><option value="Fixed term">Fixed term</option></select>
+          </Field>
+          <Field label="Station" required><input className={inputClass} value={data.station} onChange={e => u('station', e.target.value)} /></Field>
+          <Field label="Date" required><input type="date" className={inputClass} value={data.date} onChange={e => u('date', e.target.value)} /></Field>
+        </div>
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Partners<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="flex items-center gap-3 mb-4">
+          <button onClick={() => setF1Count(Math.max(2, f1Count - 1))} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">−</button>
+          <span className="font-serif text-xl font-semibold text-[#2c4a1e] min-w-[28px] text-center">{f1Count}</span>
+          <button onClick={() => setF1Count(f1Count + 1)} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">+</button>
+        </div>
+        {Array.from({ length: f1Count }).map((_, i) => (
+          <div key={i} className="border border-[#f5e9c8] rounded-lg p-4 mb-3 bg-gradient-to-br from-[#fffef8] to-[#faf7f0]">
+            <div className="font-serif font-semibold text-[#2c4a1e] mb-3 flex items-center gap-2"><span className="w-6 h-6 rounded-full bg-[#2c4a1e] text-white flex items-center justify-center text-[10px] font-bold">{i + 1}</span>Partner {i + 1}</div>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="md:col-span-3"><Field label="Full Name" required><input className={inputClass} value={partners[i]?.name || ''} onChange={e => updatePartner(i, 'name', e.target.value)} /></Field></div>
+              <Field label="Relationship">
+                <select className={inputClass} value={partners[i]?.rel || 'S/o'} onChange={e => updatePartner(i, 'rel', e.target.value)}>
+                  <option value="S/o">S/o</option><option value="D/o">D/o</option><option value="W/o">W/o</option>
+                </select>
+              </Field>
+              <Field label="Father / Husband Name" required><input className={inputClass} value={partners[i]?.father || ''} onChange={e => updatePartner(i, 'father', e.target.value)} /></Field>
+              <Field label="Age" required><input type="number" className={inputClass} value={partners[i]?.age || ''} onChange={e => updatePartner(i, 'age', e.target.value)} min={18} max={99} /></Field>
+              <div className="md:col-span-3"><Field label="Permanent Address" required><textarea className={`${inputClass} min-h-[60px]`} value={partners[i]?.address || ''} onChange={e => updatePartner(i, 'address', e.target.value)} rows={2} /></Field></div>
+              <Field label="Date of Joining" required><input type="date" className={inputClass} value={partners[i]?.joining || ''} onChange={e => updatePartner(i, 'joining', e.target.value)} /></Field>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-end mt-6"><Button variant="gold" onClick={generate}>📋 Generate Form No. 1</Button></div>
+    </div>
+  );
+}
+
+function PhotoFormPanel({ pfPC, setPfPC, pfWC, setPfWC, showDoc }: { pfPC: number; setPfPC: (n: number) => void; pfWC: number; setPfWC: (n: number) => void; showDoc: (t: string, h: string) => void }) {
+  const [data, setData] = useState({ firm: '', addr: '' });
+  const [partners, setPartners] = useState<PhotoEntry[]>([]);
+  const [witnesses, setWitnesses] = useState<PhotoEntry[]>([]);
+  const u = (k: string, v: string) => setData(d => ({ ...d, [k]: v }));
+  const updatePartner = (i: number, k: string, v: string) => {
+    setPartners(p => { const n = [...p]; while (n.length <= i) n.push({ name: '', rel: 'S/o', father: '', address: '' }); n[i] = { ...n[i], [k]: v }; return n; });
+  };
+  const updateWitness = (i: number, k: string, v: string) => {
+    setWitnesses(w => { const n = [...w]; while (n.length <= i) n.push({ name: '', rel: 'W/o', father: '', address: '' }); n[i] = { ...n[i], [k]: v }; return n; });
+  };
+
+  const generate = () => {
+    if (!data.firm || !data.addr) { alert('Fill Firm Name and Address.'); return; }
+    const ps = partners.slice(0, pfPC);
+    for (let i = 0; i < ps.length; i++) { if (!ps[i].name || !ps[i].father || !ps[i].address) { alert(`Fill all fields for Partner ${i + 1}.`); return; } }
+    const ws = witnesses.slice(0, pfWC);
+    for (let i = 0; i < ws.length; i++) { if (!ws[i].name || !ws[i].address) { alert(`Fill all fields for Witness ${i + 1}.`); return; } }
+    const pRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}.</td><td><b>${p.name}, ${p.rel || 'S/o'} ${p.father}</b></td><td>${p.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
+    const wRows = ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
+    const html = `<div class="page-break"><div class="firm-hdr">${data.firm}</div><div class="firm-addr">${data.addr}</div>
+<div class="section-hdr">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
+<table><thead><tr><th style="width:46pt;">S.No</th><th>Partners Name &amp; Father Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
+</div>
+<div class="page-break"><div class="firm-hdr">${data.firm}</div><div class="firm-addr">${data.addr}</div>
+<div class="section-hdr">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
+<table><thead><tr><th style="width:46pt;">S.No</th><th>Witness Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
+    showDoc('Photo_Form_' + data.firm, html);
+  };
+
+  return (
+    <div>
+      <div className="bg-[#f5e9c8] border border-[#b8860b] rounded-lg px-4 py-3 text-xs text-[#5a4a00] mb-6">
+        <b>Photo Form</b> — KYC documentation for Registrar of Firms. Print and physically paste photos / affix signatures.
+      </div>
+      <div className="bg-white border-2 border-[#d6c9a0] rounded-xl p-8">
+        <h2 className="font-serif text-xl font-semibold text-[#1a1209] pb-3 border-b-2 border-[#f5e9c8] mb-6">🪪 Photo Form</h2>
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Firm Details<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="grid md:grid-cols-2 gap-4">
+          <Field label="Firm Name" required><input className={inputClass} value={data.firm} onChange={e => u('firm', e.target.value)} /></Field>
+          <div className="md:col-span-2"><Field label="Firm Address" required><input className={inputClass} value={data.addr} onChange={e => u('addr', e.target.value)} /></Field></div>
+        </div>
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Partners<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="flex items-center gap-3 mb-4">
+          <button onClick={() => setPfPC(Math.max(1, pfPC - 1))} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">−</button>
+          <span className="font-serif text-xl font-semibold text-[#2c4a1e] min-w-[28px] text-center">{pfPC}</span>
+          <button onClick={() => setPfPC(pfPC + 1)} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">+</button>
+        </div>
+        {Array.from({ length: pfPC }).map((_, i) => (
+          <div key={`pp-${i}`} className="border border-[#f5e9c8] rounded-lg p-4 mb-3 bg-gradient-to-br from-[#fffef8] to-[#faf7f0]">
+            <div className="font-serif font-semibold text-[#2c4a1e] mb-3 flex items-center gap-2"><span className="w-6 h-6 rounded-full bg-[#2c4a1e] text-white flex items-center justify-center text-[10px] font-bold">{i + 1}</span>Partner {i + 1}</div>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="md:col-span-2"><Field label="Full Name" required><input className={inputClass} value={partners[i]?.name || ''} onChange={e => updatePartner(i, 'name', e.target.value)} /></Field></div>
+              <Field label="Relationship">
+                <select className={inputClass} value={partners[i]?.rel || 'S/o'} onChange={e => updatePartner(i, 'rel', e.target.value)}>
+                  <option value="S/o">S/o</option><option value="D/o">D/o</option><option value="W/o">W/o</option>
+                </select>
+              </Field>
+              <Field label="Father / Husband Name" required><input className={inputClass} value={partners[i]?.father || ''} onChange={e => updatePartner(i, 'father', e.target.value)} /></Field>
+              <div className="md:col-span-2"><Field label="Address" required><textarea className={`${inputClass} min-h-[60px]`} value={partners[i]?.address || ''} onChange={e => updatePartner(i, 'address', e.target.value)} rows={2} /></Field></div>
+            </div>
+          </div>
+        ))}
+        <div className="flex items-center gap-3 my-4 text-xs uppercase tracking-wider text-[#d6c9a0]"><span className="flex-1 h-px bg-[#d6c9a0]" />Witnesses<span className="flex-1 h-px bg-[#d6c9a0]" /></div>
+        <div className="flex items-center gap-3 mb-4">
+          <button onClick={() => setPfWC(Math.max(1, pfWC - 1))} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">−</button>
+          <span className="font-serif text-xl font-semibold text-[#2c4a1e] min-w-[28px] text-center">{pfWC}</span>
+          <button onClick={() => setPfWC(pfWC + 1)} className="w-7 h-7 rounded-lg border-2 border-[#d6c9a0] flex items-center justify-center font-bold text-base text-[#2c4a1e] hover:bg-[#f5e9c8] cursor-pointer">+</button>
+        </div>
+        {Array.from({ length: pfWC }).map((_, i) => (
+          <div key={`pw-${i}`} className="border border-[#f5e9c8] rounded-lg p-4 mb-3 bg-gradient-to-br from-[#fffef8] to-[#faf7f0]">
+            <div className="font-serif font-semibold text-[#7a6e5a] mb-3 flex items-center gap-2"><span className="w-6 h-6 rounded-full bg-[#7a6e5a] text-white flex items-center justify-center text-[10px] font-bold">W{i + 1}</span>Witness {i + 1}</div>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Field label="Full Name" required><input className={inputClass} value={witnesses[i]?.name || ''} onChange={e => updateWitness(i, 'name', e.target.value)} /></Field>
+              <Field label="C/o"><input className={inputClass} value={witnesses[i]?.rel || ''} onChange={e => updateWitness(i, 'rel', e.target.value)} /></Field>
+              <div className="md:col-span-2"><Field label="Address" required><textarea className={`${inputClass} min-h-[60px]`} value={witnesses[i]?.address || ''} onChange={e => updateWitness(i, 'address', e.target.value)} rows={2} /></Field></div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-end mt-6"><Button variant="gold" onClick={generate}>🪪 Generate Photo Form</Button></div>
+    </div>
+  );
+}
+
+function Button({ variant = 'primary', onClick, children }: { variant?: 'primary' | 'secondary' | 'gold'; onClick: () => void; children: React.ReactNode }) {
+  const styles = {
+    primary: 'bg-[#2c4a1e] text-white shadow-md hover:bg-[#3d6129]',
+    secondary: 'bg-white text-[#7a6e5a] border-2 border-[#d6c9a0] hover:border-[#2c4a1e] hover:text-[#2c4a1e]',
+    gold: 'bg-[#b8860b] text-[#1a1209] shadow-md hover:bg-[#d4a017]',
+  };
+  return (
+    <button onClick={onClick} className={`px-6 py-2.5 rounded-lg text-sm font-semibold transition-all cursor-pointer ${styles[variant]}`}>
+      {children}
+    </button>
+  );
+}
+
+// ─── SOCIETY REGISTRATION MODULE ────────────────────────────────
+function SocietyModule() {
   const [activeDoc, setActiveDoc] = useState('cover');
   const [mcCount, setMcCount] = useState(3);
   const [wcCount, setWcCount] = useState(2);
@@ -52,20 +427,21 @@ export default function SocietyRegistrationPage() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<div class="firm-hdr">${common.name}</div>
+    const html = `<div class="page-break"><div class="firm-hdr">${common.name}</div>
 <div class="firm-addr">${common.addr}</div>
-<div class="firm-addr">(Registered under Societies Registration Act 35 of 2001)</div>
-<div style="margin-top:18px;"><b>President</b><br>${pres.name}<br>${pres.rel} ${pres.father},<br>${pres.addr}</div>
-<p style="margin-top:18px;">To</p>
+<div class="firm-addr" style="font-size:10pt;">(Registered under Societies Registration Act 35 of 2001)</div>
+<div style="margin-top:18pt;"><b>President</b><br>${pres.name}<br>${pres.rel} ${pres.father},<br>${pres.addr}</div>
+<p style="margin-top:18pt;">To,</p>
 <p>The District Registrar of Assurances,<br>The District Registrar Office,<br>${common.place}.</p>
 <p>Respected Sir,</p>
-<p style="text-indent:36px;">I am here with enclosing a Memorandum and of the Rules and Regulations of <b>"${common.name}"</b>, Office Address: ${common.addr}, for registration under the Societies Registration Act 35 of 2001. I request that this may kindly be registered under the above said act and issue a necessary certificate of Registration to me. The necessary fee for its registration will be paid in person.</p>
-<p>Submitted for necessary action</p>
+<p style="text-indent:36pt;">I am here with enclosing a Memorandum and of the Rules and Regulations of <b>"${common.name}"</b>, Office Address: ${common.addr}, for registration under the Societies Registration Act 35 of 2001. I request that this may kindly be registered under the above said act and issue a necessary certificate of Registration to me. The necessary fee for its registration will be paid in person.</p>
+<p>Submitted for necessary action.</p>
 <p>Thanking you Sir,</p>
 <p>Yours faithfully,</p>
 <p><b>PRESIDENT</b></p>
 <div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<p style="margin-top:10px;">Enclosed: All members I.D Proofs with photos<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Affidavits – attested by the Notary.</p>`;
+<div class="section-sub" style="margin-top:16pt;">Enclosures</div>
+<ul><li>All members I.D Proofs with photos</li><li>Affidavits – attested by the Notary</li></ul></div>`;
     downloadDoc(html, 'Cover_Letter_' + common.name);
   };
 
@@ -73,13 +449,14 @@ export default function SocietyRegistrationPage() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<h1>COPY OF RESOLUTION</h1>
-<p style="text-indent:36px;">We the undersigned resolved to form a Society by name <b>"${common.name}"</b>, Office Address ${common.addr} and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorize the <b>PRESIDENT — ${pres.name} ${pres.rel} ${pres.father}</b> of the said Association to present the document in the Registrar's Office, ${common.place} and get it registered under the above said Act and receive the necessary certificate.</p>
+    const html = `<div class="page-break"><h1>Copy of Resolution</h1>
+<div class="section-hdr">Resolution to Form and Register the Society</div>
+<p style="text-indent:36pt;">We the undersigned resolved to form a Society by name <b>"${common.name}"</b>, Office Address ${common.addr} and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorize the <b>PRESIDENT — ${pres.name} ${pres.rel} ${pres.father}</b> of the said Association to present the document in the Registrar's Office, ${common.place} and get it registered under the above said Act and receive the necessary certificate.</p>
 <div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<p style="margin-top:18px;"><b>PRESIDENT</b></p>
-<ul style="list-style:none;margin-top:8px;">
-  <li>Bye laws</li><li>ID Proofs</li><li>Affidavit</li>
-</ul>`;
+<p style="margin-top:18pt;"><b>PRESIDENT</b></p>
+<div style="margin-top:24pt;"><span class="sig-line"></span><br>Signature</div>
+<div class="section-sub" style="margin-top:16pt;">Annexures</div>
+<ul><li>Bye Laws</li><li>ID Proofs</li><li>Affidavit</li></ul></div>`;
     downloadDoc(html, 'Resolution_' + common.name);
   };
 
@@ -95,56 +472,60 @@ export default function SocietyRegistrationPage() {
     const finalSigRows = ms.map((m, i) =>
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}, ${m.rel} ${m.father}</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
-    const html = `<div style="text-align:center;margin-bottom:6px;">MEMORANDUM OF ASSOCIATION OF</div>
+    const html = `<div class="page-break"><h1>Memorandum of Association</h1>
+<div class="section-hdr">${common.name}</div>
 <div class="firm-hdr">${common.name}</div>
 <div class="firm-addr">${common.addr}</div>
-<ul style="list-style:none;margin:14px 0 18px;">
-  <li><b>Name of the Society:</b> ${common.name}</li>
-  <li style="margin-top:6px;"><b>Office Address:</b> ${common.addr}</li>
-  <li style="margin-top:10px;"><b>Aims and Objectives:</b><ul style="margin-top:6px;">${aimItems}</ul></li>
-  <li style="margin-top:10px;"><b>Governing Body:</b> We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</li>
-</ul>
-<table><thead><tr><th>S.no</th><th>Name</th><th>Father / Husband Name</th><th>Address</th><th>Age</th><th>Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
-<p style="margin-top:14px;font-weight:bold;">DECLARATION</p>
+<div class="section-sub">1. Name of the Society</div>
+<p>${common.name}</p>
+<div class="section-sub">2. Office Address</div>
+<p>${common.addr}</p>
+<div class="section-sub">3. Aims and Objectives</div>
+<ul>${aimItems}</ul>
+<div class="section-sub">4. Governing Body</div>
+<p>We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</p>
+<table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Address</th><th>Age</th><th>Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
+<div class="page-break"><div class="section-hdr">Declaration</div>
 <p>We the undersigned desirous to form a committee and get it registered under the society's registration act 35 of 2001.</p>
-<table><thead><tr><th>S.no</th><th>Name</th><th>Father / Husband Name</th><th>Designation</th><th>Signature</th></tr></thead><tbody>${dRows}</tbody></table>
-<p style="margin-top:14px;font-weight:bold;">Signatures Of Witnesses and Their Addresses</p>
-<table><thead><tr><th style="width:46px;">S.no</th><th>Name, Father/Husband Name &amp; Address</th><th>Signature</th></tr></thead><tbody>${wRows}</tbody></table>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Designation</th><th>Signature</th></tr></thead><tbody>${dRows}</tbody></table>
+<div class="section-sub">Signatures of Witnesses and Their Addresses</div>
+<table><thead><tr><th style="width:46pt;">S.No</th><th>Name, Father/Husband Name &amp; Address</th><th>Signature</th></tr></thead><tbody>${wRows}</tbody></table>
+<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div style="margin-top:36px;text-align:center;font-weight:bold;font-size:13pt;text-decoration:underline;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
-<div class="firm-hdr" style="margin-top:10px;">${common.name}</div>
+<div class="page-break"><h1>Rules and Regulations of the Association</h1>
+<div class="section-hdr">${common.name}</div>
 <div class="firm-addr">${common.addr}</div>
 <div class="rules-section">
-<h3>1. Name of the Society</h3><p>${common.name}</p>
-<h3>2. Office Address</h3><p>${common.addr}</p>
-<h3>3. Area of Operation</h3><p>The area of operation of this ${common.name} shall be ${common.area}.</p>
-<h3>4. Membership</h3>
+<div class="section-sub">1. Name of the Society</div><p>${common.name}</p>
+<div class="section-sub">2. Office Address</div><p>${common.addr}</p>
+<div class="section-sub">3. Area of Operation</div><p>The area of operation of this ${common.name} shall be ${common.area}.</p>
+<div class="section-sub">4. Membership</div>
 <ul>
   <li>All persons who are Indian Nationals and above the Age of 18 Years and of sound mind are eligible to be Members. Their Membership shall be approved by the Executive Committee on acceptance of Rs.${common.admissionFee}/- as admission fee and a Monthly Subscription of Rs.${common.monthlySub}/- each.</li>
   <li>Every member shall contribute a monthly subscription of Rs.${common.monthlySub}/-. If any member fails to pay for 3 continuous months, their name will be deleted from the list of members.</li>
   <li>The membership shall be open to all and shall not be restricted to any caste, religion, creed, sex etc.</li>
   <li>The Society shall maintain an up-to-date Membership register with addresses and dates of admission and termination.</li>
 </ul>
-<h3>5. Cessation of Membership</h3>
+<div class="section-sub">5. Cessation of Membership</div>
 <ul><li>On acceptance of resignation approved by the Governing Body.</li><li>On becoming unsound, suffering from chronic diseases, or on death.</li><li>On termination by the Society with approval of 3/5th of the Executive Body majority on proof of violation of Rules and Regulations.</li></ul>
-<h3>6. Managing Committee</h3>
+<div class="section-sub">6. Managing Committee</div>
 <p>The Managing Committee shall consist of a President, Secretary, Treasurer and members. Members shall be elected at a General Body meeting and shall hold office for 5 years. The Committee shall meet at least 4 times a year with 10 days' notice specifying venue, agenda and time.</p>
-<h3>7. Financial Year</h3>
+<div class="section-sub">7. Financial Year</div>
 <p>The Society shall follow the financial year (1st April to 31st March) for preparation of annual accounts, receipts &amp; payments, Income-Expenditure and Balance Sheet.</p>
-<h3>8. Audit &amp; Accounts</h3>
+<div class="section-sub">8. Audit &amp; Accounts</div>
 <p>The accounts shall be audited by a Qualified Auditor / Chartered Accountant every year, appointed at the Annual General Meeting.</p>
-<h3>9. Amendments</h3>
+<div class="section-sub">9. Amendments</div>
 <p>No amendments shall be made unless voted by 3/5th of the members present at a General Body meeting and confirmed by 3/5th at a second special meeting after one month. Amendments to Byelaws require prior approval of the Commissioner/Director of Income Tax (Exemptions), Hyderabad.</p>
-<h3>10. Winding Up</h3>
+<div class="section-sub">10. Winding Up</div>
 <p>In the event of dissolution, all remaining funds and assets after satisfying liabilities shall be given to a Society having similar aims and objects registered under Sec 12AA of the Income Tax Act 1961.</p>
 </div>
-<p style="margin-top:16px;">We, the several members whose signatures are subscribed below desire to bring the above-named society into being within the meaning of Section 35 of 2001 of Societies Registration and we are desirous of getting the above society registered.</p>
-<table><thead><tr><th>S.no</th><th>Name &amp; Father / Husband Name</th><th>Designation</th><th>Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
-<p style="margin-top:14px;font-weight:bold;">Witnesses with their address &amp; signatures:</p>
-<table><thead><tr><th>S.no</th><th>Name &amp; Address</th><th>Witness Signature</th><th>Witness Photo</th></tr></thead>
+<div class="page-break"><div class="section-hdr">Registration Undertaking</div>
+<p style="margin-top:14pt;">We, the several members whose signatures are subscribed below desire to bring the above-named society into being within the meaning of Section 35 of 2001 of Societies Registration and we are desirous of getting the above society registered.</p>
+<table><thead><tr><th>S.No</th><th>Name &amp; Father / Husband Name</th><th>Designation</th><th>Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
+<div class="section-sub">Witnesses with their Address &amp; Signatures</div>
+<table><thead><tr><th>S.No</th><th>Name &amp; Address</th><th>Witness Signature</th><th>Witness Photo</th></tr></thead>
 <tbody>${ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b> ${w.rel} ${w.father}<br>${w.addr}</td><td></td><td></td></tr>`).join('')}</tbody></table>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>`;
+<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div></div></div>`;
     downloadDoc(html, 'Memorandum_of_Association_' + common.name);
   };
 
@@ -156,18 +537,20 @@ export default function SocietyRegistrationPage() {
     const memberTableRows2 = ms.map((m, i) =>
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}</td><td>${m.rel} ${m.father}</td><td>${m.addr}</td><td>${m.age} Years</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
-    const html = `<h1>AFFIDAVIT — 1</h1>
+    const html = `<div class="page-break"><h1>Affidavit — 1</h1>
+<div class="section-hdr">President's Affidavit</div>
 <p>I, ${pres.name}, ${pres.rel} ${pres.father}, aged about ${pres.age} years, ${pres.addr}, solemnly affirm and sincerely state as follows:</p>
 <ul>
   <li>I am the President of <b>${common.name}</b>, and I know the facts and swear this affidavit on behalf of me and on behalf of other executive members.</li>
   <li>The below persons are the members of the society and formed as a society namely <b>${common.name}</b>, ${common.addr}.</li>
 </ul>
 <p><b>List of Executive Members along with their Address:</b></p>
-<table><thead><tr><th>S.no</th><th>Name</th><th>Father / Husband Name</th><th>Address</th><th>Age</th><th>Designation</th><th>Signature</th></tr></thead><tbody>${memberTableRows2}</tbody></table>
-<div style="margin-top:18px;text-align:right;"><span class="sign-line"></span><br><b>DEPONENT</b><br><br><b>President</b><br>${pres.name}</div>
+<table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Address</th><th>Age</th><th>Designation</th><th>Signature</th></tr></thead><tbody>${memberTableRows2}</tbody></table>
+<div class="signature-area"><div><span class="sig-line"></span><br><b>DEPONENT</b><br><br><b>President</b><br>${pres.name}</div></div>
+<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div style="margin-top:48px;border-top:2px solid #ccc;padding-top:24px;"></div>
-<h1>AFFIDAVIT — 2 (Premises NOC)</h1>
+<div class="page-break"><h1>Affidavit — 2</h1>
+<div class="section-hdr">Premises No Objection Certificate (NOC)</div>
 <p>I, ${owner.name}, ${owner.rel} ${owner.father}${owner.age ? ', aged about ' + owner.age + ' years' : ''},${owner.addr ? ` residing at ${owner.addr},` : ''} do hereby state as follows:</p>
 <ul>
   <li>I am the owner of the premises situated at ${owner.addr || common.addr}.</li>
@@ -175,21 +558,15 @@ export default function SocietyRegistrationPage() {
   ${owner.relToPres ? `<li>I further state that ${pres.name}, who is my ${owner.relToPres}, is the President of the said society, and in view of our relationship, I have permitted the society to use my premises free of cost for its office purposes. No rent or any other consideration has been collected or will be collected for the same.</li>` : '<li>I have permitted the society to use the said premises free of cost for its office purposes.</li>'}
   <li>This No Objection Letter is issued willingly for official and registration purposes.</li>
 </ul>
-<div style="margin-top:28px;"><p>Place: ${common.place}</p><p>Date: ${formatDateShort(common.date)}</p></div>
-<div style="margin-top:20px;text-align:right;"><span class="sign-line"></span><br><b>DEPONENT</b><br>${owner.name}</div>
-<div style="margin-top:24px;text-align:right;"><b>President</b><br>${pres.name}</div>`;
+<div class="signature-area"><div><span class="sig-line"></span><br><b>DEPONENT</b><br>${owner.name}</div></div>
+<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<div style="margin-top:16pt;text-align:right;"><b>President</b><br>${pres.name}</div></div>`;
     downloadDoc(html, 'Affidavits_' + common.name);
   };
 
-  const inputClass = "w-full p-2.5 border border-[#d6c9a0] rounded-lg text-sm bg-white outline-none focus:border-[#b8860b] focus:ring-3 focus:ring-[#b8860b]/10";
-
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
-      <div className="mb-6">
-        <h1 className="font-serif text-3xl font-semibold text-[#1a1209]">Society Registration</h1>
-        <p className="text-sm text-[#7a6e5a] mt-1">Generate all documents required for registration under Societies Registration Act 35 of 2001.</p>
-      </div>
-
+    <div>
+      <div className="text-sm text-[#7a6e5a] mb-6">Generate all documents required for registration under Societies Registration Act 35 of 2001.</div>
       <div className="grid grid-cols-4 gap-3 mb-8">
         {[
           { key: 'cover', icon: '✉️', label: 'Cover Letter', desc: 'To District Registrar', badge: 'Step 1' },
@@ -318,15 +695,6 @@ export default function SocietyRegistrationPage() {
           <div className="flex justify-end mt-6"><button onClick={generateAffidavits} className="px-6 py-2.5 rounded-lg bg-[#1e3a5a] text-white text-sm font-semibold shadow-md hover:bg-[#274d78] transition cursor-pointer">📜 Generate Affidavits</button></div>
         </div>
       )}
-    </div>
-  );
-}
-
-function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label className="text-[11px] font-semibold text-[#7a6e5a] uppercase tracking-wider">{label}{required && <span className="text-[#8b2020] ml-0.5">*</span>}</label>
-      {children}
     </div>
   );
 }
