@@ -34,15 +34,42 @@ body {
   font-size: 12pt;
   line-height: 1.85;
   color: #000;
+  padding: 1.2in 1in 1in;
 }
-.doc-content h1 { text-align: center; font-size: 14pt; font-weight: bold; text-decoration: underline; margin-bottom: 8px; }
-.doc-content h2 { text-align: center; font-size: 12pt; font-weight: bold; margin-bottom: 16px; }
-.doc-content p { text-align: justify; margin-bottom: 9px; }
-.doc-content table { width: 100%; border-collapse: collapse; margin: 13px 0; }
-.doc-content table th { border: 1px solid #000; padding: 6px 9px; background: #f0f0e8; font-weight: bold; text-align: center; font-size: 11pt; }
-.doc-content table td { border: 1px solid #000; padding: 6px 9px; vertical-align: top; font-size: 11pt; }
-.doc-content ul { margin: 6px 0 6px 22px; }
-.doc-content ul li { margin-bottom: 7px; text-align: justify; }
+.doc-content h1 { text-align: center; font-size: 16pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1pt; margin: 0 0 18pt; padding-bottom: 6pt; border-bottom: 2.5pt solid #1a1209; }
+.doc-content h2 { text-align: center; font-size: 13pt; font-weight: bold; margin: 20pt 0 10pt; text-transform: uppercase; letter-spacing: 0.5pt; padding-bottom: 4pt; border-bottom: 1pt solid #b8860b; }
+.doc-content h3 { font-size: 12pt; font-weight: bold; margin: 16pt 0 8pt; }
+.doc-content p { text-align: justify; margin-bottom: 8pt; line-height: 1.65; }
+.doc-content table { width: 100%; border-collapse: collapse; margin: 10pt 0; font-size: 10.5pt; }
+.doc-content table th { background: #1a1209; color: #faf7f0; padding: 5pt 8pt; font-size: 10pt; text-align: left; text-transform: uppercase; letter-spacing: 0.3pt; }
+.doc-content table td { padding: 5pt 8pt; border: 0.5pt solid #ccc; vertical-align: top; }
+.doc-content table tr:nth-child(even) td { background: #faf7f0; }
+.doc-content ul { margin: 6pt 0 6pt 20pt; }
+.doc-content ul li { margin-bottom: 5pt; text-align: justify; }
+.doc-content ol { margin: 6pt 0 6pt 22pt; }
+.doc-content ol li { margin-bottom: 5pt; text-align: justify; }
+.doc-content .section-hdr { background: #1a1209; color: #faf7f0; padding: 8pt 12pt; font-size: 11pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5pt; margin: 24pt 0 14pt; border-radius: 2pt; text-align: center; }
+.doc-content .section-sub { background: #f5e9c8; color: #1a1209; padding: 5pt 10pt; font-size: 10.5pt; font-weight: bold; margin: 16pt 0 10pt; border-left: 3pt solid #b8860b; }
+.doc-content .firm-hdr { text-align: center; font-size: 14pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5pt; margin-bottom: 2pt; }
+.doc-content .firm-addr { text-align: center; font-size: 10.5pt; margin-bottom: 12pt; color: #555; }
+.doc-content .section-hdr-center { text-align: center; font-size: 12pt; font-weight: bold; text-decoration: underline; margin: 18pt 0 12pt; }
+.doc-content .sig-line { border-bottom: 1pt solid #1a1209; display: inline-block; width: 160pt; margin-top: 22pt; }
+.doc-content .station-row { display: flex; justify-content: space-between; margin-top: 14pt; font-size: 10.5pt; }
+.doc-content .initials-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4pt; margin: 12pt 0; font-size: 10pt; font-style: italic; }
+.doc-content .and-sep { text-align: center; font-weight: bold; margin: 6pt 0; font-size: 11pt; text-transform: uppercase; letter-spacing: 1pt; }
+.doc-content .deed-place { margin-top: 20pt; text-align: justify; font-style: italic; }
+.doc-content .deed-ol { margin: 6pt 0 6pt 26pt; }
+.doc-content .deed-ol > li { margin-bottom: 9pt; }
+.doc-content .photo-cell { width: 80pt; height: 80pt; text-align: center; vertical-align: middle; }
+.doc-content .decl-block { margin: 14pt 0; border-left: 3pt solid #b8860b; padding-left: 12pt; background: #faf7f0; padding: 8pt 12pt; border-radius: 2pt; }
+.doc-content .itr-box { background: #1a1209; color: #faf7f0; text-align: center; padding: 24pt; margin: 14pt 0; border-radius: 3pt; }
+.doc-content .itr-box h1 { color: #faf7f0; margin: 0; border: none; font-size: 24pt; }
+.doc-content .alert-crit { background: #fdf0f0; border-left: 4pt solid #8b2020; padding: 6pt 10pt; margin: 4pt 0; font-size: 10.5pt; border-radius: 2pt; }
+.doc-content .alert-ok { background: #f0f7f0; border-left: 4pt solid #2c4a1e; padding: 6pt 10pt; margin: 4pt 0; font-size: 10.5pt; border-radius: 2pt; }
+.doc-content .signature-area { margin-top: 30pt; display: flex; justify-content: flex-end; text-align: right; }
+.doc-content .doc-party { margin-bottom: 8pt; padding-left: 8pt; border-left: 2pt solid #b8860b; }
+.doc-content .scope-box { border: 1pt solid #d6c9a0; padding: 10pt 14pt; margin: 8pt 0; background: #faf7f0; border-radius: 2pt; }
+.doc-content .score-pill { display: inline-block; padding: 3pt 10pt; border-radius: 12pt; font-weight: bold; font-size: 10pt; }
 
 @media print {
   .no-print { display: none !important; }

@@ -2,6 +2,7 @@
 import { useState, useCallback } from 'react';
 import { ordinal, numWords, formatDateLong, formatDateShort, cls } from '@/lib/utils';
 import { downloadDoc } from '@/lib/doc-generator';
+import DocPreview from '@/components/ui/DocPreview';
 
 interface Partner { name: string; rel: string; father: string; age: string; address: string; aadhar: string; profit: number; }
 interface Witness { name: string; co: string; address: string; aadhar: string; }
@@ -335,22 +336,12 @@ export default function PartnershipDeedPage() {
       )}
 
       {step === 0 && docHtml ? (
-        <div className="bg-white border-2 border-[#d6c9a0] rounded-xl overflow-hidden shadow-lg">
-          <div className="bg-[#1a1209] text-[#faf7f0] px-6 py-3 flex items-center justify-between gap-3">
-            <span className="font-serif text-sm">{docTitle}</span>
-            <div className="flex gap-2">
-              <button onClick={() => downloadDoc(docHtml, `Partnership_Deed_${firm.firmName.replace(/\s+/g, '_')}`)}
-                className="bg-[#b8860b] text-[#1a1209] px-4 py-1.5 rounded-lg text-xs font-semibold hover:bg-[#d4a017] transition cursor-pointer">
-                ⬇ Download DOC
-              </button>
-              <button onClick={() => { setStep(5); setDocHtml(''); }}
-                className="bg-transparent text-[#faf7f0] border border-white/20 px-4 py-1.5 rounded-lg text-xs font-semibold hover:bg-white/10 transition cursor-pointer">
-                ✎ Edit
-              </button>
-            </div>
-          </div>
-          <div className="doc-content p-10" dangerouslySetInnerHTML={{ __html: docHtml }} />
-        </div>
+        <DocPreview
+          html={docHtml}
+          title={docTitle}
+          filename={`Partnership_Deed_${firm.firmName.replace(/\s+/g, '_')}`}
+          onEdit={() => { setStep(5); setDocHtml(''); }}
+        />
       ) : step === 1 ? (
         <div className="bg-white border-2 border-[#d6c9a0] rounded-xl p-8">
           <h2 className="font-serif text-xl font-semibold text-[#1a1209] pb-3 border-b-2 border-[#f5e9c8] mb-6">Step 1 — Firm &amp; Business Details</h2>
