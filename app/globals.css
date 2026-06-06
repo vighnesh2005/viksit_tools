@@ -60,7 +60,7 @@ body {
 .doc-content .deed-place { margin-top: 20pt; text-align: justify; font-style: italic; }
 .doc-content .deed-ol { margin: 6pt 0 6pt 26pt; }
 .doc-content .deed-ol > li { margin-bottom: 9pt; }
-.doc-content .photo-cell { width: 80pt; height: 80pt; text-align: center; vertical-align: middle; }
+.doc-content .photo-cell { width: 130pt; height: 150pt; text-align: center; vertical-align: middle; }
 .doc-content .decl-block { margin: 14pt 0; border-left: 3pt solid #b8860b; padding-left: 12pt; background: #faf7f0; padding: 8pt 12pt; border-radius: 2pt; }
 .doc-content .itr-box { background: #1a1209; color: #faf7f0; text-align: center; padding: 24pt; margin: 14pt 0; border-radius: 3pt; }
 .doc-content .itr-box h1 { color: #faf7f0; margin: 0; border: none; font-size: 24pt; }

@@ -61,8 +61,8 @@ p {
   margin-bottom: 10pt;
 }
 .photo-cell {
-  width: 80pt;
-  height: 80pt;
+  width: 130pt;
+  height: 150pt;
   text-align: center;
   vertical-align: middle;
 }
@@ -282,7 +282,7 @@ export const DOC_PREVIEW_STYLES = `
 .doc-content .deed-place { margin-top: 16pt; text-align: justify; font-style: italic; }
 .doc-content .deed-ol { margin: 4pt 0 4pt 26pt; }
 .doc-content .deed-ol > li { margin-bottom: 8pt; }
-.doc-content .photo-cell { width: 80pt; height: 80pt; text-align: center; vertical-align: middle; }
+.doc-content .photo-cell { width: 130pt; height: 150pt; text-align: center; vertical-align: middle; }
 .doc-content .decl-block { margin: 12pt 0; border-left: 3pt solid #b8860b; padding-left: 12pt; padding: 8pt 12pt; }
 .doc-content .signature-area { margin-top: 24pt; display: flex; justify-content: flex-end; text-align: right; }
 .doc-content .doc-party { margin-bottom: 6pt; padding-left: 8pt; border-left: 2pt solid #b8860b; }
