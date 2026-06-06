@@ -122,11 +122,11 @@ export default function BDMQualificationPage() {
 <tr><td>Monthly Retainer</td><td>${pkg.price}</td></tr>
 </table></div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Module-wise Score Breakdown</div>
 <table><tr><th>Module</th><th style="width:120pt;">Score</th></tr>${modKeys.map((k, i) => `<tr><td>${modLabels[i]}</td><td>${scores[k as keyof typeof scores]} / 6</td></tr>`).join('')}<tr style="font-weight:bold;"><td>Total</td><td>${totalScore} / 30</td></tr></table></div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Recommended Engagement Package</div>
 <h2 style="text-align:center;border:none;font-size:14pt;">${pkg.name}</h2>
 <div class="scope-box"><p><b>Ideal For:</b> ${pkg.ideal}</p>
@@ -135,7 +135,7 @@ export default function BDMQualificationPage() {
 <div class="section-sub">Monthly Deliverables</div><ul>${pkg.deliverables.map(d => `<li>${d}</li>`).join('')}</ul>
 <div class="section-sub">Recommended Add-ons</div><ul>${pkg.addons.map(a => `<li>${a}</li>`).join('')}</ul></div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Engagement Flags &amp; Opportunities</div>
 ${flags.length ? `<ul>${flags.map(f => `<li>${f.icon} ${f.text}</li>`).join('')}</ul>` : '<p>No flags identified.</p>'}
 <div class="section-hdr">Recommended Next Steps</div>

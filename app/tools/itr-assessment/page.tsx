@@ -179,7 +179,7 @@ export default function ITRAssessmentPage() {
 <tr><td>Assessed By</td><td>${login.name} (${login.empId})</td></tr>
 </table></div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">ITR Form Determination</div>
 <div class="itr-box"><h1>${itrResult || '—'}</h1></div>
 <p>${itrReason}</p>
@@ -191,20 +191,20 @@ export default function ITRAssessmentPage() {
 <tr><td>Income Heads Identified</td><td>${heads.length}</td></tr>
 </table></div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Income Heads Identified</div>
 ${heads.length ? `<ul>${heads.map(h => `<li>${h}</li>`).join('')}</ul>` : '<p>None identified.</p>'}
 ${escalations.length ? `<div class="section-sub">Escalation Alerts</div>${escalations.map(e => `<div class="alert-crit"><b>ESCALATION:</b> ${e}</div>`).join('')}` : ''}
 ${risks.length ? `<div class="section-sub">Risk Flags</div><ul>${risks.map(r => `<li>${r}</li>`).join('')}</ul>` : ''}
 </div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Document Requirement List</div>
 ${mandatoryDocs.length ? `<div class="section-sub">Mandatory Documents</div><ul>${mandatoryDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
 ${conditionalDocs.length ? `<div class="section-sub">Conditional / Situation-Specific</div><ul>${conditionalDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
 </div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Filing Action Plan</div>
 <ol><li>Collect all mandatory documents</li><li>Download AIS + Form 26AS</li><li>Reconcile AIS with all documents</li><li>Compute income head-by-head</li><li>Verify TDS against 26AS</li><li>Prepare ITR draft on portal</li><li>Submit to Checker (L2) with complete file</li><li>Obtain client written approval</li><li>Pay outstanding tax via Challan 280</li><li>File and e-verify via Aadhaar OTP</li></ol>
 <p style="margin-top:24pt;text-align:center;color:#666;font-size:10pt;"><i>Confidential — Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;

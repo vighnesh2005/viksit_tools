@@ -227,7 +227,7 @@ function Form1Panel({ f1Count, setF1Count, showDoc }: { f1Count: number; setF1Co
 <p style="margin-left:24pt;">${sn}</p>
 <div class="section-sub">Partners Details</div>
 <table><thead><tr><th style="width:45pt;">S.No</th><th>Name</th><th style="width:120pt;">Date of Joining</th><th>Permanent Address</th></tr></thead><tbody>${tRows}</tbody></table>
-<div class="page-break"><div class="section-hdr">Declaration by Partners</div>
+<div><div class="section-hdr">Declaration by Partners</div>
 <p>We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
 <div class="station-row"><div><p>Station: ${station}</p><p>Date: ${formatDateShort(date)}</p></div><div><b>Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
 <div style="margin-top:24pt;">${decls}</div></div></div>`;
@@ -485,7 +485,7 @@ function SocietyModule() {
 <div class="section-sub">4. Governing Body</div>
 <p>We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</p>
 <table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Address</th><th>Age</th><th>Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
-<div class="page-break"><div class="section-hdr">Declaration</div>
+<div><div class="section-hdr">Declaration</div>
 <p>We the undersigned desirous to form a committee and get it registered under the society's registration act 35 of 2001.</p>
 <table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Designation</th><th>Signature</th></tr></thead><tbody>${dRows}</tbody></table>
 <div class="section-sub">Signatures of Witnesses and Their Addresses</div>

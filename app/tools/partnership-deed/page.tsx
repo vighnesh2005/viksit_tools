@@ -179,7 +179,7 @@ export default function PartnershipDeedPage() {
 <p>All ${numWords(n)} Parties herein called parties of the ${allOrd} as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"${firmName}"</b> to ${bizNature}.</p>
 <div class="initials-row">${initRow}</div></div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Deed of Partnership — Terms &amp; Conditions</div>
 <p><b>Now this deed witness is as follows: —</b></p>
 <ol class="deed-ol">
@@ -209,7 +209,7 @@ export default function PartnershipDeedPage() {
 <li><b>Dissolution:</b> The Partnership is at will and may be dissolved by mutual decision. On dissolution, net assets excluding goodwill shall be shared after adjusting excess investments.</li>
 </ol></div>
 
-<div class="page-break">
+<div>
 <div class="section-hdr">Execution &amp; Signatures</div>
 <div class="deed-place">In witness whereof the said partners put their hands to this deed of partnership at ${placeExecution}.</div>
 <table style="margin-top:16pt;"><tr>
@@ -270,7 +270,7 @@ export default function PartnershipDeedPage() {
 <p style="margin-left:24pt;">${sn}</p>
 <div class="section-sub">Partners Details</div>
 <table><thead><tr><th style="width:45pt;">S.No</th><th>Name</th><th style="width:120pt;">Date of Joining</th><th>Permanent Address</th></tr></thead><tbody>${tRows}</tbody></table>
-<div class="page-break"><div class="section-hdr">Declaration by Partners</div>
+<div><div class="section-hdr">Declaration by Partners</div>
 <p>We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
 <div class="station-row"><div><p>Station: ${firm.placeExecution}</p><p>Date: ${formatDateShort(f1Data.date)}</p></div><div><b>Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
 <div style="margin-top:24pt;">${decls}</div></div></div>`;
