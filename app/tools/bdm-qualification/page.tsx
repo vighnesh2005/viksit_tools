@@ -108,10 +108,10 @@ export default function BDMQualificationPage() {
     const pkg = PACKAGES[pkgNum];
     const modLabels = ['A · Financial Profile', 'B · Compliance Status', 'C · Accounting & Technology', 'D · Business Complexity', 'E · Growth Intent'];
     const modKeys = ['a','b','c','d','e'];
-    const html = `<div class="page-break"><h1>Viksit Management Consultancy</h1>
-<h2 style="border:none;text-align:center;text-transform:none;letter-spacing:0;font-weight:normal;">Kurnool Delivery Centre</h2>
-<div class="section-hdr">Client Qualification Report</div>
-<table><tr><th colspan="2">Assessment Summary</th></tr>
+    const html = `<div class="page-break"><div style="text-align:center;font-size:16pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:2pt;">Viksit Management Consultancy</div>
+<div style="text-align:center;font-size:12pt;font-family:'Book Antiqua',serif;margin-bottom:8pt;">Kurnool Delivery Centre</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Client Qualification Report</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><tr><th colspan="2" style="font-size:10pt;">Assessment Summary</th></tr>
 <tr><td style="width:200pt;">Client Name</td><td><b>${cName}</b></td></tr>
 <tr><td>BDM</td><td>${client.bdmName || '—'}</td></tr>
 <tr><td>Date</td><td>${client.date || new Date().toLocaleDateString('en-IN')}</td></tr>
@@ -123,24 +123,24 @@ export default function BDMQualificationPage() {
 </table></div>
 
 <div>
-<div class="section-hdr">Module-wise Score Breakdown</div>
-<table><tr><th>Module</th><th style="width:120pt;">Score</th></tr>${modKeys.map((k, i) => `<tr><td>${modLabels[i]}</td><td>${scores[k as keyof typeof scores]} / 6</td></tr>`).join('')}<tr style="font-weight:bold;"><td>Total</td><td>${totalScore} / 30</td></tr></table></div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Module-wise Score Breakdown</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><tr><th style="font-size:10pt;">Module</th><th style="width:120pt;font-size:10pt;">Score</th></tr>${modKeys.map((k, i) => `<tr><td>${modLabels[i]}</td><td>${scores[k as keyof typeof scores]} / 6</td></tr>`).join('')}<tr style="font-weight:bold;"><td>Total</td><td>${totalScore} / 30</td></tr></table></div>
 
 <div>
-<div class="section-hdr">Recommended Engagement Package</div>
-<h2 style="text-align:center;border:none;font-size:14pt;">${pkg.name}</h2>
-<div class="scope-box"><p><b>Ideal For:</b> ${pkg.ideal}</p>
-<p><b>Monthly Retainer:</b> ${pkg.price}</p></div>
-<div class="section-sub">Services Included</div><ul>${pkg.services.map(s => `<li>${s}</li>`).join('')}</ul>
-<div class="section-sub">Monthly Deliverables</div><ul>${pkg.deliverables.map(d => `<li>${d}</li>`).join('')}</ul>
-<div class="section-sub">Recommended Add-ons</div><ul>${pkg.addons.map(a => `<li>${a}</li>`).join('')}</ul></div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Recommended Engagement Package</div>
+<div style="text-align:center;font-size:14pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:4pt;">${pkg.name}</div>
+<div style="border:1pt solid #d6c9a0;padding:10pt 14pt;margin:8pt 0;"><p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>Ideal For:</b> ${pkg.ideal}</p>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>Monthly Retainer:</b> ${pkg.price}</p></div>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Services Included</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${pkg.services.map(s => `<li>${s}</li>`).join('')}</ul>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Monthly Deliverables</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${pkg.deliverables.map(d => `<li>${d}</li>`).join('')}</ul>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Recommended Add-ons</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${pkg.addons.map(a => `<li>${a}</li>`).join('')}</ul></div>
 
 <div>
-<div class="section-hdr">Engagement Flags &amp; Opportunities</div>
-${flags.length ? `<ul>${flags.map(f => `<li>${f.icon} ${f.text}</li>`).join('')}</ul>` : '<p>No flags identified.</p>'}
-<div class="section-hdr">Recommended Next Steps</div>
-<ol><li>Log this assessment in CRM. Attach this report.</li><li>Prepare proposal using ${pkg.name} template.</li><li>Route draft proposal for internal review.</li><li>Dispatch within 24 hours. Follow up on Day 3.</li></ol>
-<p style="margin-top:24pt;text-align:center;color:#666;font-size:10pt;"><i>Confidential — For Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Engagement Flags &amp; Opportunities</div>
+${flags.length ? `<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${flags.map(f => `<li>${f.icon} ${f.text}</li>`).join('')}</ul>` : '<p style="font-family:\'Book Antiqua\',serif;font-size:12pt;">No flags identified.</p>'}
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Recommended Next Steps</div>
+<ol style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>Log this assessment in CRM. Attach this report.</li><li>Prepare proposal using ${pkg.name} template.</li><li>Route draft proposal for internal review.</li><li>Dispatch within 24 hours. Follow up on Day 3.</li></ol>
+<p style="margin-top:24pt;text-align:center;font-size:10pt;font-family:'Book Antiqua',serif;"><i>Confidential — For Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
     downloadDoc(html, `BDM_Qualification_${cName.replace(/\s+/g, '_')}`);
   };
 

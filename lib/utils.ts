@@ -21,6 +21,16 @@ export function formatDateLong(d: string): string {
     (day === 3 || day === 23) ? 'rd' : 'th';
   return `${day}${s} day of ${mo} ${dt.getFullYear()}`;
 }
+export function ordinalSup(d: string): string {
+  if (!d) return '';
+  const dt = new Date(d + 'T00:00:00');
+  const day = dt.getDate();
+  const mo = MONTHS[dt.getMonth()];
+  const s = (day === 1 || day === 21 || day === 31) ? 'st' :
+    (day === 2 || day === 22) ? 'nd' :
+    (day === 3 || day === 23) ? 'rd' : 'th';
+  return `${day}<sup>${s}</sup> day of ${mo} ${dt.getFullYear()}`;
+}
 export function cls(...classes: (string | boolean | undefined | null)[]): string {
   return classes.filter(Boolean).join(' ');
 }

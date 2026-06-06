@@ -105,25 +105,24 @@ function AffidavitPanel({ cpCount, setCpCount, showDoc }: { cpCount: number; set
     for (let i = 0; i < cpList.length; i++) { if (!cpList[i]?.name) { alert(`Enter name for Co-Partner ${i + 1}.`); return; } }
     const isOwner = premises === 'owner';
     const hasReg = reg === 'yes';
-    const html = `<div class="page-break"><h1>AFFIDAVIT</h1>
-<div class="section-hdr">Deponent Statement</div>
-<p>I, <b>${name}</b>, <b>${rel} ${father}</b>, aged <b>${age} years</b> residing at ${address} do hereby affirm and state as follows:</p>
-<ul>
-  <li>I, <b>${name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm}"</b>.</li>
-  <li>The said Firm commenced the business from ${formatDateLong(dateComm)} and the office of the firm is situated at ${officeAddr} and the said premises belong to me.</li>
-  ${hasReg ? `<li>The said firm has applied for Registration to the Registrar of Firms, ${station}.</li>` : ''}
-  ${isOwner ? `<li>I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li>I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
-</ul>
-<div class="signature-area"><div><span class="sig-line"></span><br><b>DEPONENT</b></div></div>
-<div class="station-row"><span>Place: ${station}</span><span>Date: ${formatDateShort(signDate)}</span></div>
-<p style="margin-top:12pt;">Solemnly affirmed at ${station} on this day ${formatDateShort(signDate)}.</p></div>`;
+    const html = `<div class="page-break"><div class="affidavit-title">AFFIDAVIT</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin-bottom:6pt;"><b>${name}</b>, <b>${rel} ${father}</b>, aged <b>${age} years</b> residing at ${address} do hereby affirm and state as follows:</p>
+<ol style="font-family:'Book Antiqua',serif;font-size:12pt;margin:4pt 0 4pt 24pt;">
+  <li style="margin-bottom:4pt;">I, <b>${name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm}"</b>.</li>
+  <li style="margin-bottom:4pt;">The said Firm commenced the business from ${formatDateLong(dateComm)} and the office of the firm is situated at ${officeAddr} and the said premises belong to me.</li>
+  ${hasReg ? `<li style="margin-bottom:4pt;">The said firm has applied for Registration to the Registrar of Firms, ${station}.</li>` : ''}
+  ${isOwner ? `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
+</ol>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin:10pt 0 6pt;">Solemnly affirmed at ${station} on this day ${formatDateShort(signDate)}.</p>
+<div style="margin-top:18pt;text-align:right;"><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div><br><b>DEPONENT</b></div>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${station}</span><span>Date: ${formatDateShort(signDate)}</span></div></div>`;
     showDoc('Affidavit_' + firm, html);
   };
 
   return (
     <div>
       <div className="bg-[#f5e9c8] border border-[#b8860b] rounded-lg px-4 py-3 text-xs text-[#5a4a00] mb-6">
-        This affidavit is made by the <b>property owner-partner</b> declaring the firm's office premises and consent for its use.
+        This affidavit is made by the <b>property owner-partner</b> declaring the firm&rsquo;s office premises and consent for its use.
       </div>
       <div className="bg-white border-2 border-[#d6c9a0] rounded-xl p-8">
         <h2 className="font-serif text-xl font-semibold text-[#1a1209] pb-3 border-b-2 border-[#f5e9c8] mb-6">📜 Affidavit</h2>
@@ -211,12 +210,12 @@ function Form1Panel({ f1Count, setF1Count, showDoc }: { f1Count: number; setF1Co
     const sigs = ps.map(p => `<li style="margin-bottom:6px;">${p.name}</li>`).join('');
     const decls = ps.map(p => `<div class="decl-block"><p>I, <b>${p.name}</b>, <b>${p.rel || 'S/o'} ${p.father}</b>, aged <b>${p.age} Years</b> do hereby declare that the above statement is true and correct to the best of my knowledge and belief.</p><div class="station-row"><span>Date: ${formatDateShort(date)}</span><span>Signature: <span class="sign-line" style="width:130px;"></span></span></div></div>`).join('');
     const sn = ps.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
-    const html = `<div class="page-break"><h1>FORM NO.1</h1>
-<div class="section-hdr">The Indian Partnership Act, 1932 — Registration u/s 58</div>
-<p>Application for the registration of firm by the name <b>"${firm}"</b> presented to the Registrar of Firms by <b>${presentedBy}</b>.</p>
-<p>We, the undersigned, being the partners of the firm "<b>${firm}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
-<div class="section-sub">Firm Particulars</div>
-<table style="border:none;margin:8pt 0;">
+    const html = `<div class="page-break"><div class="form1-title">FORM NO.1</div>
+<div style="text-align:center;font-size:10pt;font-weight:bold;margin-bottom:10pt;">THE INDIAN PARTNERSHIP ACT, 1932<br>Registration u/s 58</div>
+<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm}"</b> presented to the Registrar of Firms by <b>${presentedBy}</b>.</p>
+<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
+<div style="font-weight:bold;font-size:10pt;margin:14pt 0 8pt;">Firm Particulars</div>
+<table style="border:none;margin:6pt 0;font-size:10pt;">
   <tr><td style="border:none;width:220pt;"><b>The Firm's Name</b></td><td style="border:none;">:&nbsp;&nbsp;<b>${firm}</b></td></tr>
   <tr><td style="border:none;" colspan="2"><b>Place of Business:</b></td></tr>
   <tr><td style="border:none;padding-left:22pt;">(a) Principal Place:</td><td style="border:none;">:&nbsp;&nbsp;${principalPlace}</td></tr>
@@ -224,13 +223,13 @@ function Form1Panel({ f1Count, setF1Count, showDoc }: { f1Count: number; setF1Co
   <tr><td style="border:none;"><b>Nature of Business</b></td><td style="border:none;">:&nbsp;&nbsp;${nature}</td></tr>
   <tr><td style="border:none;"><b>Duration of the Firm</b></td><td style="border:none;">:&nbsp;&nbsp;${data.duration}</td></tr>
 </table>
-<p style="margin-left:24pt;">${sn}</p>
-<div class="section-sub">Partners Details</div>
-<table><thead><tr><th style="width:45pt;">S.No</th><th>Name</th><th style="width:120pt;">Date of Joining</th><th>Permanent Address</th></tr></thead><tbody>${tRows}</tbody></table>
-<div><div class="section-hdr">Declaration by Partners</div>
-<p>We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
-<div class="station-row"><div><p>Station: ${station}</p><p>Date: ${formatDateShort(date)}</p></div><div><b>Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
-<div style="margin-top:24pt;">${decls}</div></div></div>`;
+<p style="margin-left:24pt;font-size:10pt;">${sn}</p>
+<div style="font-weight:bold;font-size:10pt;margin:14pt 0 8pt;">Partners Details</div>
+<table style="font-size:10pt;"><thead><tr><th style="width:45pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Name of Partners in full</th><th style="width:120pt;font-size:10pt;">Date of joining the firm</th><th style="font-size:10pt;">Permanent address in full</th></tr></thead><tbody>${tRows}</tbody></table>
+<div style="margin-top:16pt;"><div style="text-align:center;font-size:10pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;">DECLARATION</div>
+<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:10pt;"><div><p style="font-size:10pt;">Station: ${station}</p><p style="font-size:10pt;">Date: ${formatDateShort(date)}</p></div><div><b style="font-size:10pt;">Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
+<div style="margin-top:20pt;font-size:10pt;">${decls}</div></div></div>`;
     showDoc('Form_No_1_' + firm, html);
   };
 
@@ -303,13 +302,13 @@ function PhotoFormPanel({ pfPC, setPfPC, pfWC, setPfWC, showDoc }: { pfPC: numbe
     for (let i = 0; i < ws.length; i++) { if (!ws[i].name || !ws[i].address) { alert(`Fill all fields for Witness ${i + 1}.`); return; } }
     const pRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}.</td><td><b>${p.name}, ${p.rel || 'S/o'} ${p.father}</b></td><td>${p.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
     const wRows = ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
-    const html = `<div class="page-break"><div class="firm-hdr">${data.firm}</div><div class="firm-addr">${data.addr}</div>
-<div class="section-hdr">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
-<table><thead><tr><th style="width:46pt;">S.No</th><th>Partners Name &amp; Father Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
+    const html = `<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Partners Name &amp; Father Name</th><th style="font-size:10pt;">Address</th><th style="width:96pt;font-size:10pt;">Photo</th><th style="width:126pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
 </div>
-<div class="page-break"><div class="firm-hdr">${data.firm}</div><div class="firm-addr">${data.addr}</div>
-<div class="section-hdr">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
-<table><thead><tr><th style="width:46pt;">S.No</th><th>Witness Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
+<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Witness Name</th><th style="font-size:10pt;">Address</th><th style="width:96pt;font-size:10pt;">Photo</th><th style="width:126pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
     showDoc('Photo_Form_' + data.firm, html);
   };
 
@@ -427,21 +426,21 @@ function SocietyModule() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<div class="page-break"><div class="firm-hdr">${common.name}</div>
-<div class="firm-addr">${common.addr}</div>
-<div class="firm-addr" style="font-size:10pt;">(Registered under Societies Registration Act 35 of 2001)</div>
-<div style="margin-top:18pt;"><b>President</b><br>${pres.name}<br>${pres.rel} ${pres.father},<br>${pres.addr}</div>
-<p style="margin-top:18pt;">To,</p>
-<p>The District Registrar of Assurances,<br>The District Registrar Office,<br>${common.place}.</p>
-<p>Respected Sir,</p>
-<p style="text-indent:36pt;">I am here with enclosing a Memorandum and of the Rules and Regulations of <b>"${common.name}"</b>, Office Address: ${common.addr}, for registration under the Societies Registration Act 35 of 2001. I request that this may kindly be registered under the above said act and issue a necessary certificate of Registration to me. The necessary fee for its registration will be paid in person.</p>
-<p>Submitted for necessary action.</p>
-<p>Thanking you Sir,</p>
-<p>Yours faithfully,</p>
-<p><b>PRESIDENT</b></p>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<div class="section-sub" style="margin-top:16pt;">Enclosures</div>
-<ul><li>All members I.D Proofs with photos</li><li>Affidavits – attested by the Notary</li></ul></div>`;
+    const html = `<div class="page-break"><div style="text-align:center;font-size:18pt;font-weight:bold;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${common.name}</div>
+<div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
+<div style="text-align:center;font-size:16pt;font-weight:bold;margin-bottom:10pt;font-family:'Book Antiqua',serif;">(Registered under Societies Registration Act 35 of 2001)</div>
+<div style="margin-top:18pt;font-family:'Book Antiqua',serif;font-size:12pt;"><b>President</b><br>${pres.name}<br>${pres.rel} ${pres.father},<br>${pres.addr}</div>
+<p style="margin-top:18pt;font-family:'Book Antiqua',serif;font-size:12pt;">To,</p>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;">The District Registrar of Assurances,<br>The District Registrar Office,<br>${common.place}.</p>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Respected Sir,</p>
+<p style="text-indent:36pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I am here with enclosing a Memorandum and of the Rules and Regulations of <b>"${common.name}"</b>, Office Address: ${common.addr}, for registration under the Societies Registration Act 35 of 2001. I request that this may kindly be registered under the above said act and issue a necessary certificate of Registration to me. The necessary fee for its registration will be paid in person.</p>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Submitted for necessary action.</p>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Thanking you Sir,</p>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Yours faithfully,</p>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>PRESIDENT</b></p>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Enclosures</div>
+<ul style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>All members I.D Proofs with photos</li><li>Affidavits – attested by the Notary</li></ul></div>`;
     downloadDoc(html, 'Cover_Letter_' + common.name);
   };
 
@@ -449,14 +448,14 @@ function SocietyModule() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<div class="page-break"><h1>Copy of Resolution</h1>
-<div class="section-hdr">Resolution to Form and Register the Society</div>
-<p style="text-indent:36pt;">We the undersigned resolved to form a Society by name <b>"${common.name}"</b>, Office Address ${common.addr} and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorize the <b>PRESIDENT — ${pres.name} ${pres.rel} ${pres.father}</b> of the said Association to present the document in the Registrar's Office, ${common.place} and get it registered under the above said Act and receive the necessary certificate.</p>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<p style="margin-top:18pt;"><b>PRESIDENT</b></p>
-<div style="margin-top:24pt;"><span class="sig-line"></span><br>Signature</div>
-<div class="section-sub" style="margin-top:16pt;">Annexures</div>
-<ul><li>Bye Laws</li><li>ID Proofs</li><li>Affidavit</li></ul></div>`;
+    const html = `<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">Copy of Resolution</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Resolution to Form and Register the Society</div>
+<p style="text-indent:36pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We the undersigned resolved to form a Society by name <b>"${common.name}"</b>, Office Address ${common.addr} and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorize the <b>PRESIDENT — ${pres.name} ${pres.rel} ${pres.father}</b> of the said Association to present the document in the Registrar's Office, ${common.place} and get it registered under the above said Act and receive the necessary certificate.</p>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<p style="margin-top:18pt;font-family:'Book Antiqua',serif;font-size:12pt;"><b>PRESIDENT</b></p>
+<div style="margin-top:24pt;"><span style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></span><br>Signature</div>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Annexures</div>
+<ul style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>Bye Laws</li><li>ID Proofs</li><li>Affidavit</li></ul></div>`;
     downloadDoc(html, 'Resolution_' + common.name);
   };
 
@@ -472,60 +471,57 @@ function SocietyModule() {
     const finalSigRows = ms.map((m, i) =>
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}, ${m.rel} ${m.father}</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
-    const html = `<div class="page-break"><h1>Memorandum of Association</h1>
-<div class="section-hdr">${common.name}</div>
-<div class="firm-hdr">${common.name}</div>
-<div class="firm-addr">${common.addr}</div>
-<div class="section-sub">1. Name of the Society</div>
-<p>${common.name}</p>
-<div class="section-sub">2. Office Address</div>
-<p>${common.addr}</p>
-<div class="section-sub">3. Aims and Objectives</div>
-<ul>${aimItems}</ul>
-<div class="section-sub">4. Governing Body</div>
-<p>We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</p>
-<table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Address</th><th>Age</th><th>Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
-<div><div class="section-hdr">Declaration</div>
-<p>We the undersigned desirous to form a committee and get it registered under the society's registration act 35 of 2001.</p>
-<table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Designation</th><th>Signature</th></tr></thead><tbody>${dRows}</tbody></table>
-<div class="section-sub">Signatures of Witnesses and Their Addresses</div>
-<table><thead><tr><th style="width:46pt;">S.No</th><th>Name, Father/Husband Name &amp; Address</th><th>Signature</th></tr></thead><tbody>${wRows}</tbody></table>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
+    const html = `<div class="page-break"><div style="text-align:center;font-size:13pt;font-weight:bold;font-family:'Book Antiqua',serif;">MEMORANDUM OF ASSOCIATION OF</div>
+<div style="text-align:center;font-size:18pt;font-weight:bold;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${common.name}</div>
+<div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">1. Name of the Society</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">${common.name}</p>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">2. Office Address</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">${common.addr}</p>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">3. Aims and Objectives</div>
+<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${aimItems}</ul>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">4. Governing Body</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</p>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name</th><th style="font-size:10pt;">Father / Husband Name</th><th style="font-size:10pt;">Address</th><th style="font-size:10pt;">Age</th><th style="font-size:10pt;">Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
+<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin:16pt 0 8pt;font-family:'Book Antiqua',serif;">DECLARATION</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We the undersigned desirous to form a committee and get it registered under the society's registration act 35 of 2001.</p>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name</th><th style="font-size:10pt;">Father / Husband Name</th><th style="font-size:10pt;">Designation</th><th style="font-size:10pt;">Signature</th></tr></thead><tbody>${dRows}</tbody></table>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Signatures of Witnesses and Their Addresses</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Name, Father/Husband Name &amp; Address</th><th style="font-size:10pt;">Signature</th></tr></thead><tbody>${wRows}</tbody></table>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div class="page-break"><h1>Rules and Regulations of the Association</h1>
-<div class="section-hdr">${common.name}</div>
-<div class="firm-addr">${common.addr}</div>
-<div class="rules-section">
-<div class="section-sub">1. Name of the Society</div><p>${common.name}</p>
-<div class="section-sub">2. Office Address</div><p>${common.addr}</p>
-<div class="section-sub">3. Area of Operation</div><p>The area of operation of this ${common.name} shall be ${common.area}.</p>
-<div class="section-sub">4. Membership</div>
-<ul>
+<div class="page-break"><div style="text-align:center;font-size:12pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
+<div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">1. Name of the Society</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">${common.name}</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">2. Office Address</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">${common.addr}</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">3. Area of Operation</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The area of operation of this ${common.name} shall be ${common.area}.</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">4. Membership</div>
+<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">
   <li>All persons who are Indian Nationals and above the Age of 18 Years and of sound mind are eligible to be Members. Their Membership shall be approved by the Executive Committee on acceptance of Rs.${common.admissionFee}/- as admission fee and a Monthly Subscription of Rs.${common.monthlySub}/- each.</li>
   <li>Every member shall contribute a monthly subscription of Rs.${common.monthlySub}/-. If any member fails to pay for 3 continuous months, their name will be deleted from the list of members.</li>
   <li>The membership shall be open to all and shall not be restricted to any caste, religion, creed, sex etc.</li>
   <li>The Society shall maintain an up-to-date Membership register with addresses and dates of admission and termination.</li>
 </ul>
-<div class="section-sub">5. Cessation of Membership</div>
-<ul><li>On acceptance of resignation approved by the Governing Body.</li><li>On becoming unsound, suffering from chronic diseases, or on death.</li><li>On termination by the Society with approval of 3/5th of the Executive Body majority on proof of violation of Rules and Regulations.</li></ul>
-<div class="section-sub">6. Managing Committee</div>
-<p>The Managing Committee shall consist of a President, Secretary, Treasurer and members. Members shall be elected at a General Body meeting and shall hold office for 5 years. The Committee shall meet at least 4 times a year with 10 days' notice specifying venue, agenda and time.</p>
-<div class="section-sub">7. Financial Year</div>
-<p>The Society shall follow the financial year (1st April to 31st March) for preparation of annual accounts, receipts &amp; payments, Income-Expenditure and Balance Sheet.</p>
-<div class="section-sub">8. Audit &amp; Accounts</div>
-<p>The accounts shall be audited by a Qualified Auditor / Chartered Accountant every year, appointed at the Annual General Meeting.</p>
-<div class="section-sub">9. Amendments</div>
-<p>No amendments shall be made unless voted by 3/5th of the members present at a General Body meeting and confirmed by 3/5th at a second special meeting after one month. Amendments to Byelaws require prior approval of the Commissioner/Director of Income Tax (Exemptions), Hyderabad.</p>
-<div class="section-sub">10. Winding Up</div>
-<p>In the event of dissolution, all remaining funds and assets after satisfying liabilities shall be given to a Society having similar aims and objects registered under Sec 12AA of the Income Tax Act 1961.</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">5. Cessation of Membership</div>
+<ul style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>On acceptance of resignation approved by the Governing Body.</li><li>On becoming unsound, suffering from chronic diseases, or on death.</li><li>On termination by the Society with approval of 3/5th of the Executive Body majority on proof of violation of Rules and Regulations.</li></ul>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">6. Managing Committee</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The Managing Committee shall consist of a President, Secretary, Treasurer and members. Members shall be elected at a General Body meeting and shall hold office for 5 years. The Committee shall meet at least 4 times a year with 10 days' notice specifying venue, agenda and time.</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">7. Financial Year</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The Society shall follow the financial year (1st April to 31st March) for preparation of annual accounts, receipts &amp; payments, Income-Expenditure and Balance Sheet.</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">8. Audit &amp; Accounts</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The accounts shall be audited by a Qualified Auditor / Chartered Accountant every year, appointed at the Annual General Meeting.</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">9. Amendments</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">No amendments shall be made unless voted by 3/5th of the members present at a General Body meeting and confirmed by 3/5th at a second special meeting after one month. Amendments to Byelaws require prior approval of the Commissioner/Director of Income Tax (Exemptions), Hyderabad.</p>
+<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">10. Winding Up</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">In the event of dissolution, all remaining funds and assets after satisfying liabilities shall be given to a Society having similar aims and objects registered under Sec 12AA of the Income Tax Act 1961.</p>
 </div>
-<div class="page-break"><div class="section-hdr">Registration Undertaking</div>
-<p style="margin-top:14pt;">We, the several members whose signatures are subscribed below desire to bring the above-named society into being within the meaning of Section 35 of 2001 of Societies Registration and we are desirous of getting the above society registered.</p>
-<table><thead><tr><th>S.No</th><th>Name &amp; Father / Husband Name</th><th>Designation</th><th>Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
-<div class="section-sub">Witnesses with their Address &amp; Signatures</div>
-<table><thead><tr><th>S.No</th><th>Name &amp; Address</th><th>Witness Signature</th><th>Witness Photo</th></tr></thead>
+<div class="page-break"><div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Registration Undertaking</div>
+<p style="margin-top:14pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We, the several members whose signatures are subscribed below desire to bring the above-named society into being within the meaning of Section 35 of 2001 of Societies Registration and we are desirous of getting the above society registered.</p>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name &amp; Father / Husband Name</th><th style="font-size:10pt;">Designation</th><th style="font-size:10pt;">Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
+<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Witnesses with their Address &amp; Signatures</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name &amp; Address</th><th style="font-size:10pt;">Witness Signature</th><th style="font-size:10pt;">Witness Photo</th></tr></thead>
 <tbody>${ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b> ${w.rel} ${w.father}<br>${w.addr}</td><td></td><td></td></tr>`).join('')}</tbody></table>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div></div></div>`;
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div></div></div>`;
     downloadDoc(html, 'Memorandum_of_Association_' + common.name);
   };
 
@@ -537,30 +533,30 @@ function SocietyModule() {
     const memberTableRows2 = ms.map((m, i) =>
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}</td><td>${m.rel} ${m.father}</td><td>${m.addr}</td><td>${m.age} Years</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
-    const html = `<div class="page-break"><h1>Affidavit — 1</h1>
-<div class="section-hdr">President's Affidavit</div>
-<p>I, ${pres.name}, ${pres.rel} ${pres.father}, aged about ${pres.age} years, ${pres.addr}, solemnly affirm and sincerely state as follows:</p>
-<ul>
+    const html = `<div class="page-break"><div class="affidavit-title">AFFIDAVIT — 1</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">President's Affidavit</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I, ${pres.name}, ${pres.rel} ${pres.father}, aged about ${pres.age} years, ${pres.addr}, solemnly affirm and sincerely state as follows:</p>
+<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">
   <li>I am the President of <b>${common.name}</b>, and I know the facts and swear this affidavit on behalf of me and on behalf of other executive members.</li>
   <li>The below persons are the members of the society and formed as a society namely <b>${common.name}</b>, ${common.addr}.</li>
 </ul>
-<p><b>List of Executive Members along with their Address:</b></p>
-<table><thead><tr><th>S.No</th><th>Name</th><th>Father / Husband Name</th><th>Address</th><th>Age</th><th>Designation</th><th>Signature</th></tr></thead><tbody>${memberTableRows2}</tbody></table>
-<div class="signature-area"><div><span class="sig-line"></span><br><b>DEPONENT</b><br><br><b>President</b><br>${pres.name}</div></div>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>List of Executive Members along with their Address:</b></p>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name</th><th style="font-size:10pt;">Father / Husband Name</th><th style="font-size:10pt;">Address</th><th style="font-size:10pt;">Age</th><th style="font-size:10pt;">Designation</th><th style="font-size:10pt;">Signature</th></tr></thead><tbody>${memberTableRows2}</tbody></table>
+<div style="margin-top:24pt;text-align:right;"><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div><br><b>DEPONENT</b><br><br><b>President</b><br>${pres.name}</div>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div class="page-break"><h1>Affidavit — 2</h1>
-<div class="section-hdr">Premises No Objection Certificate (NOC)</div>
-<p>I, ${owner.name}, ${owner.rel} ${owner.father}${owner.age ? ', aged about ' + owner.age + ' years' : ''},${owner.addr ? ` residing at ${owner.addr},` : ''} do hereby state as follows:</p>
-<ul>
+<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">AFFIDAVIT — 2</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Premises No Objection Certificate (NOC)</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I, ${owner.name}, ${owner.rel} ${owner.father}${owner.age ? ', aged about ' + owner.age + ' years' : ''},${owner.addr ? ` residing at ${owner.addr},` : ''} do hereby state as follows:</p>
+<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">
   <li>I am the owner of the premises situated at ${owner.addr || common.addr}.</li>
   <li>I have no objection to ${pres.name} establishing and operating a society under the name and style of <b>"${common.name}"</b> at the above said premises.</li>
   ${owner.relToPres ? `<li>I further state that ${pres.name}, who is my ${owner.relToPres}, is the President of the said society, and in view of our relationship, I have permitted the society to use my premises free of cost for its office purposes. No rent or any other consideration has been collected or will be collected for the same.</li>` : '<li>I have permitted the society to use the said premises free of cost for its office purposes.</li>'}
   <li>This No Objection Letter is issued willingly for official and registration purposes.</li>
 </ul>
-<div class="signature-area"><div><span class="sig-line"></span><br><b>DEPONENT</b><br>${owner.name}</div></div>
-<div class="station-row"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<div style="margin-top:16pt;text-align:right;"><b>President</b><br>${pres.name}</div></div>`;
+<div style="margin-top:24pt;text-align:right;"><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div><br><b>DEPONENT</b><br>${owner.name}</div>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<div style="margin-top:16pt;text-align:right;font-family:'Book Antiqua',serif;font-size:12pt;"><b>President</b><br>${pres.name}</div></div>`;
     downloadDoc(html, 'Affidavits_' + common.name);
   };
 

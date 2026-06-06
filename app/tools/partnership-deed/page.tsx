@@ -1,6 +1,6 @@
 'use client';
 import { useState, useCallback } from 'react';
-import { ordinal, numWords, formatDateLong, formatDateShort, cls } from '@/lib/utils';
+import { ordinal, numWords, formatDateLong, formatDateShort, ordinalSup, cls } from '@/lib/utils';
 import { downloadDoc } from '@/lib/doc-generator';
 import DocPreview from '@/components/ui/DocPreview';
 
@@ -121,6 +121,7 @@ export default function PartnershipDeedPage() {
     const n = numPartners;
     const { firmName, bizNature, placeOfBiz, dateCommencement, placeExecution, capitalRate } = firm;
     const dateComm = formatDateLong(dateCommencement);
+    const dateCommSup = ordinalSup(dateCommencement);
     const ps = partners.slice(0, n).map((p, i) => ({ ...p, profit: profitInputs[i] || 0 }));
     const wpNames = workingIdxs.map(i => `<b>${ps[i].name}</b>`).join(', ');
     const workingText = workingIdxs.map(i => `Party of the ${ordinal(i)} Part namely <b>${ps[i].name}</b>`).join(' and ');
@@ -173,49 +174,46 @@ export default function PartnershipDeedPage() {
     const capText = capitalRate === 'As mutually decided' ? 'as mutually decided' : capitalRate + '% per annum or as prescribed';
     const allOrd = ps.map((_, i) => ordinal(i)).join(', ');
 
-    const html = `<div class="page-break"><h1>PARTNERSHIP DEED</h1>
-<p>This Partnership Deed is entered and executed on this ${dateComm} out of free will and mutual consent by and between:</p>
-<div class="section-hdr">Parties to the Deed</div>
-<div class="doc-parties">${partyParas}</div>
-<p>All ${numWords(n)} Parties herein called parties of the ${allOrd} as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"${firmName}"</b> to ${bizNature}.</p>
-<div class="initials-row">${initRow}</div></div>
+    const html = `<div class="page-break"><div class="deed-title">PARTNERSHIP DEED</div>
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin-bottom:6pt;">This Partnership Deed is entered and executed on this ${dateCommSup} out of free will and mutual consent by and between:</p>
+${partyParas}
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin-bottom:6pt;">All ${numWords(n)} Parties herein called parties of the ${allOrd} as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"${firmName}"</b> to ${bizNature}.</p>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4pt;margin:10pt 0;font-size:10pt;">${initRow}</div>
 
 <div>
-<div class="section-hdr">Deed of Partnership — Terms &amp; Conditions</div>
-<p><b>Now this deed witness is as follows: —</b></p>
-<ol class="deed-ol">
-<li><b>Name and Nature of the Firm:</b> That the business of the Partnership Shall be to ${bizNature}. The name of the firm shall be <b>${firmName}</b>.</li>
-<li><b>Place of Business:</b> The registered office is situated at ${placeOfBiz}.</li>
-<li><b>Date of Commencement:</b> The partnership shall come into effect from the ${dateComm} and shall continue till determined or as mutually decided by the partners.</li>
-<li><b>Capital Contribution:</b><ol type="i" style="margin-left:22px;margin-top:5px;"><li>Capital shall be contributed by the partners as per the requirement of the business as mutually decided from time to time.</li><li>Interest at the rate of ${capText} U/s. 40(b)(iv) of the Income Tax Act, 1961 shall be payable to the partners on the amounts standing to their credit, credited at the close of each accounting year.</li></ol></li>
-<li><b>Books of Accounts:</b> Proper Books of Accounts shall be maintained by the Working Partners ${wpNames}. All records shall be kept at the Principal Place of Business and shall be open for inspection by all partners. Accounts shall be closed on 31st March every year.</li>
-<li><b>Remuneration:</b> ${remuText}</li>
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin:16pt 0 6pt;"><b>Now this deed witness is as follows: —</b></p>
+<ol style="font-family:'Book Antiqua',serif;font-size:11pt;margin:4pt 0 4pt 26pt;">
+<li style="margin-bottom:8pt;"><b>Name and Nature of the Firm:</b> That the business of the Partnership Shall be to ${bizNature}. The name of the firm shall be <b>${firmName}</b>.</li>
+<li style="margin-bottom:8pt;"><b>Place of Business:</b> The registered office is situated at ${placeOfBiz}.</li>
+<li style="margin-bottom:8pt;"><b>Date of Commencement:</b> The partnership shall come into effect from the ${dateComm} and shall continue till determined or as mutually decided by the partners.</li>
+<li style="margin-bottom:8pt;"><b>Capital Contribution:</b><ol type="i" style="margin-left:22px;margin-top:5px;"><li>Capital shall be contributed by the partners as per the requirement of the business as mutually decided from time to time.</li><li>Interest at the rate of ${capText} U/s. 40(b)(iv) of the Income Tax Act, 1961 shall be payable to the partners on the amounts standing to their credit, credited at the close of each accounting year.</li></ol></li>
+<li style="margin-bottom:8pt;"><b>Books of Accounts:</b> Proper Books of Accounts shall be maintained by the Working Partners ${wpNames}. All records shall be kept at the Principal Place of Business and shall be open for inspection by all partners. Accounts shall be closed on 31st March every year.</li>
+<li style="margin-bottom:8pt;"><b>Remuneration:</b> ${remuText}</li>
 </ol>
-<div class="initials-row">${initRow}</div>
-<ol class="deed-ol" start="7">
-<li><b>Profit / Loss:</b><ol type="i" style="margin-left:22px;margin-top:5px;"><li>Profit and Loss shall be ascertained after deducting all expenses, charges and providing for such reserves as the partners may think fit.</li><li>Profit and Losses shall be shared in the following ratios:<br><br><b>${profitLines}</b></li></ol></li>
-<li><b>Working Partners:</b> ${workingText} shall be the working partner(s) and shall take an active part in day-to-day conduct of the business affairs.</li>
-<li><b>Operation of Bank Accounts:</b> Bank accounts shall be established in the name of the firm. ${bankOpText}</li>
-<li><b>Advances and Loans:</b> ${loanText}</li>
-<li><b>Contracts:</b> All business contracts shall be made in the name of the Firm namely <b>"${firmName}"</b>.</li>
-<li><b>Duration:</b> The Duration of the Partnership Business shall be at will.</li>
-<li><b>Death:</b> In the event of the demise of any partner, the eldest male child or, alternatively, the spouse or other legal heir shall step into the shoes of the deceased as a partner, to which the surviving partners shall have no objection.</li>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4pt;margin:10pt 0;font-size:10pt;">${initRow}</div>
+<ol style="font-family:'Book Antiqua',serif;font-size:11pt;margin:4pt 0 4pt 26pt;" start="7">
+<li style="margin-bottom:8pt;"><b>Profit / Loss:</b><ol type="i" style="margin-left:22px;margin-top:5px;"><li>Profit and Loss shall be ascertained after deducting all expenses, charges and providing for such reserves as the partners may think fit.</li><li>Profit and Losses shall be shared in the following ratios:<br><br><b>${profitLines}</b></li></ol></li>
+<li style="margin-bottom:8pt;"><b>Working Partners:</b> ${workingText} shall be the working partner(s) and shall take an active part in day-to-day conduct of the business affairs.</li>
+<li style="margin-bottom:8pt;"><b>Operation of Bank Accounts:</b> Bank accounts shall be established in the name of the firm. ${bankOpText}</li>
+<li style="margin-bottom:8pt;"><b>Advances and Loans:</b> ${loanText}</li>
+<li style="margin-bottom:8pt;"><b>Contracts:</b> All business contracts shall be made in the name of the Firm namely <b>"${firmName}"</b>.</li>
+<li style="margin-bottom:8pt;"><b>Duration:</b> The Duration of the Partnership Business shall be at will.</li>
+<li style="margin-bottom:8pt;"><b>Death:</b> In the event of the demise of any partner, the eldest male child or, alternatively, the spouse or other legal heir shall step into the shoes of the deceased as a partner, to which the surviving partners shall have no objection.</li>
 </ol>
-<div class="initials-row">${initRow}</div>
-<ol class="deed-ol" start="14">
-<li><b>Disputes:</b> Any disputes arising between the parties shall be resolved through arbitration under the Indian Arbitration Act of 1940.</li>
-<li><b>Retirement:</b> Partners are at liberty to retire by giving at least 30 days' notice. The retiring partner is not entitled to any share in the Goodwill.</li>
-<li><b>Amendments:</b> Any terms may be altered with mutual consent of all parties. The Indian Partnership Act, 1932 shall apply to matters not expressly provided herein.</li>
-<li><b>Drawings:</b> Partners may withdraw capital only with others' consent but may freely draw their share of profits credited to their accounts annually.</li>
-<li><b>Dissolution:</b> The Partnership is at will and may be dissolved by mutual decision. On dissolution, net assets excluding goodwill shall be shared after adjusting excess investments.</li>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4pt;margin:10pt 0;font-size:10pt;">${initRow}</div>
+<ol style="font-family:'Book Antiqua',serif;font-size:11pt;margin:4pt 0 4pt 26pt;" start="14">
+<li style="margin-bottom:8pt;"><b>Disputes:</b> Any disputes arising between the parties shall be resolved through arbitration under the Indian Arbitration Act of 1940.</li>
+<li style="margin-bottom:8pt;"><b>Retirement:</b> Partners are at liberty to retire by giving at least 30 days' notice. The retiring partner is not entitled to any share in the Goodwill.</li>
+<li style="margin-bottom:8pt;"><b>Amendments:</b> Any terms may be altered with mutual consent of all parties. The Indian Partnership Act, 1932 shall apply to matters not expressly provided herein.</li>
+<li style="margin-bottom:8pt;"><b>Drawings:</b> Partners may withdraw capital only with others' consent but may freely draw their share of profits credited to their accounts annually.</li>
+<li style="margin-bottom:8pt;"><b>Dissolution:</b> The Partnership is at will and may be dissolved by mutual decision. On dissolution, net assets excluding goodwill shall be shared after adjusting excess investments.</li>
 </ol></div>
 
 <div>
-<div class="section-hdr">Execution &amp; Signatures</div>
-<div class="deed-place">In witness whereof the said partners put their hands to this deed of partnership at ${placeExecution}.</div>
-<table style="margin-top:16pt;"><tr>
-  <td style="width:50%;"><b>Signature of the Witnesses:</b><br><br>${witBlock}</td>
-  <td style="width:50%;"><b>Signature of the Partners:</b><br><br>${ps.map((p, i) => `<div style="margin-bottom:22pt;">${i+1}. <span class="sig-line"></span><br><span style="margin-left:8pt;">${p.name}</span></div>`).join('')}</td>
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;font-style:italic;margin-top:16pt;">In witness whereof the said partners put their hands to this deed of partnership at ${placeExecution}.</p>
+<table style="margin-top:16pt;font-size:11pt;"><tr>
+  <td style="width:50%;font-size:11pt;"><b>Signature of the Witnesses:</b><br><br>${witBlock}</td>
+  <td style="width:50%;font-size:11pt;"><b>Signature of the Partners:</b><br><br>${ps.map((p, i) => `<div style="margin-bottom:22pt;">${i+1}. <span style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></span><br><span style="margin-left:8pt;">${p.name}</span></div>`).join('')}</td>
 </tr></table></div>`;
 
     setDocHtml(html);
@@ -230,20 +228,17 @@ export default function PartnershipDeedPage() {
     if (!deponent?.name) { alert('Fill partner details first.'); return; }
     if (!affData.officeAddr || !affData.signDate) { alert('Fill Office Address and Sign Date.'); return; }
     const cpList = ps.slice(1).filter(p => p.name);
-    const html = `<div class="page-break"><h1>AFFIDAVIT</h1>
-<div class="section-hdr">Deponent Statement</div>
-<p>I, <b>${deponent.name}</b>, <b>${deponent.rel} ${deponent.father}</b>, aged <b>${deponent.age} years</b> residing at ${deponent.address} do hereby affirm and state as follows:</p>
-<ul>
-  <li>I, <b>${deponent.name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm.firmName}"</b>.</li>
-  <li>The said Firm commenced the business from ${formatDateLong(firm.dateCommencement)} and the office of the firm is situated at ${affData.officeAddr} and the said premises belong to me.</li>
-  ${affData.reg === 'yes' ? `<li>The said firm has applied for Registration to the Registrar of Firms, ${firm.placeExecution}.</li>` : ''}
-  ${affData.premises === 'owner' ? `<li>I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li>I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
-</ul>
-<div class="signature-area">
-<div><span class="sig-line"></span><br><b>DEPONENT</b></div>
-</div>
-<div class="station-row"><span>Place: ${firm.placeExecution}</span><span>Date: ${formatDateShort(affData.signDate)}</span></div>
-<p style="margin-top:12pt;">Solemnly affirmed at ${firm.placeExecution} on this day ${formatDateShort(affData.signDate)}.</p></div>`;
+    const html = `<div class="page-break"><div class="affidavit-title">AFFIDAVIT</div>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin-bottom:6pt;"><b>${deponent.name}</b>, <b>${deponent.rel} ${deponent.father}</b>, aged <b>${deponent.age} years</b> residing at ${deponent.address} do hereby affirm and state as follows:</p>
+<ol style="font-family:'Book Antiqua',serif;font-size:12pt;margin:4pt 0 4pt 24pt;">
+  <li style="margin-bottom:4pt;">I, <b>${deponent.name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm.firmName}"</b>.</li>
+  <li style="margin-bottom:4pt;">The said Firm commenced the business from ${formatDateLong(firm.dateCommencement)} and the office of the firm is situated at ${affData.officeAddr} and the said premises belong to me.</li>
+  ${affData.reg === 'yes' ? `<li style="margin-bottom:4pt;">The said firm has applied for Registration to the Registrar of Firms, ${firm.placeExecution}.</li>` : ''}
+  ${affData.premises === 'owner' ? `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
+</ol>
+<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin:10pt 0 6pt;">Solemnly affirmed at ${firm.placeExecution} on this day ${formatDateShort(affData.signDate)}.</p>
+<div style="margin-top:18pt;text-align:right;"><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div><br><b>DEPONENT</b></div>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${firm.placeExecution}</span><span>Date: ${formatDateShort(affData.signDate)}</span></div></div>`;
     downloadDoc(html, 'Affidavit_' + firm.firmName);
   };
 
@@ -255,12 +250,12 @@ export default function PartnershipDeedPage() {
     const sigs = ps2.map(p => `<li style="margin-bottom:6px;">${p.name}</li>`).join('');
     const decls = ps2.map(p => `<div class="decl-block"><p>I, <b>${p.name}</b>, <b>${p.rel} ${p.father}</b>, aged <b>${p.age} Years</b> do hereby declare that the above statement is true and correct to the best of my knowledge and belief.</p><div class="station-row"><span>Date: ${formatDateShort(f1Data.date)}</span><span>Signature: <span class="sign-line" style="width:130px;"></span></span></div></div>`).join('');
     const sn = ps2.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
-    const html = `<div class="page-break"><h1>FORM NO.1</h1>
-<div class="section-hdr">The Indian Partnership Act, 1932 — Registration u/s 58</div>
-<p>Application for the registration of firm by the name <b>"${firm.firmName}"</b> presented to the Registrar of Firms by <b>${f1Data.presentedBy}</b>.</p>
-<p>We, the undersigned, being the partners of the firm "<b>${firm.firmName}"</b>, hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
-<div class="section-sub">Firm Particulars</div>
-<table style="border:none;margin:8pt 0;">
+    const html = `<div class="page-break"><div class="form1-title">FORM NO.1</div>
+<div style="text-align:center;font-size:10pt;font-weight:bold;margin-bottom:10pt;">THE INDIAN PARTNERSHIP ACT, 1932<br>Registration u/s 58</div>
+<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm.firmName}"</b> presented to the Registrar of Firms by <b>${f1Data.presentedBy}</b>.</p>
+<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm.firmName}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
+<div style="font-weight:bold;font-size:10pt;margin:14pt 0 8pt;">Firm Particulars</div>
+<table style="border:none;margin:6pt 0;font-size:10pt;">
   <tr><td style="border:none;width:220pt;"><b>The Firm's Name</b></td><td style="border:none;">:&nbsp;&nbsp;<b>${firm.firmName}</b></td></tr>
   <tr><td style="border:none;" colspan="2"><b>Place of Business:</b></td></tr>
   <tr><td style="border:none;padding-left:22pt;">(a) Principal Place:</td><td style="border:none;">:&nbsp;&nbsp;${firm.placeOfBiz}</td></tr>
@@ -268,13 +263,13 @@ export default function PartnershipDeedPage() {
   <tr><td style="border:none;"><b>Nature of Business</b></td><td style="border:none;">:&nbsp;&nbsp;${firm.bizNature}</td></tr>
   <tr><td style="border:none;"><b>Duration of the Firm</b></td><td style="border:none;">:&nbsp;&nbsp;${f1Data.duration}</td></tr>
 </table>
-<p style="margin-left:24pt;">${sn}</p>
-<div class="section-sub">Partners Details</div>
-<table><thead><tr><th style="width:45pt;">S.No</th><th>Name</th><th style="width:120pt;">Date of Joining</th><th>Permanent Address</th></tr></thead><tbody>${tRows}</tbody></table>
-<div><div class="section-hdr">Declaration by Partners</div>
-<p>We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
-<div class="station-row"><div><p>Station: ${firm.placeExecution}</p><p>Date: ${formatDateShort(f1Data.date)}</p></div><div><b>Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
-<div style="margin-top:24pt;">${decls}</div></div></div>`;
+<p style="margin-left:24pt;font-size:10pt;">${sn}</p>
+<div style="font-weight:bold;font-size:10pt;margin:14pt 0 8pt;">Partners Details</div>
+<table style="font-size:10pt;"><thead><tr><th style="width:45pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Name of Partners in full</th><th style="width:120pt;font-size:10pt;">Date of joining the firm</th><th style="font-size:10pt;">Permanent address in full</th></tr></thead><tbody>${tRows}</tbody></table>
+<div style="margin-top:16pt;"><div style="text-align:center;font-size:10pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;">DECLARATION</div>
+<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:10pt;"><div><p style="font-size:10pt;">Station: ${firm.placeExecution}</p><p style="font-size:10pt;">Date: ${formatDateShort(f1Data.date)}</p></div><div><b style="font-size:10pt;">Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
+<div style="margin-top:20pt;font-size:10pt;">${decls}</div></div></div>`;
     downloadDoc(html, 'Form_No_1_' + firm.firmName);
   };
 
@@ -284,13 +279,13 @@ export default function PartnershipDeedPage() {
     if (!ps.length) { alert('No partners to include.'); return; }
     const pRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}.</td><td><b>${p.name}, ${p.rel} ${p.father}</b></td><td>${p.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
     const wRows = ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:68px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:98px;height:68px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
-    const html = `<div class="page-break"><div class="firm-hdr">${firm.firmName}</div><div class="firm-addr">${firm.placeOfBiz}</div>
-<div class="section-hdr">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
-<table><thead><tr><th style="width:46pt;">S.No</th><th>Partners Name &amp; Father Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
+    const html = `<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${firm.firmName}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${firm.placeOfBiz}</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Partners Name &amp; Father Name</th><th style="font-size:10pt;">Address</th><th style="width:96pt;font-size:10pt;">Photo</th><th style="width:126pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
 </div>
-<div class="page-break"><div class="firm-hdr">${firm.firmName}</div><div class="firm-addr">${firm.placeOfBiz}</div>
-<div class="section-hdr">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
-<table><thead><tr><th style="width:46pt;">S.No</th><th>Witness Name</th><th>Address</th><th style="width:96pt;">Photo</th><th style="width:126pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
+<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${firm.firmName}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${firm.placeOfBiz}</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Witness Name</th><th style="font-size:10pt;">Address</th><th style="width:96pt;font-size:10pt;">Photo</th><th style="width:126pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
     downloadDoc(html, 'Photo_Form_' + firm.firmName);
   };
 
@@ -541,7 +536,7 @@ export default function PartnershipDeedPage() {
             <div className="border border-[#d6c9a0] rounded-xl mb-3 overflow-hidden">
               <div onClick={() => setOpenSup(s => ({ ...s, aff: !s.aff }))} className="flex items-center gap-3 px-5 py-3 cursor-pointer bg-[#faf7f0] hover:bg-[#f5e9c8] transition-colors">
                 <span className="text-lg">📜</span>
-                <span className="flex-1 text-sm font-semibold text-[#1a1209]">Affidavit (Owner's Premises)</span>
+                <span className="flex-1 text-sm font-semibold text-[#1a1209]">Affidavit (Owner&rsquo;s Premises)</span>
                 <span className={`text-[#7a6e5a] transition-transform ${openSup.aff ? 'rotate-180' : ''}`}>▾</span>
               </div>
               {openSup.aff && (
