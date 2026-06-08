@@ -108,7 +108,7 @@ export default function BDMQualificationPage() {
     const pkg = PACKAGES[pkgNum];
     const modLabels = ['A · Financial Profile', 'B · Compliance Status', 'C · Accounting & Technology', 'D · Business Complexity', 'E · Growth Intent'];
     const modKeys = ['a','b','c','d','e'];
-    const html = `<div class="page-break"><div style="text-align:center;font-size:16pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:2pt;">Viksit Management Consultancy</div>
+    const html = `<div><div style="text-align:center;font-size:16pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:2pt;">Viksit Management Consultancy</div>
 <div style="text-align:center;font-size:12pt;font-family:'Book Antiqua',serif;margin-bottom:8pt;">Kurnool Delivery Centre</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Client Qualification Report</div>
 <table style="font-size:10pt;font-family:'Book Antiqua',serif;"><tr><th colspan="2" style="font-size:10pt;">Assessment Summary</th></tr>

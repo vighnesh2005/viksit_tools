@@ -26,9 +26,6 @@ p {
   margin-bottom: 6pt;
   line-height: 1.5;
 }
-.page-break {
-  page-break-before: always;
-}
 .sig-line {
   border-bottom: 1pt solid #000;
   display: inline-block;

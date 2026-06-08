@@ -174,7 +174,7 @@ export default function PartnershipDeedPage() {
     const capText = capitalRate === 'As mutually decided' ? 'as mutually decided' : capitalRate + '% per annum or as prescribed';
     const allOrd = ps.map((_, i) => ordinal(i)).join(', ');
 
-    const html = `<div class="page-break"><div class="deed-title">PARTNERSHIP DEED</div>
+    const html = `<div><div class="deed-title">PARTNERSHIP DEED</div>
 <p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin-bottom:6pt;">This Partnership Deed is entered and executed on this ${dateCommSup} out of free will and mutual consent by and between:</p>
 ${partyParas}
 <p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin-bottom:6pt;">All ${numWords(n)} Parties herein called parties of the ${allOrd} as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"${firmName}"</b> to ${bizNature}.</p>
@@ -228,7 +228,7 @@ ${partyParas}
     if (!deponent?.name) { alert('Fill partner details first.'); return; }
     if (!affData.officeAddr || !affData.signDate) { alert('Fill Office Address and Sign Date.'); return; }
     const cpList = ps.slice(1).filter(p => p.name);
-    const html = `<div class="page-break"><div class="affidavit-title">AFFIDAVIT</div>
+    const html = `<div><div class="affidavit-title">AFFIDAVIT</div>
 <p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin-bottom:6pt;"><b>${deponent.name}</b>, <b>${deponent.rel} ${deponent.father}</b>, aged <b>${deponent.age} years</b> residing at ${deponent.address} do hereby affirm and state as follows:</p>
 <ol style="font-family:'Book Antiqua',serif;font-size:12pt;margin:4pt 0 4pt 24pt;">
   <li style="margin-bottom:4pt;">I, <b>${deponent.name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm.firmName}"</b>.</li>
@@ -250,7 +250,7 @@ ${partyParas}
     const sigs = ps2.map(p => `<li style="margin-bottom:6px;">${p.name}</li>`).join('');
     const decls = ps2.map(p => `<div class="decl-block"><p>I, <b>${p.name}</b>, <b>${p.rel} ${p.father}</b>, aged <b>${p.age} Years</b> do hereby declare that the above statement is true and correct to the best of my knowledge and belief.</p><div class="station-row"><span>Date: ${formatDateShort(f1Data.date)}</span><span>Signature: <span class="sign-line" style="width:130px;"></span></span></div></div>`).join('');
     const sn = ps2.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
-    const html = `<div class="page-break"><div class="form1-title">FORM NO.1</div>
+    const html = `<div><div class="form1-title">FORM NO.1</div>
 <div style="text-align:center;font-size:10pt;font-weight:bold;margin-bottom:10pt;">THE INDIAN PARTNERSHIP ACT, 1932<br>Registration u/s 58</div>
 <p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm.firmName}"</b> presented to the Registrar of Firms by <b>${f1Data.presentedBy}</b>.</p>
 <p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm.firmName}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
@@ -279,11 +279,11 @@ ${partyParas}
     if (!ps.length) { alert('No partners to include.'); return; }
     const pRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}.</td><td><b>${p.name}, ${p.rel} ${p.father}</b></td><td>${p.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:100px;height:120px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:110px;height:70px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
     const wRows = ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:100px;height:120px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:110px;height:70px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
-    const html = `<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${firm.firmName}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${firm.placeOfBiz}</div>
+    const html = `<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${firm.firmName}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${firm.placeOfBiz}</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
 <table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Partners Name &amp; Father Name</th><th style="font-size:10pt;">Address</th><th style="width:140pt;font-size:10pt;">Photo</th><th style="width:160pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
 </div>
-<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${firm.firmName}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${firm.placeOfBiz}</div>
+<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${firm.firmName}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${firm.placeOfBiz}</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
 <table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Witness Name</th><th style="font-size:10pt;">Address</th><th style="width:140pt;font-size:10pt;">Photo</th><th style="width:160pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
     downloadDoc(html, 'Photo_Form_' + firm.firmName);

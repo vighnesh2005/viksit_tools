@@ -105,7 +105,7 @@ function AffidavitPanel({ cpCount, setCpCount, showDoc }: { cpCount: number; set
     for (let i = 0; i < cpList.length; i++) { if (!cpList[i]?.name) { alert(`Enter name for Co-Partner ${i + 1}.`); return; } }
     const isOwner = premises === 'owner';
     const hasReg = reg === 'yes';
-    const html = `<div class="page-break"><div class="affidavit-title">AFFIDAVIT</div>
+    const html = `<div><div class="affidavit-title">AFFIDAVIT</div>
 <p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin-bottom:6pt;"><b>${name}</b>, <b>${rel} ${father}</b>, aged <b>${age} years</b> residing at ${address} do hereby affirm and state as follows:</p>
 <ol style="font-family:'Book Antiqua',serif;font-size:12pt;margin:4pt 0 4pt 24pt;">
   <li style="margin-bottom:4pt;">I, <b>${name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm}"</b>.</li>
@@ -210,7 +210,7 @@ function Form1Panel({ f1Count, setF1Count, showDoc }: { f1Count: number; setF1Co
     const sigs = ps.map(p => `<li style="margin-bottom:6px;">${p.name}</li>`).join('');
     const decls = ps.map(p => `<div class="decl-block"><p>I, <b>${p.name}</b>, <b>${p.rel || 'S/o'} ${p.father}</b>, aged <b>${p.age} Years</b> do hereby declare that the above statement is true and correct to the best of my knowledge and belief.</p><div class="station-row"><span>Date: ${formatDateShort(date)}</span><span>Signature: <span class="sign-line" style="width:130px;"></span></span></div></div>`).join('');
     const sn = ps.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
-    const html = `<div class="page-break"><div class="form1-title">FORM NO.1</div>
+    const html = `<div><div class="form1-title">FORM NO.1</div>
 <div style="text-align:center;font-size:10pt;font-weight:bold;margin-bottom:10pt;">THE INDIAN PARTNERSHIP ACT, 1932<br>Registration u/s 58</div>
 <p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm}"</b> presented to the Registrar of Firms by <b>${presentedBy}</b>.</p>
 <p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
@@ -302,11 +302,11 @@ function PhotoFormPanel({ pfPC, setPfPC, pfWC, setPfWC, showDoc }: { pfPC: numbe
     for (let i = 0; i < ws.length; i++) { if (!ws[i].name || !ws[i].address) { alert(`Fill all fields for Witness ${i + 1}.`); return; } }
     const pRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}.</td><td><b>${p.name}, ${p.rel || 'S/o'} ${p.father}</b></td><td>${p.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:100px;height:120px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:110px;height:70px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
     const wRows = ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.address}</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:100px;height:120px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:120px;"><div style="border:1px dashed #bbb;width:110px;height:70px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr>`).join('');
-    const html = `<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
+    const html = `<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
 <table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Partners Name &amp; Father Name</th><th style="font-size:10pt;">Address</th><th style="width:140pt;font-size:10pt;">Photo</th><th style="width:160pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
 </div>
-<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
+<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
 <table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Witness Name</th><th style="font-size:10pt;">Address</th><th style="width:140pt;font-size:10pt;">Photo</th><th style="width:160pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
     showDoc('Photo_Form_' + data.firm, html);
@@ -426,7 +426,7 @@ function SocietyModule() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<div class="page-break"><div style="text-align:center;font-size:18pt;font-weight:bold;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${common.name}</div>
+    const html = `<div><div style="text-align:center;font-size:18pt;font-weight:bold;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${common.name}</div>
 <div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
 <div style="text-align:center;font-size:16pt;font-weight:bold;margin-bottom:10pt;font-family:'Book Antiqua',serif;">(Registered under Societies Registration Act 35 of 2001)</div>
 <div style="margin-top:18pt;font-family:'Book Antiqua',serif;font-size:12pt;"><b>President</b><br>${pres.name}<br>${pres.rel} ${pres.father},<br>${pres.addr}</div>
@@ -448,7 +448,7 @@ function SocietyModule() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">Copy of Resolution</div>
+    const html = `<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">Copy of Resolution</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Resolution to Form and Register the Society</div>
 <p style="text-indent:36pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We the undersigned resolved to form a Society by name <b>"${common.name}"</b>, Office Address ${common.addr} and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorize the <b>PRESIDENT — ${pres.name} ${pres.rel} ${pres.father}</b> of the said Association to present the document in the Registrar's Office, ${common.place} and get it registered under the above said Act and receive the necessary certificate.</p>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
@@ -471,7 +471,7 @@ function SocietyModule() {
     const finalSigRows = ms.map((m, i) =>
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}, ${m.rel} ${m.father}</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
-    const html = `<div class="page-break"><div style="text-align:center;font-size:13pt;font-weight:bold;font-family:'Book Antiqua',serif;">MEMORANDUM OF ASSOCIATION OF</div>
+    const html = `<div><div style="text-align:center;font-size:13pt;font-weight:bold;font-family:'Book Antiqua',serif;">MEMORANDUM OF ASSOCIATION OF</div>
 <div style="text-align:center;font-size:18pt;font-weight:bold;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${common.name}</div>
 <div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
 <div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">1. Name of the Society</div>
@@ -490,7 +490,7 @@ function SocietyModule() {
 <table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Name, Father/Husband Name &amp; Address</th><th style="font-size:10pt;">Signature</th></tr></thead><tbody>${wRows}</tbody></table>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div class="page-break"><div style="text-align:center;font-size:12pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
+<div><div style="text-align:center;font-size:12pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
 <div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
 <div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">1. Name of the Society</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">${common.name}</p>
 <div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">2. Office Address</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">${common.addr}</p>
@@ -515,7 +515,7 @@ function SocietyModule() {
 <div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">10. Winding Up</div>
 <p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">In the event of dissolution, all remaining funds and assets after satisfying liabilities shall be given to a Society having similar aims and objects registered under Sec 12AA of the Income Tax Act 1961.</p>
 </div>
-<div class="page-break"><div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Registration Undertaking</div>
+<div><div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Registration Undertaking</div>
 <p style="margin-top:14pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We, the several members whose signatures are subscribed below desire to bring the above-named society into being within the meaning of Section 35 of 2001 of Societies Registration and we are desirous of getting the above society registered.</p>
 <table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name &amp; Father / Husband Name</th><th style="font-size:10pt;">Designation</th><th style="font-size:10pt;">Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
 <div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Witnesses with their Address &amp; Signatures</div>
@@ -533,7 +533,7 @@ function SocietyModule() {
     const memberTableRows2 = ms.map((m, i) =>
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}</td><td>${m.rel} ${m.father}</td><td>${m.addr}</td><td>${m.age} Years</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
-    const html = `<div class="page-break"><div class="affidavit-title">AFFIDAVIT — 1</div>
+    const html = `<div><div class="affidavit-title">AFFIDAVIT — 1</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">President's Affidavit</div>
 <p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I, ${pres.name}, ${pres.rel} ${pres.father}, aged about ${pres.age} years, ${pres.addr}, solemnly affirm and sincerely state as follows:</p>
 <ul style="font-family:'Book Antiqua',serif;font-size:12pt;">
@@ -545,7 +545,7 @@ function SocietyModule() {
 <div style="margin-top:24pt;text-align:right;"><b>DEPONENT</b><br><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div><br><br><b>President</b><br>${pres.name}</div>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div class="page-break"><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">AFFIDAVIT — 2</div>
+<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">AFFIDAVIT — 2</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Premises No Objection Certificate (NOC)</div>
 <p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I, ${owner.name}, ${owner.rel} ${owner.father}${owner.age ? ', aged about ' + owner.age + ' years' : ''},${owner.addr ? ` residing at ${owner.addr},` : ''} do hereby state as follows:</p>
 <ul style="font-family:'Book Antiqua',serif;font-size:12pt;">

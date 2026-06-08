@@ -167,7 +167,7 @@ export default function ITRAssessmentPage() {
   }, [answers, client]);
 
   const downloadReport = () => {
-    const html = `<div class="page-break"><div style="text-align:center;font-size:16pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:2pt;">Viksit Consulting</div>
+    const html = `<div><div style="text-align:center;font-size:16pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:2pt;">Viksit Consulting</div>
 <div style="text-align:center;font-size:12pt;font-family:'Book Antiqua',serif;margin-bottom:8pt;">Kurnool Delivery Centre — Internal Tax Assessment Tool</div>
 <div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">ITR Assessment Report — AY 2026-27</div>
 <div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Document Control</div>
