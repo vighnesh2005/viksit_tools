@@ -1,4 +1,8 @@
-const DOC_STYLES = `
+<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Photo_Form_google</title><style>
 body {
   font-family: 'Book Antiqua', serif;
   font-size: 12pt;
@@ -251,54 +255,13 @@ ol li {
   font-size: 10pt;
   table-layout: fixed;
 }
-`;
-
-export default DOC_STYLES;
-
-export const DOC_PREVIEW_STYLES = `
-.doc-content {
-  font-family: 'Book Antiqua', serif;
-  font-size: 12pt;
-  line-height: 1.5;
-  color: #000;
-  padding: 1in;
-}
-.doc-content h1 { text-align: center; font-weight: bold; margin: 0 0 6pt; }
-.doc-content h2 { text-align: center; font-weight: bold; font-size: 13pt; margin: 16pt 0 8pt; }
-.doc-content p { text-align: justify; margin-bottom: 6pt; line-height: 1.5; }
-.doc-content table { width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 10pt; table-layout: fixed; }
-.doc-content th { font-weight: bold; padding: 4pt 6pt; text-align: left; border: 0.5pt solid #000; font-size: 10pt; }
-.doc-content td { padding: 4pt 6pt; border: 0.5pt solid #000; vertical-align: top; font-size: 10pt; word-break: break-word; }
-.doc-content ul { margin: 4pt 0 4pt 24pt; }
-.doc-content ul li { margin-bottom: 4pt; text-align: justify; }
-.doc-content ol { margin: 4pt 0 4pt 26pt; }
-.doc-content ol li { margin-bottom: 4pt; text-align: justify; }
-.doc-content .section-hdr { text-align: center; font-weight: bold; font-size: 11pt; text-transform: uppercase; margin: 18pt 0 10pt; }
-.doc-content .section-sub { font-weight: bold; font-size: 11pt; margin: 14pt 0 8pt; }
-.doc-content .firm-hdr { text-align: center; font-size: 14pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5pt; margin-bottom: 2pt; }
-.doc-content .firm-addr { text-align: center; font-size: 11pt; margin-bottom: 10pt; }
-.doc-content .sig-line { border-bottom: 1pt solid #000; display: inline-block; width: 160pt; margin-top: 8pt; }
-.doc-content .station-row { display: flex; justify-content: space-between; margin-top: 10pt; font-size: 11pt; }
-.doc-content .initials-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4pt; margin: 10pt 0; font-size: 10pt; }
-.doc-content .and-sep { text-align: center; font-weight: bold; margin: 6pt 0; font-size: 11pt; text-transform: uppercase; letter-spacing: 1pt; }
-.doc-content .deed-place { margin-top: 16pt; text-align: justify; font-style: italic; }
-.doc-content .deed-ol { margin: 4pt 0 4pt 26pt; }
-.doc-content .deed-ol > li { margin-bottom: 8pt; }
-.doc-content .photo-cell { width: 105pt; height: 125pt; text-align: center; vertical-align: middle; }
-.doc-content .decl-block { margin: 12pt 0; border-left: 3pt solid #b8860b; padding-left: 12pt; padding: 8pt 12pt; }
-.doc-content .signature-area { margin-top: 24pt; display: flex; justify-content: flex-end; text-align: right; }
-.doc-content .doc-party { margin-bottom: 6pt; padding-left: 8pt; border-left: 2pt solid #b8860b; }
-.doc-content .society-title { text-align: center; font-size: 18pt; font-weight: bold; margin-bottom: 2pt; }
-.doc-content .society-sub { text-align: center; font-size: 16pt; font-weight: bold; margin-bottom: 10pt; }
-.doc-content .affidavit-title { text-align: center; font-size: 20pt; font-weight: bold; text-decoration: underline; margin-bottom: 12pt; }
-.doc-content .form1-title { text-align: center; font-size: 10pt; font-weight: bold; margin-bottom: 2pt; }
-.doc-content .deed-title { text-align: center; font-size: 11pt; font-weight: bold; text-decoration: underline; margin-bottom: 8pt; }
-.doc-content .itr-box { background: #1a1209; color: #faf7f0; text-align: center; padding: 24pt; margin: 14pt 0; }
-.doc-content .itr-box h1 { color: #faf7f0; margin: 0; border: none; font-size: 24pt; }
-.doc-content .alert-crit { background: #fdf0f0; border-left: 4pt solid #8b2020; padding: 6pt 10pt; margin: 4pt 0; font-size: 10.5pt; }
-.doc-content .alert-ok { background: #f0f7f0; border-left: 4pt solid #2c4a1e; padding: 6pt 10pt; margin: 4pt 0; font-size: 10.5pt; }
-.doc-content .scope-box { border: 1pt solid #d6c9a0; padding: 10pt 14pt; margin: 8pt 0; }
-@media print {
-  .no-print { display: none !important; }
-}
-`;
+</style></head>
+<body><div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">google</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">california</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:28pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Partners Name &amp; Father Name</th><th style="font-size:10pt;">Address</th><th style="width:115pt;font-size:10pt;">Photo</th><th style="width:120pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody><tr><td style="text-align:center;">1.</td><td><b>Munimadugu Vighnesh Prasad, S/o murali krishna</b></td><td>78-112 krishna nagar kurnool
+beside sri devi mla house near dolphin bakery kurnool</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:85pt;height:105pt;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:115pt;"><div style="border:1px dashed #bbb;width:90pt;height:50pt;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr><tr><td style="text-align:center;">2.</td><td><b>p sanjay, S/o p davis</b></td><td>nandyal checkpost</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:85pt;height:105pt;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:115pt;"><div style="border:1px dashed #bbb;width:90pt;height:50pt;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr></tbody></table>
+</div>
+<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">google</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">california</div>
+<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:28pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Witness Name</th><th style="font-size:10pt;">Address</th><th style="width:115pt;font-size:10pt;">Photo</th><th style="width:120pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody><tr><td style="text-align:center;">1</td><td><b>Munimadugu Vighnesh Prasad</b></td><td>78-112 krishna nagar kurnool
+beside sri devi mla house near dolphin bakery kurnool</td><td class="photo-cell"><div style="border:1px dashed #bbb;width:85pt;height:105pt;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;">Photo</div></td><td class="photo-cell" style="width:115pt;"><div style="border:1px dashed #bbb;width:90pt;height:50pt;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:8pt;color:#bbb;text-align:center;">Sign &amp; Thumb</div></td></tr></tbody></table></div></body></html>

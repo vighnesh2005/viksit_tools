@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Partnership_Deed_eqwwe</title><style>
+body {
+  font-family: 'Book Antiqua', serif;
+  font-size: 12pt;
+  margin: 1.2in 1in 1in;
+  color: #000;
+  line-height: 1.5;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 6pt;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 13pt;
+  margin: 16pt 0 8pt;
+}
+h3 {
+  font-weight: bold;
+  margin: 14pt 0 6pt;
+}
+p {
+  text-align: justify;
+  margin-bottom: 6pt;
+  line-height: 1.5;
+}
+.sig-line {
+  border-bottom: 1pt solid #000;
+  display: inline-block;
+  width: 160pt;
+  margin-top: 8pt;
+}
+.station-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10pt;
+  font-size: 11pt;
+}
+.decl-block {
+  margin: 12pt 0;
+  border-left: 3pt solid #b8860b;
+  padding-left: 12pt;
+  padding: 8pt 12pt;
+}
+.firm-hdr {
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  margin-bottom: 2pt;
+}
+.firm-addr {
+  text-align: center;
+  font-size: 11pt;
+  margin-bottom: 10pt;
+}
+.photo-cell {
+  width: 130pt;
+  height: 150pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.section-hdr {
+  text-align: center;
+  font-weight: bold;
+  font-size: 11pt;
+  text-transform: uppercase;
+  margin: 18pt 0 10pt;
+}
+.section-sub {
+  font-weight: bold;
+  font-size: 11pt;
+  margin: 14pt 0 8pt;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8pt 0;
+  font-size: 10pt;
+}
+th {
+  font-weight: bold;
+  padding: 4pt 6pt;
+  text-align: left;
+  border: 0.5pt solid #000;
+  font-size: 10pt;
+}
+td {
+  padding: 4pt 6pt;
+  border: 0.5pt solid #000;
+  vertical-align: top;
+  font-size: 10pt;
+}
+ul {
+  margin: 4pt 0 4pt 24pt;
+}
+ul li {
+  margin-bottom: 4pt;
+  text-align: justify;
+}
+ol {
+  margin: 4pt 0 4pt 26pt;
+}
+ol li {
+  margin-bottom: 4pt;
+  text-align: justify;
+}
+.initials-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4pt;
+  margin: 10pt 0;
+  font-size: 10pt;
+}
+.and-sep {
+  text-align: center;
+  font-weight: bold;
+  margin: 6pt 0;
+  font-size: 11pt;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+}
+.deed-place {
+  margin-top: 16pt;
+  text-align: justify;
+  font-style: italic;
+}
+.deed-ol {
+  margin: 4pt 0 4pt 26pt;
+}
+.deed-ol > li {
+  margin-bottom: 8pt;
+}
+.signature-area {
+  margin-top: 24pt;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+.doc-party {
+  margin-bottom: 6pt;
+  padding-left: 8pt;
+  border-left: 2pt solid #b8860b;
+}
+.rules-section h3 {
+  font-size: 11pt;
+  font-weight: bold;
+  margin-top: 12pt;
+  margin-bottom: 4pt;
+}
+.rules-section p {
+  margin-bottom: 5pt;
+  padding-left: 8pt;
+}
+.society-title {
+  text-align: center;
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 2pt;
+}
+.society-sub {
+  text-align: center;
+  font-size: 16pt;
+  font-weight: bold;
+  margin-bottom: 10pt;
+}
+.affidavit-title {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 12pt;
+}
+.form1-title {
+  text-align: center;
+  font-size: 10pt;
+  font-weight: bold;
+  margin-bottom: 2pt;
+}
+.deed-title {
+  text-align: center;
+  font-size: 11pt;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8pt;
+}
+.bold-name {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.sig-block {
+  margin-top: 18pt;
+  text-align: right;
+}
+.empty-line {
+  margin: 6pt 0;
+}
+.itr-box {
+  background: #1a1209;
+  color: #faf7f0;
+  text-align: center;
+  padding: 24pt;
+  margin: 14pt 0;
+}
+.itr-box h1 {
+  color: #faf7f0;
+  margin: 0;
+  border: none;
+  font-size: 24pt;
+}
+.alert-crit {
+  background: #fdf0f0;
+  border-left: 4pt solid #8b2020;
+  padding: 6pt 10pt;
+  margin: 4pt 0;
+  font-size: 10.5pt;
+}
+.alert-ok {
+  background: #f0f7f0;
+  border-left: 4pt solid #2c4a1e;
+  padding: 6pt 10pt;
+  margin: 4pt 0;
+  font-size: 10.5pt;
+}
+.scope-box {
+  border: 1pt solid #d6c9a0;
+  padding: 10pt 14pt;
+  margin: 8pt 0;
+}
+.score-pill {
+  display: inline-block;
+  padding: 3pt 10pt;
+  border-radius: 12pt;
+  font-weight: bold;
+  font-size: 10pt;
+}
+</style></head>
+<body><div><div class="deed-title">PARTNERSHIP DEED</div>
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin-bottom:6pt;">This Partnership Deed is entered and executed on this NaN<sup>th</sup> day of undefined NaN out of free will and mutual consent by and between:</p>
+<div class="doc-party">• <b>213232231</b>, <b>S/o 21322321</b>, aged <b>232</b> years, residing at fddfsdfs (Aadhar: 23213123123132)<br>(Hereinafter referred as the party of the First part)</div><div class="and-sep">AND</div><div class="doc-party">• <b>dsfdsfd12</b>, <b>S/o dsfwfrw</b>, aged <b>32</b> years, residing at fweerewrww (Aadhar: 23213123213123)<br>(Hereinafter referred as the party of the Second part)</div>
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin-bottom:6pt;">All two Parties herein called parties of the First, Second as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"eqwwe"</b> to qwwqq.</p>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4pt;margin:10pt 0;font-size:10pt;">1. 213232231&nbsp;&nbsp;&nbsp;&nbsp;2. dsfdsfd12</div>
+
+<div>
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;margin:16pt 0 6pt;"><b>Now this deed witness is as follows: —</b></p>
+<ol style="font-family:'Book Antiqua',serif;font-size:11pt;margin:4pt 0 4pt 26pt;">
+<li style="margin-bottom:8pt;"><b>Name and Nature of the Firm:</b> That the business of the Partnership Shall be to qwwqq. The name of the firm shall be <b>eqwwe</b>.</li>
+<li style="margin-bottom:8pt;"><b>Place of Business:</b> The registered office is situated at wqeqweqwe.</li>
+<li style="margin-bottom:8pt;"><b>Date of Commencement:</b> The partnership shall come into effect from the NaNth day of undefined NaN and shall continue till determined or as mutually decided by the partners.</li>
+<li style="margin-bottom:8pt;"><b>Capital Contribution:</b><ol type="i" style="margin-left:22px;margin-top:5px;"><li>Capital shall be contributed by the partners as per the requirement of the business as mutually decided from time to time.</li><li>Interest at the rate of 12% per annum or as prescribed U/s. 40(b)(iv) of the Income Tax Act, 1961 shall be payable to the partners on the amounts standing to their credit, credited at the close of each accounting year.</li></ol></li>
+<li style="margin-bottom:8pt;"><b>Books of Accounts:</b> Proper Books of Accounts shall be maintained by the Working Partners <b>213232231</b>. All records shall be kept at the Principal Place of Business and shall be open for inspection by all partners. Accounts shall be closed on 31st March every year.</li>
+<li style="margin-bottom:8pt;"><b>Remuneration:</b> The Remuneration payable to the Working Partners as decided by all the Partners from time to time and not to exceed the maximum permissible limit U/s. 40(b) of the Income-tax Act, 1961 as Amended from time to time.</li>
+</ol>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4pt;margin:10pt 0;font-size:10pt;">1. 213232231&nbsp;&nbsp;&nbsp;&nbsp;2. dsfdsfd12</div>
+<ol style="font-family:'Book Antiqua',serif;font-size:11pt;margin:4pt 0 4pt 26pt;" start="7">
+<li style="margin-bottom:8pt;"><b>Profit / Loss:</b><ol type="i" style="margin-left:22px;margin-top:5px;"><li>Profit and Loss shall be ascertained after deducting all expenses, charges and providing for such reserves as the partners may think fit.</li><li>Profit and Losses shall be shared in the following ratios:<br><br><b>1. <b>213232231</b> — <b>43%</b>&nbsp;&nbsp;&nbsp;2. <b>dsfdsfd12</b> — <b>57%</b></b></li></ol></li>
+<li style="margin-bottom:8pt;"><b>Working Partners:</b> Party of the First Part namely <b>213232231</b> shall be the working partner(s) and shall take an active part in day-to-day conduct of the business affairs.</li>
+<li style="margin-bottom:8pt;"><b>Operation of Bank Accounts:</b> Bank accounts shall be established in the name of the firm. Any one of the partners is individually authorized to manage and operate the bank accounts of the firm.</li>
+<li style="margin-bottom:8pt;"><b>Advances and Loans:</b> Any one of the partners is authorized individually to raise any loans and advances on behalf of the firm from any Nationalized Banks or Financial Institutions.</li>
+<li style="margin-bottom:8pt;"><b>Contracts:</b> All business contracts shall be made in the name of the Firm namely <b>"eqwwe"</b>.</li>
+<li style="margin-bottom:8pt;"><b>Duration:</b> The Duration of the Partnership Business shall be at will.</li>
+<li style="margin-bottom:8pt;"><b>Death:</b> In the event of the demise of any partner, the eldest male child or, alternatively, the spouse or other legal heir shall step into the shoes of the deceased as a partner, to which the surviving partners shall have no objection.</li>
+</ol>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4pt;margin:10pt 0;font-size:10pt;">1. 213232231&nbsp;&nbsp;&nbsp;&nbsp;2. dsfdsfd12</div>
+<ol style="font-family:'Book Antiqua',serif;font-size:11pt;margin:4pt 0 4pt 26pt;" start="14">
+<li style="margin-bottom:8pt;"><b>Disputes:</b> Any disputes arising between the parties shall be resolved through arbitration under the Indian Arbitration Act of 1940.</li>
+<li style="margin-bottom:8pt;"><b>Retirement:</b> Partners are at liberty to retire by giving at least 30 days' notice. The retiring partner is not entitled to any share in the Goodwill.</li>
+<li style="margin-bottom:8pt;"><b>Amendments:</b> Any terms may be altered with mutual consent of all parties. The Indian Partnership Act, 1932 shall apply to matters not expressly provided herein.</li>
+<li style="margin-bottom:8pt;"><b>Drawings:</b> Partners may withdraw capital only with others' consent but may freely draw their share of profits credited to their accounts annually.</li>
+<li style="margin-bottom:8pt;"><b>Dissolution:</b> The Partnership is at will and may be dissolved by mutual decision. On dissolution, net assets excluding goodwill shall be shared after adjusting excess investments.</li>
+</ol></div>
+
+<div>
+<p style="font-family:'Book Antiqua',serif;font-size:11pt;text-align:justify;font-style:italic;margin-top:16pt;">In witness whereof the said partners put their hands to this deed of partnership at 3212wqqwe.</p>
+<table style="margin-top:16pt;font-size:11pt;"><tr>
+  <td style="width:50%;font-size:11pt;"><b>Signature of the Witnesses:</b><br><br><div style="margin-bottom:14px;">1. ewqewe<br>ewqw<br>12332<br>(Aadhar: ew32123122312)</div></td>
+  <td style="width:50%;font-size:11pt;"><b>Signature of the Partners:</b><br><br><div style="margin-bottom:22pt;">1. <span style="margin-left:8pt;">213232231</span><br><span style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></span></div><div style="margin-bottom:22pt;">2. <span style="margin-left:8pt;">dsfdsfd12</span><br><span style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></span></div></td>
+</tr></table></div></body></html>

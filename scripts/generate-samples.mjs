@@ -8,7 +8,7 @@ import { DATA } from './dummy-data.mjs';
 const PORT = 3456;
 const BASE = `http://localhost:${PORT}`;
 const OUT = join(process.cwd(), 'samples');
-const BASE_STYLES = `body{font-family:'Book Antiqua',serif;font-size:12pt;margin:1.2in 1in 1in;color:#000;line-height:1.5;}
+const BASE_STYLES = `body{font-family:'Book Antiqua',serif;font-size:12pt;margin:1in;color:#000;line-height:1.5;}
 h1,h2{text-align:center;font-weight:bold;}
 h1{margin:0 0 6pt;}h2{font-size:13pt;margin:16pt 0 8pt;}
 h3{font-weight:bold;margin:14pt 0 6pt;}
