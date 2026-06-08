@@ -43,9 +43,9 @@ p {
 }
 .decl-block {
   margin: 12pt 0;
-  border-left: 3pt solid #b8860b;
+  border-left: 2pt solid #000;
   padding-left: 12pt;
-  padding: 8pt 12pt;
+  padding: 8pt 0;
 }
 .firm-hdr {
   text-align: center;
@@ -100,6 +100,9 @@ td {
   word-break: break-word;
   font-size: 10pt;
 }
+tr {
+  page-break-inside: avoid;
+}
 ul {
   margin: 4pt 0 4pt 24pt;
 }
@@ -151,7 +154,7 @@ ol li {
 .doc-party {
   margin-bottom: 6pt;
   padding-left: 8pt;
-  border-left: 2pt solid #b8860b;
+  border-left: 2pt solid #000;
 }
 .rules-section h3 {
   font-size: 11pt;
@@ -215,34 +218,33 @@ ol li {
   margin: 6pt 0;
 }
 .itr-box {
-  background: #1a1209;
-  color: #faf7f0;
+  border: 2pt solid #000;
+  color: #000;
   text-align: center;
   padding: 24pt;
   margin: 14pt 0;
 }
 .itr-box h1 {
-  color: #faf7f0;
+  color: #000;
   margin: 0;
   border: none;
   font-size: 24pt;
 }
 .alert-crit {
-  background: #fdf0f0;
-  border-left: 4pt solid #8b2020;
+  border-left: 3pt solid #000;
   padding: 6pt 10pt;
   margin: 4pt 0;
   font-size: 10.5pt;
+  font-weight: bold;
 }
 .alert-ok {
-  background: #f0f7f0;
-  border-left: 4pt solid #2c4a1e;
+  border-left: 3pt solid #000;
   padding: 6pt 10pt;
   margin: 4pt 0;
   font-size: 10.5pt;
 }
 .scope-box {
-  border: 1pt solid #d6c9a0;
+  border: 1pt solid #000;
   padding: 10pt 14pt;
   margin: 8pt 0;
 }
@@ -270,14 +272,15 @@ export const DOC_PREVIEW_STYLES = `
 .doc-content h2 { text-align: center; font-weight: bold; font-size: 13pt; margin: 16pt 0 8pt; }
 .doc-content p { text-align: justify; margin-bottom: 6pt; line-height: 1.5; }
 .doc-content table { width: 95%; max-width: 100%; border-collapse: collapse; margin: 8pt auto; font-size: 10pt; }
+.doc-content tr { page-break-inside: avoid; }
 .doc-content th { font-weight: bold; padding: 4pt 6pt; text-align: left; border: 0.5pt solid #000; font-size: 10pt; }
 .doc-content td { padding: 4pt 6pt; border: 0.5pt solid #000; vertical-align: top; font-size: 10pt; word-break: break-word; }
 .doc-content ul { margin: 4pt 0 4pt 24pt; }
 .doc-content ul li { margin-bottom: 4pt; text-align: justify; }
 .doc-content ol { margin: 4pt 0 4pt 26pt; }
 .doc-content ol li { margin-bottom: 4pt; text-align: justify; }
-.doc-content .section-hdr { text-align: center; font-weight: bold; font-size: 11pt; text-transform: uppercase; margin: 18pt 0 10pt; }
-.doc-content .section-sub { font-weight: bold; font-size: 11pt; margin: 14pt 0 8pt; }
+.doc-content .section-hdr { text-align: center; font-weight: bold; font-size: 12pt; text-transform: uppercase; margin: 18pt 0 10pt; border-bottom: 1pt solid #000; padding-bottom: 4pt; }
+.doc-content .section-sub { font-weight: bold; font-size: 11pt; margin: 14pt 0 8pt; text-decoration: underline; }
 .doc-content .firm-hdr { text-align: center; font-size: 14pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5pt; margin-bottom: 2pt; }
 .doc-content .firm-addr { text-align: center; font-size: 11pt; margin-bottom: 10pt; }
 .doc-content .sig-line { border-bottom: 1pt solid #000; display: inline-block; width: 160pt; margin-top: 8pt; }
@@ -288,16 +291,16 @@ export const DOC_PREVIEW_STYLES = `
 .doc-content .deed-ol { margin: 4pt 0 4pt 26pt; }
 .doc-content .deed-ol > li { margin-bottom: 8pt; }
 .doc-content .photo-cell { width: 105pt; height: 125pt; text-align: center; vertical-align: middle; }
-.doc-content .decl-block { margin: 12pt 0; border-left: 3pt solid #b8860b; padding-left: 12pt; padding: 8pt 12pt; }
+.doc-content .decl-block { margin: 12pt 0; border-left: 2pt solid #000; padding-left: 12pt; padding: 8pt 0; }
 .doc-content .signature-area { margin-top: 24pt; display: flex; justify-content: flex-end; text-align: right; }
-.doc-content .doc-party { margin-bottom: 6pt; padding-left: 8pt; border-left: 2pt solid #b8860b; }
+.doc-content .doc-party { margin-bottom: 6pt; padding-left: 8pt; border-left: 2pt solid #000; }
 .doc-content .society-title { text-align: center; font-size: 18pt; font-weight: bold; margin-bottom: 2pt; }
 .doc-content .society-sub { text-align: center; font-size: 16pt; font-weight: bold; margin-bottom: 10pt; }
 .doc-content .affidavit-title { text-align: center; font-size: 20pt; font-weight: bold; text-decoration: underline; margin-bottom: 12pt; }
 .doc-content .form1-title { text-align: center; font-size: 10pt; font-weight: bold; margin-bottom: 2pt; }
 .doc-content .deed-title { text-align: center; font-size: 11pt; font-weight: bold; text-decoration: underline; margin-bottom: 8pt; }
-.doc-content .itr-box { background: #1a1209; color: #faf7f0; text-align: center; padding: 24pt; margin: 14pt 0; }
-.doc-content .itr-box h1 { color: #faf7f0; margin: 0; border: none; font-size: 24pt; }
+.doc-content .itr-box { border: 2pt solid #000; color: #000; text-align: center; padding: 24pt; margin: 14pt 0; }
+.doc-content .itr-box h1 { color: #000; margin: 0; border: none; font-size: 24pt; }
 .doc-content .alert-crit { background: #fdf0f0; border-left: 4pt solid #8b2020; padding: 6pt 10pt; margin: 4pt 0; font-size: 10.5pt; }
 .doc-content .alert-ok { background: #f0f7f0; border-left: 4pt solid #2c4a1e; padding: 6pt 10pt; margin: 4pt 0; font-size: 10.5pt; }
 .doc-content .scope-box { border: 1pt solid #d6c9a0; padding: 10pt 14pt; margin: 8pt 0; }
