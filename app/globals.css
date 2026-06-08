@@ -34,13 +34,13 @@ body {
   font-size: 12pt;
   line-height: 1.85;
   color: #000;
-  padding: 1in;
+  padding: 0.4in;
 }
 .doc-content h1 { text-align: center; font-size: 16pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1pt; margin: 0 0 18pt; padding-bottom: 6pt; border-bottom: 2.5pt solid #1a1209; }
 .doc-content h2 { text-align: center; font-size: 13pt; font-weight: bold; margin: 20pt 0 10pt; text-transform: uppercase; letter-spacing: 0.5pt; padding-bottom: 4pt; border-bottom: 1pt solid #b8860b; }
 .doc-content h3 { font-size: 12pt; font-weight: bold; margin: 16pt 0 8pt; }
 .doc-content p { text-align: justify; margin-bottom: 8pt; line-height: 1.65; }
-.doc-content table { width: 100%; border-collapse: collapse; margin: 10pt 0; font-size: 10.5pt; table-layout: fixed; }
+.doc-content table { width: 95%; max-width: 100%; border-collapse: collapse; margin: 10pt auto; font-size: 10.5pt; }
 .doc-content table th { background: #1a1209; color: #faf7f0; padding: 5pt 8pt; font-size: 10pt; text-align: left; text-transform: uppercase; letter-spacing: 0.3pt; }
 .doc-content table td { padding: 5pt 8pt; border: 0.5pt solid #ccc; vertical-align: top; word-break: break-word; }
 .doc-content table tr:nth-child(even) td { background: #faf7f0; }

@@ -1,8 +1,11 @@
 const DOC_STYLES = `
+@page {
+  margin: 0.4in;
+}
 body {
   font-family: 'Book Antiqua', serif;
   font-size: 12pt;
-  margin: 1in;
+  margin: 0.4in;
   color: #000;
   line-height: 1.5;
 }
@@ -77,11 +80,11 @@ p {
   margin: 14pt 0 8pt;
 }
 table {
-  width: 100%;
+  width: 95%;
+  max-width: 100%;
   border-collapse: collapse;
-  margin: 8pt 0;
+  margin: 8pt auto;
   font-size: 10pt;
-  table-layout: fixed;
 }
 th {
   font-weight: bold;
@@ -261,12 +264,12 @@ export const DOC_PREVIEW_STYLES = `
   font-size: 12pt;
   line-height: 1.5;
   color: #000;
-  padding: 1in;
+  padding: 0.4in;
 }
 .doc-content h1 { text-align: center; font-weight: bold; margin: 0 0 6pt; }
 .doc-content h2 { text-align: center; font-weight: bold; font-size: 13pt; margin: 16pt 0 8pt; }
 .doc-content p { text-align: justify; margin-bottom: 6pt; line-height: 1.5; }
-.doc-content table { width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 10pt; table-layout: fixed; }
+.doc-content table { width: 95%; max-width: 100%; border-collapse: collapse; margin: 8pt auto; font-size: 10pt; }
 .doc-content th { font-weight: bold; padding: 4pt 6pt; text-align: left; border: 0.5pt solid #000; font-size: 10pt; }
 .doc-content td { padding: 4pt 6pt; border: 0.5pt solid #000; vertical-align: top; font-size: 10pt; word-break: break-word; }
 .doc-content ul { margin: 4pt 0 4pt 24pt; }
