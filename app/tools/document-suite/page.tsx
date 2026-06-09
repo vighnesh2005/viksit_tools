@@ -475,28 +475,23 @@ function SocietyModule() {
     const html = `<div><div style="text-align:center;font-size:13pt;font-weight:bold;font-family:'Bookman Old Style',serif;">MEMORANDUM OF ASSOCIATION OF</div>
 <div style="text-align:center;font-size:15pt;font-weight:bold;margin-bottom:2pt;font-family:'Bookman Old Style',serif;">${common.name}</div>
 <div style="text-align:center;font-size:13pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${common.addr}</div>
-<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">1. Name of the Society</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.name}</p>
-<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">2. Office Address</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.addr}</p>
-<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">3. Aims and Objectives</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;margin-bottom:6pt;"><b>Name of the Society:</b> ${common.name}</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;margin-bottom:6pt;"><b>Office Address:</b> ${common.addr}</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Aims And Objectives:</div>
 <ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${aimItems}</ul>
-<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">4. Governing Body</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>Governing Body:</b> We the following mentioned persons in memorandum of Society have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under, the Societies Registration Act 35 of 2001.</p>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father / Husband Name</th><th style="font-size:13pt;">Address</th><th style="font-size:13pt;">Age</th><th style="font-size:13pt;">Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
 <div><div style="text-align:center;font-size:15pt;font-weight:bold;text-decoration:underline;margin:16pt 0 8pt;font-family:'Bookman Old Style',serif;">DECLARATION</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">We the undersigned desirous to form a committee and get it registered under the society's registration act 35 of 2001.</p>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father / Husband Name</th><th style="font-size:13pt;">Designation</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${dRows}</tbody></table>
-<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Signatures of Witnesses and Their Addresses</div>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Signatures Of Witnesses and Their Addresses</div>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="width:46pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Name, Father/Husband Name &amp; Address</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${wRows}</tbody></table>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
 <div><div style="text-align:center;font-size:13pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Bookman Old Style',serif;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
 <div style="text-align:center;font-size:13pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${common.addr}</div>
-<div style="font-weight:bold;font-size:14pt;margin:12pt 0 4pt;font-family:'Bookman Old Style',serif;">Name of the Society</div><p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.name}</p>
-<div style="font-weight:bold;font-size:14pt;margin:12pt 0 4pt;font-family:'Bookman Old Style',serif;">Office Address</div><p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.addr}</p>
-<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Area of Operation</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The area of operation of this ${common.name} shall be ${common.area}.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>Name of the Society:</b> ${common.name}</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>Office Address:</b> ${common.addr}</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>Area of Operation:</b> The area of operation of this ${common.name} shall be ${common.area}.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">4.1. Membership of the Society</div>
 <ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">All the persons who are Indian Nationals and above the Age of 18 Years and are of sound Mind and are eligible to the Members of the Society. Their Membership shall be approved By the Executive Committee on acceptance of Rs.${common.admissionFee}/- as an admission Fee and a Monthly Subscription of Rs.${common.monthlySub}/- each. All subscriptions shall be paid every year i.e., before closing the financial year.</li>
@@ -532,14 +527,15 @@ function SocietyModule() {
 <li style="margin-bottom:4pt;">It  shall  do  such  other  things  as  to  promote  the  cause  of  development  of  people.</li>
 <li style="margin-bottom:4pt;">It  shall  make  rules  and  regulations  as  it  thinks  fit  for  the  efficient  management  of  the  affairs  of  the  Society.</li>
 <li style="margin-bottom:4pt;">It  shall  give  notice  to  all  General  Body  members  15  days  in  advance  specifying  the  Venue, Agenda, and  time  of  meeting  of  the  General  Body  Meeting .</li>
-</ul>
-<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">It  shall  exercise  direct  control  over  the  following</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">It  shall  exercise  direct  control  over  the  following:
+<ul style="padding-left:16pt;margin-top:4pt;">
 <li style="margin-bottom:4pt;">Personal working in Society administration and discipline.</li>
 <li style="margin-bottom:4pt;">Finance, Establishment and Records.</li>
 <li style="margin-bottom:4pt;">Transport, Equipment, Machinery and stores.</li>
 <li style="margin-bottom:4pt;">Buildings and Contributions.</li>
 <li style="margin-bottom:4pt;">All movable and Immovable properties.</li>
+</ul>
+</li>
 <li style="margin-bottom:4pt;">The  Executive  body  may  appoint  from  among  themselves  or from outsiders  other  officers  for  the  efficient  better  management  of  the  organization  and  fix  their  remuneration.</li>
 <li style="margin-bottom:4pt;">The  Managing  Committee  can  reserve  for  itself  the   right  to  admit  or   not  to  admit  a  person  who  applies  for  membership.</li>
 </ul>
