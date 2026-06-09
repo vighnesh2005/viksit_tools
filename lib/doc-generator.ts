@@ -4,7 +4,9 @@ import * as htmlDocx from 'html-docx-js/dist/html-docx';
 
 export function downloadDoc(htmlContent: string, filename: string) {
   const wrapped = `<!DOCTYPE html>
-<html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
 <head><meta charset="utf-8"><title>${filename}</title><style>${DOC_STYLES}</style></head>
 <body>${htmlContent}</body></html>`;
 
@@ -12,7 +14,7 @@ export function downloadDoc(htmlContent: string, filename: string) {
   const converter = (htmlDocx as any).default || htmlDocx;
   
   const converted = converter.asBlob(wrapped, { 
-    margins: { top: 1440, right: 1440, bottom: 1440, left: 1440 } 
+    margins: { top: 1080, right: 1080, bottom: 1080, left: 1080 } 
   });
 
   const url = URL.createObjectURL(converted);

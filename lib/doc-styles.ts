@@ -1,13 +1,14 @@
 const DOC_STYLES = `
-@page {
-  margin: 0.4in;
-}
+
 body {
   font-family: 'Bookman Old Style', serif;
   font-size: 13pt;
-  margin: 0.4in;
   color: #000;
   line-height: 1.5;
+  mso-line-height-rule: exactly;
+  mso-para-margin: 0in;
+  mso-para-margin-bottom: .0001pt;
+  mso-pagination: widow-orphan;
 }
 h1 {
   text-align: center;
@@ -30,6 +31,7 @@ p {
   text-align: justify;
   margin-bottom: 6pt;
   line-height: 1.5;
+  mso-line-height-rule: exactly;
 }
 .sig-line {
   border-bottom: 1pt solid #000;
@@ -87,6 +89,8 @@ table {
   border-collapse: collapse;
   margin: 8pt auto;
   font-size: 10pt;
+  mso-table-overlap: never;
+  mso-table-layout-alt: fixed;
 }
 th {
   font-weight: bold;
@@ -99,7 +103,8 @@ td {
   padding: 4pt 6pt;
   border: 0.5pt solid #000;
   vertical-align: top;
-  word-break: break-word;
+  word-break: normal;
+  mso-word-break: break-all;
   font-size: 10pt;
 }
 tr {

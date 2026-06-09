@@ -1,0 +1,805 @@
+<w:bottom w:val="single" w:sz="6" w:space="6" w:color="156082" w:themeColor="accent1"/></w:pBdr><w:spacing w:after="240"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsiaTheme="majorEastAsia" w:hAnsi="Book Antiqua" w:cstheme="majorBidi"/><w:b/><w:bCs/><w:caps/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr></w:pPr><w:r w:rsidRPr="00BB189A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsiaTheme="majorEastAsia" w:hAnsi="Book Antiqua" w:cstheme="majorBidi"/><w:b/><w:bCs/><w:caps/><w:sz w:val="36"/><w:szCs w:val="36"/></w:rPr>Lakshmi Narasimha Social Service Society
+D.no: 
+24/407
+,
+Kowdal
+ Pet
+,
+    
+Revenue Ward No. 
+24
+,
+Adoni
+Kurnool District,
+Andhra Pradesh-518
+3
+01.
+( Registered under societies Registration Act 35 of 2001)
+President
+ RAICHUR UMAMAHESWARI
+W/O K Veerabhadra Achari, 
+H.no: 50/753/1A1, Tagore Nagar, 
+Maddur
+ Nagar,
+ 
+Kallur
+ 
+Mandal,Kurnool
+, 
+Andhra Pradesh - 518002
+<w:p w14:paraId="76E15E96" w14:textId="5F3DB079" w:rsidR="00C16A0A" w:rsidRDefault="00C16A0A"><w:pPr><w:pStyle w:val="NoSpacing"/><w:jc w:val="center"/><w:rPr><w:color w:val="156082" w:themeColor="accent1"/></w:rPr></w:pPr></w:p></w:txbxContent></wps:txbx><wps:bodyPr rot="0" spcFirstLastPara="0" vertOverflow="overflow" horzOverflow="overflow" vert="horz" wrap="square" lIns="0" tIns="0" rIns="0" bIns="0" numCol="1" spcCol="0" rtlCol="0" fromWordArt="0" anchor="b" anchorCtr="0" forceAA="0" compatLnSpc="1"><a:prstTxWarp prst="textNoShape"><a:avLst/></a:prstTxWarp><a:spAutoFit/></wps:bodyPr></wps:wsp></a:graphicData></a:graphic><wp14:sizeRelH relativeFrom="margin"><wp14:pctWidth>100000</wp14:pctWidth></wp14:sizeRelH><wp14:sizeRelV relativeFrom="margin"><wp14:pctHeight>0</wp14:pctHeight></wp14:sizeRelV></wp:anchor></w:drawing></mc:Choice><mc:Fallback><w:pict><v:shapetype w14:anchorId="230E5944" id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><v:stroke joinstyle="miter"/><v:path gradientshapeok="t" o:connecttype="rect"/></v:shapetype><v:shape id="Text Box 146" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:0;margin-top:703.8pt;width:516pt;height:43.9pt;z-index:251664384;visibility:visible;mso-wrap-style:square;mso-width-percent:1000;mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;mso-position-vertical:absolute;mso-position-vertical-relative:page;mso-width-percent:1000;mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:bottom" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF&#xA;90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA&#xA;0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD&#xA;OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893&#xA;SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y&#xA;JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl&#xA;bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR&#xA;JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY&#xA;22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i&#xA;OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA&#xA;IQBVZKhcXQIAAC0FAAAOAAAAZHJzL2Uyb0RvYy54bWysVN9v2jAQfp+0/8Hy+wgU0U2IUDEqpkmo&#xA;rUanPhvHhmiOzzsbEvbX7+wkULG9dNqLc/H9/u47z+6ayrCjQl+CzfloMORMWQlFaXc5//68+vCJ&#xA;Mx+ELYQBq3J+Up7fzd+/m9Vuqm5gD6ZQyCiI9dPa5XwfgptmmZd7VQk/AKcsKTVgJQL94i4rUNQU&#xA;vTLZzXB4m9WAhUOQynu6vW+VfJ7ia61keNTaq8BMzqm2kE5M5zae2XwmpjsUbl/KrgzxD1VUorSU&#xA;9BzqXgTBDlj+EaoqJYIHHQYSqgy0LqVKPVA3o+FVN5u9cCr1QuB4d4bJ/7+w8uG4cU/IQvMZGhpg&#xA;BKR2furpMvbTaKzilyplpCcIT2fYVBOYpMvbyWRMs+BMkm4y+TgZJ1yzi7dDH74oqFgUco40loSW&#xA;OK59oIxk2pvEZBZWpTFpNMaymjKMJ8PkcNaQh7HRVqUhd2EulScpnIyKNsZ+U5qVRWogXiR6qaVB&#xA;dhREDCGlsiH1nuKSdbTSVMRbHDv7S1VvcW776DODDWfnqrSAqfursosffcm6tScgX/UdxdBsm26i&#xA;WyhONGiEdge8k6uSprEWPjwJJNLTAGmRwyMd2gChDp3E2R7w19/uoz1xkbSc1bREOfc/DwIVZ+ar&#xA;JZbGjesF7IVtL9hDtQSCf0RPhJNJJAcMphc1QvVC+72IWUglrKRcOd/24jK0q0zvg1SLRTKivXIi&#xA;rO3GyRg6TiNy67l5Eeg6Agai7gP06yWmVzxsbRNR3OIQiI2JpBHQFsUOaNrJxN3u/YhL//o/WV1e&#xA;uflvAAAA//8DAFBLAwQUAAYACAAAACEA4nm35OAAAAALAQAADwAAAGRycy9kb3ducmV2LnhtbEyP&#xA;wU7DMBBE70j8g7VIXBC1KaWBEKdCqBwQEoLCAW5OvCRR43UUu63h69mc4LhvRrMzxSq5XuxxDJ0n&#xA;DRczBQKp9rajRsP728P5NYgQDVnTe0IN3xhgVR4fFSa3/kCvuN/ERnAIhdxoaGMccilD3aIzYeYH&#xA;JNa+/OhM5HNspB3NgcNdL+dKLaUzHfGH1gx432K93eychsfw9BPadfp4ec7W1VmV2e1nilqfnqS7&#xA;WxARU/wzw1Sfq0PJnSq/IxtEr4GHRKYLlS1BTLq6nDOrJnZztQBZFvL/hvIXAAD//wMAUEsBAi0A&#xA;FAAGAAgAAAAhALaDOJL+AAAA4QEAABMAAAAAAAAAAAAAAAAAAAAAAFtDb250ZW50X1R5cGVzXS54&#xA;bWxQSwECLQAUAAYACAAAACEAOP0h/9YAAACUAQAACwAAAAAAAAAAAAAAAAAvAQAAX3JlbHMvLnJl&#xA;bHNQSwECLQAUAAYACAAAACEAVWSoXF0CAAAtBQAADgAAAAAAAAAAAAAAAAAuAgAAZHJzL2Uyb0Rv&#xA;Yy54bWxQSwECLQAUAAYACAAAACEA4nm35OAAAAALAQAADwAAAAAAAAAAAAAAAAC3BAAAZHJzL2Rv&#xA;d25yZXYueG1sUEsFBgAAAAAEAAQA8wAAAMQFAAAAAA==&#xA;" filled="f" stroked="f" strokeweight=".5pt"><v:textbox style="mso-fit-shape-to-text:t" inset="0,0,0,0"><w:p w14:paraId="76E15E96" w14:textId="5F3DB079" w:rsidR="00C16A0A" w:rsidRDefault="00C16A0A"><w:pPr><w:pStyle w:val="NoSpacing"/><w:jc w:val="center"/><w:rPr><w:color w:val="156082" w:themeColor="accent1"/></w:rPr></w:pPr></w:p></w:txbxContent></v:textbox><w10:wrap anchorx="margin" anchory="page"/></v:shape></w:pict></mc:Fallback></mc:AlternateContent></w:r><w:r w:rsidR="00C16A0A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr><w:br w:type="page"/></w:r></w:p></w:sdtContent></w:sdt><w:p w14:paraId="164D07FE" w14:textId="035BC718" w:rsidR="00C66727" w:rsidRPr="006C02D3" w:rsidRDefault="00C66727" w:rsidP="006C02D3"><w:pPr><w:spacing w:after="0"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="006C02D3"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr><w:lastRenderedPageBreak/>To
+The District Registrar 
+o
+f Assurances,
+The District Registrar Office
+,
+Kurnool
+.
+Respected Sir,
+           I am here with enclosing a Memorandum and of the Rules and Regulations of 
+“
+LAKSHMI NARASIMHA
+ SOCIAL SERVICE SOCIETY
+”, Office Address: 
+D.no: 24/407
+, 
+Kowdal
+ Pet, Revenue Ward No. 24, Adoni, 
+Kurnool, Andhra Pradesh
+- 518301,
+ registration under the Societies Registration Act 35 of 2001. I request that this may kindly be registered under the above said act and issue a necessary certificate of Registration to me. The necessary fee for its registration will be paid in person.
+Submitted for necessary action
+Thanking you Sir,
+Yours faithfully,
+PRESIDENT
+P
+lace
+: K
+urnool
+D
+ate
+:
+ 
+02
+-0
+4
+-202
+6
+Encl
+osed
+: All members I.D Proofs with photos
+        
+          
+Affidavits – attested by the Notary.
+COPY OF RESOLUTION DATE:
+                                                 
+We the undersigned resolved to form a Society by name 
+“
+LAKSHMI NARASIMHA
+ SOCIAL SERVICE SOCIETY
+”, Office Address
+ D.no: 24/407
+, 
+Kowdal
+ Pet, Revenue Ward No. 24, Adoni, 
+Kurnool, Andhra Pradesh
+- 518301 
+and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorized the 
+PRESIDENT- 
+RAICHUR UMAMAHESWARI
+ W/o 
+K VEERABHADRA ACHARI
+ of the said Association to present the document in the Registrar’s Office, Kurnool and get it registered under the above said Act and receive the necessary certificate.
+P
+lace: Kurnool
+D
+ate
+:
+ 
+02
+-0
+4
+-202
+6
+PRESIDENT
+Bye laws
+ID Proofs
+Affidavit 
+   
+MEMORANDUM OF ASSOCIATION OF
+  
+LAKSHMI NARASIMHA SOCIAL SERVICE SOCIETY
+D.no: 24/407, 
+Kowdal
+ Pet, Revenue Ward No. 24, Adoni, Kurnool, Andhra Pradesh- 518301
+Name of the Society
+: 
+LAKSHMI NARASIMHA
+ SOCIAL SERVICE SOCIETY
+</w:tabs><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr>Office Address
+ 
+D.no: 24/407, 
+Kowdal
+ Pet, Revenue Ward No. 24, Adoni, Kurnool, Andhra Pradesh- 518301
+</w:tabs><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr>Aims And Objectives
+:  
+Providing food, education, healthcare, and emotional support to orphaned children to help them to lead a better life.
+Promoting education, healthcare, and employment opportunities for Poor communities to improve their living conditions.
+Conducting skill development programs and create job opportunities for women to help them become self-reliant.
+Organizing awareness programs and self-defence training sessions to ensure the safety and security of girls.
+Providing free education books and learning materials to children from poor backgrounds.
+Offering free medical check-ups, health camps, and awareness programs for children, women, and the elderly.
+Providing counselling services and emotional support for orphans, women facing abuse, and elderly people.
+Promoting tree plantation drives, waste management programs, and awareness about protecting nature.
+Working on projects that provide clean drinking water to remote areas and educate people about water conservation.
+Conducting seminars, workshops, and campaigns on child rights, gender equality, and environmental safety.
+Governing Body:
+  We the following mentioned persons in memorandum of Society have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under, the Societies Registration Act 35 of 2001.
+</w:tblPr><w:gridCol w:w="712"/><w:gridCol w:w="2025"/><w:gridCol w:w="2225"/><w:gridCol w:w="2705"/><w:gridCol w:w="1126"/><w:gridCol w:w="1575"/></w:tblGrid></w:trPr></w:tcPr><w:p w14:paraId="72374419" w14:textId="4717E10B" w:rsidR="00922DB1" w:rsidRPr="008B52EF" w:rsidRDefault="00922DB1" w:rsidP="00AF3225"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr><w:lastRenderedPageBreak/>S.no
+</w:tcPr><w:p w14:paraId="4D3C753B" w14:textId="69C2A3ED" w:rsidR="00922DB1" w:rsidRPr="008B52EF" w:rsidRDefault="00922DB1" w:rsidP="00AF3225"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Name
+</w:tcPr><w:p w14:paraId="236A45E8" w14:textId="764737E7" w:rsidR="00922DB1" w:rsidRPr="008B52EF" w:rsidRDefault="00922DB1" w:rsidP="00AF3225"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Father /Husband Name
+</w:tcPr><w:p w14:paraId="48580B9B" w14:textId="5E710545" w:rsidR="00922DB1" w:rsidRPr="008B52EF" w:rsidRDefault="00922DB1" w:rsidP="00AF3225"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Address
+</w:tcPr><w:p w14:paraId="3F089738" w14:textId="3F7FFDEF" w:rsidR="00922DB1" w:rsidRPr="008B52EF" w:rsidRDefault="00922DB1" w:rsidP="00AF3225"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Age
+</w:tcPr><w:p w14:paraId="479E1330" w14:textId="5F55BBC5" w:rsidR="00922DB1" w:rsidRPr="008B52EF" w:rsidRDefault="00922DB1" w:rsidP="00AF3225"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Designation
+</w:trPr></w:tcPr><w:p w14:paraId="089DEE87" w14:textId="77115EA9" w:rsidR="00272F79" w:rsidRPr="008B52EF" w:rsidRDefault="00272F79" w:rsidP="008B52EF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>1
+</w:tcPr><w:p w14:paraId="2DD4614C" w14:textId="78A639F3" w:rsidR="00272F79" w:rsidRPr="008B52EF" w:rsidRDefault="00272F79" w:rsidP="008B52EF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Uma Maheswari
+</w:tcPr><w:p w14:paraId="47A5798D" w14:textId="613739FD" w:rsidR="00272F79" w:rsidRPr="008B52EF" w:rsidRDefault="00272F79" w:rsidP="008B52EF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>W/o 
+K.Veerabhadra
+ Achari
+</w:tcPr><w:p w14:paraId="5725AACA" w14:textId="782CB127" w:rsidR="00272F79" w:rsidRPr="008B52EF" w:rsidRDefault="00272F79" w:rsidP="008B52EF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 50/753/1A1, Tagore Nagar, 
+Maddur
+ Nagar, 
+Kallur
+ Mandal, Kurnool,
+ 
+Andhrapradesh
+- 518002
+</w:tcPr><w:p w14:paraId="3234E101" w14:textId="2A781BD3" w:rsidR="00272F79" w:rsidRPr="008B52EF" w:rsidRDefault="00272F79" w:rsidP="008B52EF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>43 Years
+</w:tcPr><w:p w14:paraId="31A8A17B" w14:textId="37402697" w:rsidR="00272F79" w:rsidRPr="008B52EF" w:rsidRDefault="00272F79" w:rsidP="008B52EF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>President
+</w:trPr></w:tcPr><w:p w14:paraId="33077328" w14:textId="34A6CE43" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>2
+</w:tcPr><w:p w14:paraId="3FD9A298" w14:textId="6C823E22" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>K Veerabhadra Achari
+</w:tcPr><w:p w14:paraId="1B3F6BA0" w14:textId="5B968095" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o K Manohara Achari
+</w:tcPr><w:p w14:paraId="754AECE3" w14:textId="37CFB310" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 50/753/1A1, Tagore Nagar, 
+Maddur
+ Nagar, 
+Kallur
+ Mandal, 
+Kurnool,Andhrapradesh
+- 518002
+</w:tcPr><w:p w14:paraId="6B109AC3" w14:textId="36154BF9" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>39 Years
+</w:tcPr><w:p w14:paraId="770E092C" w14:textId="4C772C22" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Vice President
+</w:trPr></w:tcPr><w:p w14:paraId="65A060E0" w14:textId="1A95A6E2" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>3
+</w:tcPr><w:p w14:paraId="0E3D4FB6" w14:textId="77777777" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>N Tejashree
+</w:tcPr><w:p w14:paraId="32B036DC" w14:textId="6127A061" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>D/O N Sreenivasa Reddy
+</w:tcPr><w:p w14:paraId="7215EF8A" w14:textId="484089F8" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:proofErr w:type="spellStart"/><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.No
+. 3-188, 
+Mudumala
+, C 
+Belagal
+ Mandal, 
+Vtc
+: 
+C.Belagal
+, Po: 
+Mudumala
+, District: Kurnool, State: Andhra Pradesh, Pin Code: 518462
+</w:tcPr><w:p w14:paraId="2D3551F1" w14:textId="6EF9DC09" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>27 Years
+</w:tcPr><w:p w14:paraId="719550FB" w14:textId="0F8AEFCF" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Secretary
+</w:trPr></w:tcPr><w:p w14:paraId="189D11C9" w14:textId="7A2FDF93" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>4
+</w:tcPr><w:p w14:paraId="5CC00CE8" w14:textId="150B4FA6" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Deva 
+R
+aju
+</w:tcPr><w:p w14:paraId="4EBC05A9" w14:textId="49FBB097" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="0771A47C" w14:textId="7D6FC38E" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301.
+</w:tcPr><w:p w14:paraId="1E31F505" w14:textId="478241E0" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>35 Years
+</w:tcPr><w:p w14:paraId="07C39572" w14:textId="77777777" w:rsidR="0088534A" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr></w:p><w:p w14:paraId="7D91855F" w14:textId="003B33A3" w:rsidR="00EF7EDF" w:rsidRPr="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Treasurer
+</w:trPr></w:tcPr><w:p w14:paraId="0BE91DD4" w14:textId="19A10271" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="0088534A" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>5
+</w:tcPr><w:p w14:paraId="092A0D2F" w14:textId="5EF9343F" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Siva 
+R
+aju
+</w:tcPr><w:p w14:paraId="2D487C46" w14:textId="40FA47B4" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="346D7300" w14:textId="6C535CB6" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301.
+</w:tcPr><w:p w14:paraId="50D445BF" w14:textId="1F72F84A" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>41 Years
+</w:tcPr><w:p w14:paraId="7A8492B0" w14:textId="3A2092B7" w:rsidR="0088534A" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="0088534A"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+</w:trPr></w:tcPr><w:p w14:paraId="37297CB1" w14:textId="50E75C3A" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>6
+</w:tcPr><w:p w14:paraId="4DA16B3D" w14:textId="19562F7A" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>K Uday
+ 
+kiran
+</w:tcPr><w:p w14:paraId="449BF44D" w14:textId="76135166" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:ind w:right="-180"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>C/O: K 
+Anjinappa
+</w:tcPr><w:p w14:paraId="1929A935" w14:textId="5E26A103" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/><w:highlight w:val="yellow"/></w:rPr>H.no
+ 390, 14th Ward, Gulbarga Colony, VTC: 
+Siruguppa
+, PO: 
+Siruguppa
+, Ballari, Karnataka
+- 
+583121
+</w:tcPr><w:p w14:paraId="2DF81274" w14:textId="0AFBE85A" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>22 Years
+</w:tcPr><w:p w14:paraId="20E8B5DF" w14:textId="7D0D8CA0" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+</w:trPr></w:tcPr><w:p w14:paraId="418F89FB" w14:textId="56C9F93B" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>7
+</w:tcPr><w:p w14:paraId="3AAD470A" w14:textId="64AA85D2" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="002B7444" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="002B7444"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Laxmi Devi
+</w:tcPr><w:p w14:paraId="248B10D8" w14:textId="15E5BEBB" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="002B7444" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/><w:highlight w:val="yellow"/></w:rPr></w:pPr><w:r w:rsidRPr="002B7444"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>W/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="1D023688" w14:textId="5D296E37" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="002B7444" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/><w:highlight w:val="yellow"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301
+</w:tcPr><w:p w14:paraId="0611E984" w14:textId="48994001" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="002B7444" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>69 Years
+</w:tcPr><w:p w14:paraId="78382585" w14:textId="5CC51D5C" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="002B7444" w:rsidP="00EF7EDF"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+DECLARATION
+We the undersigned desirous to form a committee and get it registered under the society’s registration act 35 of 2001.
+</w:tblPr><w:gridCol w:w="620"/><w:gridCol w:w="2747"/><w:gridCol w:w="3013"/><w:gridCol w:w="1595"/><w:gridCol w:w="3013"/></w:tblGrid></w:trPr></w:tcPr><w:p w14:paraId="616A64E0" w14:textId="3CC35B63" w:rsidR="00AF3225" w:rsidRPr="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="00437BD4"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:bookmarkStart w:id="0" w:name="_Hlk191721558"/><w:r w:rsidRPr="00AF3225"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>S.no
+</w:tcPr><w:p w14:paraId="49ACDF6F" w14:textId="5052CF46" w:rsidR="00AF3225" w:rsidRPr="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="00437BD4"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00AF3225"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Name
+</w:tcPr><w:p w14:paraId="08047B0C" w14:textId="1E27D7E2" w:rsidR="00AF3225" w:rsidRPr="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="00437BD4"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00AF3225"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Father /Husband Name
+</w:tcPr><w:p w14:paraId="2EF1270B" w14:textId="3B040053" w:rsidR="00AF3225" w:rsidRPr="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="00437BD4"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00AF3225"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Designation
+</w:tcPr><w:p w14:paraId="4B61029C" w14:textId="4FE7C632" w:rsidR="00AF3225" w:rsidRPr="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="00437BD4"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00AF3225"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Signature
+</w:trPr></w:tcPr><w:p w14:paraId="13D54C45" w14:textId="1E0CAF5F" w:rsidR="00EF7EDF" w:rsidRPr="00C86783" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>1
+</w:tcPr><w:p w14:paraId="78DBC0C4" w14:textId="74767E87" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Uma Maheswari
+</w:tcPr><w:p w14:paraId="217F06E8" w14:textId="52026AC1" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>W/o 
+K.Veerabhadra
+ Achari
+</w:tcPr><w:p w14:paraId="2138B4BF" w14:textId="55626C6B" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00D43C57"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>President
+</w:tcPr><w:p w14:paraId="24CC08C7" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="5A6FA653" w14:textId="7315F204" w:rsidR="00EF7EDF" w:rsidRPr="00C86783" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>2
+</w:tcPr><w:p w14:paraId="084CB0F2" w14:textId="711BFDBF" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>K Veerabhadra Achari
+</w:tcPr><w:p w14:paraId="012CF1E2" w14:textId="5EC20717" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o K Manohara Achari
+</w:tcPr><w:p w14:paraId="344826E5" w14:textId="09B5D571" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00D43C57"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Vice President
+</w:tcPr><w:p w14:paraId="4CF570DE" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="25FBC872" w14:textId="226DF1FC" w:rsidR="00EF7EDF" w:rsidRPr="00C86783" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>3
+</w:tcPr><w:p w14:paraId="3A7F82B0" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRPr="008B52EF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>N Tejashree
+</w:tcPr><w:p w14:paraId="4EF741C4" w14:textId="5B3C3C5A" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>D/O N Sreenivasa Reddy
+</w:tcPr><w:p w14:paraId="7EA2D8D0" w14:textId="26ADC46B" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00D43C57"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Secretary
+</w:tcPr><w:p w14:paraId="05BECBCF" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="5517088A" w14:textId="02F1FE70" w:rsidR="00EF7EDF" w:rsidRPr="00C86783" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>4
+</w:tcPr><w:p w14:paraId="6FAF792F" w14:textId="30E41CC4" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Deva 
+R
+aju
+</w:tcPr><w:p w14:paraId="39C90539" w14:textId="6C7BF5DB" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="2249964F" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00D43C57"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr></w:p><w:p w14:paraId="6FDA2D00" w14:textId="7C18185B" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00D43C57"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Treasurer
+</w:tcPr><w:p w14:paraId="490B1048" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="2D736FEB" w14:textId="2C0A42C9" w:rsidR="00EF7EDF" w:rsidRPr="00C86783" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>5
+</w:tcPr><w:p w14:paraId="4099596C" w14:textId="43B8D835" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Siva 
+R
+aju
+</w:tcPr><w:p w14:paraId="56084FE9" w14:textId="545F559F" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="17EE8905" w14:textId="08B889BE" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00D43C57"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="68DF964A" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="55C9CC42" w14:textId="1E65DF7C" w:rsidR="00EF7EDF" w:rsidRPr="00C86783" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>6
+</w:tcPr><w:p w14:paraId="39ADF038" w14:textId="75F8CD85" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>K Uday
+ 
+kiran
+</w:tcPr><w:p w14:paraId="60E571ED" w14:textId="17F87ADD" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>C/O: K 
+Anjinappa
+</w:tcPr><w:p w14:paraId="5D508C47" w14:textId="639FA1EB" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00D43C57"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="584ECCA1" w14:textId="77777777" w:rsidR="00EF7EDF" w:rsidRDefault="00EF7EDF" w:rsidP="00EF7EDF"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="2DA5EEC8" w14:textId="645EDC0A" w:rsidR="002B7444" w:rsidRPr="00C86783" w:rsidRDefault="002B7444" w:rsidP="002B7444"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>7
+</w:tcPr><w:p w14:paraId="51C63786" w14:textId="0ADFB207" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="002B7444"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="002B7444"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Laxmi Devi
+</w:tcPr><w:p w14:paraId="3C4CEF1A" w14:textId="42BD6B11" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="002B7444"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="002B7444"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>W/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="6E7D8B50" w14:textId="13A028BE" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="00D43C57"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="61567838" w14:textId="77777777" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="002B7444"><w:pPr><w:pStyle w:val="ListParagraph"/><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="0" w:right="-755"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:tbl><w:bookmarkEnd w:id="0"/><w:p w14:paraId="4EB52DE8" w14:textId="7103DFB9" w:rsidR="00AF3225" w:rsidRPr="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="002B7444"><w:pPr><w:ind w:right="-755"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr><w:r w:rsidRPr="00AF3225"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr>Signatures Of Two Witnesses and Their Addresses
+</w:tblPr><w:gridCol w:w="672"/><w:gridCol w:w="2939"/><w:gridCol w:w="3837"/><w:gridCol w:w="2440"/></w:tblGrid></w:trPr></w:tcPr><w:p w14:paraId="4C580951" w14:textId="13348CDF" w:rsidR="00AF3225" w:rsidRPr="00C86783" w:rsidRDefault="00AF3225" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr>S.no
+</w:tcPr><w:p w14:paraId="686A5538" w14:textId="5A86C911" w:rsidR="00AF3225" w:rsidRPr="00C86783" w:rsidRDefault="00AF3225" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr>Name
+</w:tcPr><w:p w14:paraId="18F4E616" w14:textId="098E4750" w:rsidR="00AF3225" w:rsidRPr="00C86783" w:rsidRDefault="00AF3225" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr>Father/Husband Name
+ &amp; Address
+</w:tcPr><w:p w14:paraId="52543BA8" w14:textId="68487E6F" w:rsidR="00AF3225" w:rsidRPr="00C86783" w:rsidRDefault="00AF3225" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00C86783"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr>Signature
+</w:trPr></w:tcPr><w:p w14:paraId="747CEA3A" w14:textId="4C25D960" w:rsidR="00AF3225" w:rsidRDefault="00C86783" w:rsidP="00C86783"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>1
+</w:tcPr><w:p w14:paraId="77329C91" w14:textId="01015563" w:rsidR="00AF3225" w:rsidRDefault="00EF7EDF" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>Boya Uma Maheswari
+</w:tcPr><w:p w14:paraId="538DDBD9" w14:textId="6003971F" w:rsidR="00AF3225" w:rsidRDefault="00EF7EDF" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>W/o Saginala Raja Pradeep
+H.no. 15-9N /12/1, Hazi Nagar, 
+Nandikotkur
+, Kurnool, Andhra Pradesh -518401.
+</w:tcPr><w:p w14:paraId="6BAD5D49" w14:textId="062BA60C" w:rsidR="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="699B5E79" w14:textId="631113A9" w:rsidR="00AF3225" w:rsidRDefault="00C86783" w:rsidP="00C86783"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>2
+</w:tcPr><w:p w14:paraId="088435E1" w14:textId="75123BA1" w:rsidR="00AF3225" w:rsidRDefault="002B7444" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>K Naga Lakshmi
+</w:tcPr><w:p w14:paraId="6F3B8173" w14:textId="54E45325" w:rsidR="00AF3225" w:rsidRDefault="002B7444" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>D/o K 
+Anjinappa
+, Mane Number -390, Ward 
+Number-14
+, Gulbarga Colony, 
+Siruguppa
+, Bellary, Karnataka – 583121.
+</w:tcPr><w:p w14:paraId="5313BE1F" w14:textId="0437E43C" w:rsidR="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:tbl><w:p w14:paraId="7C1F0FFC" w14:textId="77777777" w:rsidR="00AF3225" w:rsidRDefault="00AF3225" w:rsidP="006C02D3"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="3D02BA2D" w14:textId="77777777" w:rsidR="00DC1172" w:rsidRDefault="00C86783" w:rsidP="00C86783"><w:pPr><w:spacing w:after="0"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:szCs w:val="20"/></w:rPr>Place: 
+Kurnool
+Date:
+ 
+02
+-0
+4
+-202
+6
+RULES AND REGULATIONS OF THE ASSOCIATION
+  
+  
+LAKSHMI NARASIMHA SOCIAL SERVICE SOCIETY
+D.no: 24/407, 
+Kowdal
+ Pet, Revenue Ward No. 24, Adoni, Kurnool, Andhra Pradesh- 518301
+Name of the Society
+: 
+    LAKSHMI NARASIMHA
+Office Address
+:
+ 
+D.no: 24/407, 
+Kowdal
+ Pet, Revenue Ward No. 24, Adoni, Kurnool, Andhra Pradesh- 518301
+Area of Operation
+:
+ 
+The area of operation of this 
+LAKSHMI NARASIMHA
+ SOCIAL SERVICE SOCIETY
+ 
+shall be all the revenue districts in the regions of 
+Kurnool
+.
+4.1
+. 
+Membership of the Society
+: 
+All the persons who are Indian Nationals and above the Age of 18 Years and are of sound Mind and are eligible to the Members of the Society. Their Membership shall be approved By the Executive Committee on acceptance of 
+Rs.100/-
+ as 
+an 
+admission Fee and a Monthly Subscription of 
+Rs. 10
+/- each. All subscriptions shall be paid every year i.e., before closing the financial year.
+Every member shall contribute a 
+monthly subscription
+ of 
+Rs.10/-
+ if any member fails to pay the subscriptions for 3 continuous months his  name  will be deleted from  the  list  of  members  of  the  society
+ and all 
+members shall be loyal and   faith full to the society.
+The membership of the 
+s
+ociety shall be opened to all and shall not be restricted to 
+a
+ny caste, religion, caste, creed, 
+s
+ex etc.,  
+The Society shall maintain an up-to-date Membership register, records and addresses of all the members with the date of admission and date of termination if any.
+4.2
+. 
+Cessation of Membership
+:
+  
+Any member shall cease to be a member  
+On  the  acceptance  of  his  resignation  approved  by  Governing  body.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00B42334"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>On his/her becoming unsound, mad and suffering from Chronic diseases as per Medical Reports
+ and 
+on his/her death
+.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00B42334"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>On termination of his/her membership by the Society as provided in the Rules and Regulations or on conviction of  any  Court  of  Law  and  shall  expel  any  member  with  the  approval  of  3/5
+th
+ of  the  majority  of  the  Executive  Body  on  the  proof   of  the  violation  of  the  Rules  and  Regulations  of  the  Society.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00B42334"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>No person shall be entitled to vote or be counted as a member whose subscription at the relevant time has been in arrears for a period exceeding  three  months. In such cases he or she will automatically cease to be a member and will lose his/her right  to  be  as 
+ 
+a member.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00B42334"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>If  any  member acts  against  the  wishes  of  the  Society  or  fraudulently  indulges  or  violates the aims  and  objects  of  the  Society  his  membership  shall  be  terminated
+.
+</w:tabs><w:ind w:hanging="1575"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="36D31420" w14:textId="77777777" w:rsidR="00FC16D1" w:rsidRDefault="00FC16D1" w:rsidP="00FC16D1"><w:pPr><w:pStyle w:val="BodyTextIndent"/></w:tabs><w:ind w:hanging="1575"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="25E0C667" w14:textId="77777777" w:rsidR="00BB189A" w:rsidRDefault="00BB189A" w:rsidP="00FC16D1"><w:pPr><w:pStyle w:val="BodyTextIndent"/></w:tabs><w:ind w:hanging="1575"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="254BA190" w14:textId="77777777" w:rsidR="00B42334" w:rsidRDefault="00B42334" w:rsidP="00504747"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:szCs w:val="20"/></w:rPr></w:pPr></w:p><w:p w14:paraId="6DAD57C9" w14:textId="2E0DA851" w:rsidR="0003369F" w:rsidRDefault="0003369F" w:rsidP="00D24DF1"><w:pPr><w:pStyle w:val="NoSpacing"/></w:tabs><w:ind w:left="630"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr></w:pPr><w:r w:rsidRPr="00D24DF1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr><w:lastRenderedPageBreak/>4.3
+.
+   
+Resignation
+  :  
+Resignation by any  member  shall  be  through  a  notice  served  to  the  President at
+ 
+least one
+ 
+month in advance,
+ 
+the same shall be placed in the next Managing Committee  meeting  and acceptance  of  the  same  shall  be  intimated  within  
+1
+0 days  of  the  meeting
+.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr></w:pPr></w:p><w:p w14:paraId="71855B50" w14:textId="4AED350B" w:rsidR="0003369F" w:rsidRPr="0003369F" w:rsidRDefault="0003369F" w:rsidP="0003369F"><w:pPr><w:pStyle w:val="NoSpacing"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="10"/></w:numPr></w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr></w:pPr><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr>General  Body  and  Function
+ :
+  The  General  Body  shall  consist  of  the  founders  and  Co-Op.,  members  only. They  must  meet  at  least  once  in  a  year, in  the  month  of  January. A  Quorum  of  the  General  Body  shall  be  3/5th  of  the  membership. The  adjourned  meeting  of  the  General  Body  need  not  have  Quorum
+.
+ The  annual  general   body  meeting  shall  be  convened  for  the  following  purposes :
+The General Body shall review and approve the annual statement of receipts and expenditure and the audited Balance Sheet of the previous completed year.
+It shall appoint an auditor or auditors for next year to hold office till the conclusion of the next Annual General Body meeting to be fixed by the Board of Trustees from time to time.  The retiring auditor is eligible for re-appointment.
+To set up guidelines for the achievement of the objectives of the Trust.
+</w:r></w:p><w:p w14:paraId="113DB9B6" w14:textId="2C31981E" w:rsidR="0003369F" w:rsidRPr="00E63A00" w:rsidRDefault="00E63A00" w:rsidP="00E32D58"><w:pPr><w:pStyle w:val="NoSpacing"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="10"/></w:numPr><w:spacing w:line="276" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua"/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr></w:pPr><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr>Managing Committee:
+  
+The  complete  Management  and  control  of  the Society 
+shall 
+ 
+rest  on  the Management Committee  of  the  Society. The  Managing  Committee of  the  Society  shall  consist  of  a  President 
+,
+a  Secretary , 
+treasurer , and 5 members  total   in  10  members . The  members  of  the  managing  committee  shall be  elected  at  a  General  Body  meeting. The members  of  the  managing  committee shall  hold  the  office  for  a  period  of  5  years  at  a  time  and  that  period  shall  and  always  with  the  conclusion  of  an   Annual  General  Body  Meeting. The  executive committee  shall  be the  authority  for  the  Society  for all  its  functions. The  executive body shall  consist of  not  less than  and  not    more than  9  members. The  managing  committee  shall   meet  at least  4  times  in  a  year  by  a   notice specifying the venue, Agenda, Time  of  meeting, the
+  notice  shall  be  given  to  all members  at least  10  days in  advance.
+Functions of Managing Committee:
+</w:tabs><w:spacing w:line="276" w:lineRule="auto"/><w:ind w:left="1260" w:hanging="540"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00E63A00"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>It shall  have  powers  to  employ  persons.
+</w:tabs><w:ind w:left="1260" w:hanging="540"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00E63A00"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>It  is  responsible  for  the  smooth  running  and  management  of  funds  for advancement  of  the  Society.
+</w:tabs><w:ind w:left="1260" w:hanging="540"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00E63A00"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>It  shall  receive  Donations either in cash or in kind  ,Grants, Contributions , raise  loans ,etc.
+</w:tabs><w:ind w:left="1260" w:hanging="540"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00E63A00"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>It  shall  do  such  other  things  as  to  promote  the  cause  of  development  of  people.
+</w:tabs><w:ind w:left="1260" w:hanging="540"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00E63A00"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>It  shall  make  rules  and  regulations  as  it  thinks  fit  for  the  efficient  management  of  the  affairs  of  the  Society.
+</w:tabs><w:ind w:left="1260" w:hanging="540"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="00E63A00"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>It  shall  give  notice  to  all  General  Body  members  15  days  in  advance  specifying  the  Venue, Agenda, and  time  of  meeting  of  the  General  Body  Meeting .
+</w:tabs><w:ind w:hanging="1575"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Verdana" w:hAnsi="Verdana" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="51A406CB" w14:textId="318A81D9" w:rsidR="00E32D58" w:rsidRPr="00E32D58" w:rsidRDefault="00E32D58" w:rsidP="00E32D58"><w:pPr><w:pStyle w:val="BodyTextIndent"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="20"/></w:numPr></w:tabs><w:spacing w:line="276" w:lineRule="auto"/><w:ind w:hanging="720"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>It  shall  exercise  direct  control  over  the  following :
+</w:tabs><w:spacing w:line="276" w:lineRule="auto"/><w:ind w:left="1800"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>Personal working in Society administration and discipline.
+</w:tabs><w:spacing w:line="276" w:lineRule="auto"/><w:ind w:left="1800"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr><w:lastRenderedPageBreak/>Finance, Establishment and Records.
+</w:tabs><w:spacing w:line="276" w:lineRule="auto"/><w:ind w:left="1800"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>Transport, Equipment, Machinery and stores.
+</w:tabs><w:spacing w:line="276" w:lineRule="auto"/><w:ind w:left="1800"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>Buildings and Contributions.
+</w:tabs><w:spacing w:after="0"/><w:ind w:left="1800"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>All movable and Immovable propertie
+s.
+</w:tabs><w:spacing w:after="0"/><w:ind w:left="1260"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>The  Executive  body  may  appoint  from  among  themselves  or from outsiders  other  officers  for  the  efficient  better  management  of  the  organization  and  fix  their  remuneration.
+</w:tabs><w:spacing w:after="0"/><w:ind w:left="1260"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>The  Managing  Committee  can  reserve  for  itself  the   right  to  admit  or   not  to  admit  a  person  who  applies  for  membership
+.
+</w:tabs><w:spacing w:after="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32D58"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Meeting of the Executive Committee:
+The  Executive  Committee  shall  meet  ordinarily  once  in  a  year  and  meet  often   for  any  special  purpose  which  may be  fixed,  by  the  Secretary  in consultation  with  the  president  Society. 
+The  meeting    shall  be  presided  over  by  the  president  or  in  the  absence  of  the  president,  by  the  
+Secretary
+  or  in  the  absence  of  the  President  and  
+Secretary
+  by  a  member  elected  from  among  the  member  
+presents
+.
+Any  member  of  the  Executive  Committee  who absent  himself  without  Permission  
+o
+f  the  committee  for  any  three  Executive  meetings   shall  cease  to  be  member  thereof.   But  he  may  for  sufficient  cause,  be  restored  as  a  member  by  the  Executive  Committee.
+Any    vacancy  caused  in  the Executive  Committee  by  the resignation  or  otherwise  shall  be  filled  up  by  co-
+o
+ption  by  the  other members  of  the  Executive  Committee.
+</w:tabs><w:spacing w:after="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Quorum of Executive Committee:
+</w:tabs><w:ind w:left="1080"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:bookmarkStart w:id="1" w:name="_Hlk191651552"/><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>The  quorum  for  the  meeting  of  the  Executive  Committee shall  by  3/5
+th
+  of  the  members. 
+</w:tabs><w:ind w:left="1080"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>All  the  matters and resolutions  of  the  Executive  Committee  shall  be  decided  and  carried  by  a  majority  vote.
+</w:tabs><w:ind w:left="1080"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>In  case  of  vitas bear  equal  on  both sides, the  president  of  the  meeting shall  exercise  his casting  vote
+.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Filling The Vacancies
+:  
+Vacancies  either  permanent  or  casual  caused in  the Society  can  be  filled  by  the  governing  body  by  Co-option  for  the  unexpired  portion of  the  term  of  the  office
+.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00064137"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Budget:
+ 
+The  managing  committee  shall  present  the  budget  of  Income    and Expenditure  of  the  Society  prepared  by  the  secretary  on  the  aims  and  objects  of  the  Society once  in  a  year  and  get  it  approved  and  adopted
+.
+</w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="1C2ABEB5" w14:textId="77777777" w:rsidR="00FC16D1" w:rsidRPr="00FC16D1" w:rsidRDefault="00FC16D1" w:rsidP="00FC16D1"><w:pPr></w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="18D04E6F" w14:textId="77777777" w:rsidR="00504747" w:rsidRPr="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:pStyle w:val="ListParagraph"/></w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="5465FEE2" w14:textId="10FC42DD" w:rsidR="00D24DF1" w:rsidRDefault="00D24DF1" w:rsidP="00D24DF1"><w:pPr><w:pStyle w:val="ListParagraph"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="10"/></w:numPr></w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00D24DF1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Functions of the Office Bearers
+: 
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00D24DF1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>President:
+ 
+The  President  shall  be  the  overall  in charge  of  the  Society  and  shall  preside  overall  meetings  of  the  Society. He  can  also  advice  the  Secretary  to  call  for  emergency  meetings  of  the  managing  committee  at least  by  giving  3  days  prior  notice.
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0094195D"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr>Secretary:
+ 
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>In  the  absence  of  the  President  or  on  the  authorization  of  President  the  
+Secretary 
+can  act  as  
+President.
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>The  secretary  can  convene  the  meetings  of  the  executive  committee  as  well  as  meetings  of  general  body
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>He
+ or She
+  shall  maintain  all  the  records  of  the   Society  and   issue  notices  for  all  the  meetings  in  the  end   with consultation of the  President
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>The  secretary  shall  also  be  the  member  of  the  governing  body  of the Society. He  shall  present  the  accounts  and  reports  to  the  executive  body  periodically  and  shall  cause  maintenance  of  accounts  and  records  in  close  association  with  the  treasurer. He  shall  be  responsible  for  the  selection  of  staff  of  the  Society  and  shall be  responsible  for  any  disciplinary  action  if  necessary.
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>He
+ or she
+  shall  prepare  the  plans  and  programs  basing  on  the  objectives  of  Society
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>He 
+or she
+ shall  be  responsible  for  overall  day  to  day  administration  for  the  smooth  running  of  the  Society
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>He 
+or she
+ shall  function  as  the  main  executive  of  the  Society
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>The  Secretary   shall  be  entitled  to  borrow  loans  or  take  advances  or  accept either  in  kind  or  cash  on  behalf  of  the  Society for  the  purpose  of  aims  and objects  of  the  Society
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980" w:hanging="270"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00A92714"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>The  Secretary   of  the  Society  shall  be  entitled  to  raise  loans  and  advances from  any  commercial  banks  or  financial  institutions  on  behalf  of  the  Society and  such  funds  should  be  exclusively  used  for  the  purpose  of  achieving  the  main  objects  and  aims  of  the  Society.  He
+ or she
+  shall  present  the  annual  report  of  the  Society to  general  body .He
+ or she
+  shall  be  responsible  for  all  kinds  of  activities  that  are  sponsored  by  the  Society.
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="0094195D"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Treasurer:
+ 
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00DE6D2B"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>The  treasurer  shall  be  responsible  for  the  maintaining  all  the  accounts  for  the  finances  received  from  the  governing  body
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00DE6D2B"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>He or She  shall  attend  to  the  Annual  Audit  and  preparation  of  financial  reports  in  close  association  with  the  secretary
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00DE6D2B"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>He or She shall  be  responsible  for  maintenance  of  all  accounts  books  and  shall  represent  the  same  to  all  proper  authorities
+.
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr></w:p><w:p w14:paraId="11D42B5C" w14:textId="77777777" w:rsidR="00E32976" w:rsidRPr="00E32976" w:rsidRDefault="00E32976" w:rsidP="00E32976"><w:pPr><w:pStyle w:val="ListParagraph"/></w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="1980"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr></w:p><w:p w14:paraId="08E465EC" w14:textId="11263858" w:rsidR="00DE6D2B" w:rsidRPr="00E32976" w:rsidRDefault="00DE6D2B" w:rsidP="00DE6D2B"><w:pPr><w:pStyle w:val="ListParagraph"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="29"/></w:numPr></w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00DE6D2B"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Funds:
+ 
+Funds  for  the  execution  of  aims  and  objects  of  Society shall  be collected  by  way  of:
+</w:tabs><w:ind w:left="1980"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>Donations either in cash or in kind 
+</w:tabs><w:ind w:left="1980"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>Contributions
+</w:tabs><w:ind w:left="1980"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>Gifts  either  in  cash  or  in  kind
+Any  other  funds  raised  or  received  from  the  well-wishers  and such other institutions registered under sec 12 AA of the Income tax Act.
+Any amounts in the form loans and advances from the financial institutions, Nationalized  Banks or such other institutions or from the individuals or concerns.
+</w:tabs><w:ind w:left="500" w:firstLine="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>The  funds  of  the  Society  so  collected or raised  shall  be  spent  only  for  the  purpose  of  attaining  the  main  objects  and  aims  of the  Society  and  no  portion  thereof  shall  be  paid  or  transferred   either  directly  or  indirectly  to  any  of  its  members  by  any  means.
+</w:tabs><w:ind w:left="500" w:firstLine="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="689E49E0" w14:textId="5EBEA23B" w:rsidR="00E32976" w:rsidRPr="00E32976" w:rsidRDefault="00E32976" w:rsidP="00E32976"><w:pPr><w:pStyle w:val="BodyTextIndent"/></w:tabs><w:ind w:left="500" w:firstLine="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>The  Society  will  endeavor  to  raise  more  funds  needed  for  the  attainment   of  main  objects  by  other  enterprises  which  may  generate  more  resources to  the  Society, which  can  yield  a  surplus  income  to  be  used  for  the public charitable  purposes  of  the  Society.
+</w:tabs><w:ind w:left="500" w:firstLine="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="447AEBB6" w14:textId="2276F367" w:rsidR="00E32976" w:rsidRDefault="00E32976" w:rsidP="00E32976"><w:pPr><w:pStyle w:val="BodyTextIndent"/></w:tabs><w:ind w:left="540" w:firstLine="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr>All  the  funds  negotiable  instruments, bank  accounts  and  operations  shall  be  jointly  by  the  President  and  treasurer.
+</w:tabs><w:ind w:left="540" w:firstLine="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="3D995990" w14:textId="77777777" w:rsidR="00E32976" w:rsidRPr="00E32976" w:rsidRDefault="00E32976" w:rsidP="00E32976"><w:pPr><w:pStyle w:val="BodyTextIndent"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="29"/></w:numPr></w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:szCs w:val="24"/></w:rPr>Voting:
+   
+Each   member  shall  have  one  vote,  and  the  co-opted  members  do  not have  any  voting  power. However,  they  can  participate  in discussions on invitation.  In  case  of  a  tie, the  President  shall  have  a  casting  vote.
+   
+</w:tabs><w:ind w:left="0" w:firstLine="0"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Verdana" w:hAnsi="Verdana" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="528FBEDE" w14:textId="77777777" w:rsidR="00E32976" w:rsidRDefault="00E32976" w:rsidP="00E32976"><w:pPr><w:pStyle w:val="BodyTextIndent"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="29"/></w:numPr></w:tabs><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr><w:r w:rsidRPr="00E32976"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:szCs w:val="24"/></w:rPr>Amendments:  
+No  amendments  or  alterations  shall  be  made  for  the purpose  as  mentioned  in  the   Memorandum  of  Association  unless  it  is  voted  by  3/5
+th
+  of   the  members  present  at  a  meeting  of  the  general  body  convened   for  the  purpose  and  confirmed  by  3/5
+th
+  of  the  members  present  at  a  second  special   meeting  after  an  interval   of  one  month. Any  amendments  to  the  Byelaws  of  the  Society  will  be  carried  out  only  with the prior  approval  of  the  Commissioner/ Director    of  Income  Tax [ Exemptions ] , Hyderabad.
+       
+Winding Up
+:  
+In  the  event  of  dissolution  of  the  Society all  the  remaining  funds and  assets  after  the  full  satisfaction  of  the  liabilities  of  the  Society  shall be given to the Society having  similar aims  and  objects and having  Registration  under  Sec 12 AA  of  the  Income  Tax  Act  1961
+.
+Investments:
+ 
+The  surplus  money  of  Society  shall  be  invested  only  in  securities  referred  to  in  Sec  11 ( 5 ) of  Income  Tax   Act  1961
+.
+Property 
+How Deal With:
+ 
+All documents relating to the immovable properties that may be endowed to the society through purchase, gift or lease shall be executed in favour of the society represented by its president for the time being.
+All the society properties are vested in the name of the society who shall hold the same for the use and benefit of the Society.
+The Governing Body does not have any power to alienate or to transfer or to mortgage or to pledge any of the properties standing in the name of the Society that are acquired and in peaceful possession of the Society as held today. The properties that are conveyed in the name of the Society either by way of acquisition or by gift or in kind or in any other mode shall not be transferred during the tenure of the Society either by the Governing Body or their members or by the Board of Members or by any others who hold interest in the Society.
+Further the General Body may accept any immovable / movable properties by way of Gift or in Kind and if such properties are located and if in the opinion of the Board such properties are not manageable because of their location, may and if deem such of those properties may be disposed of by obtaining the approval of majority of the trustees on the board and also duly notifying the Act of Sale in local vernacular language or in a daily English newspaper.
+ The conveyance deed or deeds relating to alienation of disposal of the Society property shall be executed by the President of the Society for the time being for and on behalf of the Society.
+Disqualifications:  
+Any member who has been appointed to the General Body shall cease his membership by any of the reasons stated below or any eventual situations that makes him incapable to continue as the Board member or to act as the Council.
+If he or she dies.
+If he or she becomes bankrupt.
+If he or she is found to be lunatic or of an unsound mind.
+If he  or she resign his office.
+If he acts in contravention of the objects of the Society or in a manner determined to the interest of the Society or guilty of misconduct in the opinion of the Society called for the purpose by the three-fourth of the members present.
+If any member in the board of the society fails to attend 3 consecutive meetings irrespective of any factual circumstances, he shall be disqualified to continue or to act as the member of the General Body.
+Financial Year:
+  
+The society shall follow financial year for preparation of annual accounts (
+i.e
+ 1
+st
+ April to 31
+st
+ March).  The trust shall prepare receipts and payments, Income-Expenditure and Balance Sheet on the financial year ending on 31
+st
+ March every year
+.
+</w:tabs><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsiaTheme="minorEastAsia" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-IN" w:eastAsia="en-IN"/></w:rPr></w:pPr><w:r w:rsidRPr="00F50777"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:szCs w:val="24"/></w:rPr>Audit &amp; Accounts
+ 
+:    
+The Society shall follow financial year for the preparation of financial statements.
+The Society shall prepare Receipts and Payments, Income &amp; Expenditure account, Balance Sheet every year. 
+The accounts  of the society shall be   audited by a Qualified  Auditor/Chartered Accountant every  year  to  be appointed  by the  Society at  every  annual  general  meeting.
+Proxy
+:
+  
+</w:tabs><w:ind w:hanging="720"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00F50777"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>There shall be no voting by proxy.
+</w:tabs><w:ind w:hanging="720"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00F50777"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>The Society   shall not undertake any activity outside India.
+</w:tabs><w:ind w:left="2250" w:hanging="450"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00F50777"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>The  Society  formed  by  us  is  a public charitable  one  and  it is  an irrevocable society
+.
+</w:tabs><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00F50777"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>Suit
+:  The society shall sue or be sued in the name of the president
+.
+</w:tabs><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr>Property:  
+Any  Judgment  for  the  recovery of  the property  shall  be  enforced against  the   property of the society only.
+A
+ll other provisions  of  the ap society  registration  act 
+35
+ of 2001 not  specially   mentioned  therein  shall  apply  to this  society.
+We,  the  several  members whose signature  and  designation  and  subscribed  below  desire  to  bring  formed into  the  above-named  society  within the  meaning  and  section 
+35
+ of  2001  of  societies registration    and  we are  also  desirous  to  get  registered  the  above  society
+.
+</w:tblPr><w:gridCol w:w="995"/><w:gridCol w:w="4199"/><w:gridCol w:w="2596"/><w:gridCol w:w="2596"/></w:tblGrid></w:trPr></w:tcPr><w:p w14:paraId="382D52BD" w14:textId="03DBE5D6" w:rsidR="001F4B7E" w:rsidRPr="00D43C57" w:rsidRDefault="001F4B7E" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00D43C57"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr><w:lastRenderedPageBreak/>S.no
+</w:tcPr><w:p w14:paraId="3DCBE2F1" w14:textId="1BF9BD9D" w:rsidR="001F4B7E" w:rsidRPr="00D43C57" w:rsidRDefault="001F4B7E" w:rsidP="00D43C57"><w:pPr><w:ind w:left="130" w:hanging="130"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00D43C57"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr>Name &amp; Father/ Husband Name
+</w:tcPr><w:p w14:paraId="51CE1FED" w14:textId="1B369850" w:rsidR="001F4B7E" w:rsidRPr="00D43C57" w:rsidRDefault="001F4B7E" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00D43C57"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr>Designation
+</w:tcPr><w:p w14:paraId="6BABA1E9" w14:textId="19491D8B" w:rsidR="001F4B7E" w:rsidRPr="00D43C57" w:rsidRDefault="001F4B7E" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00D43C57"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr>Signature &amp; Photo
+</w:trPr></w:tcPr><w:p w14:paraId="720A79F6" w14:textId="24FF0FDA" w:rsidR="001F4B7E" w:rsidRDefault="001F4B7E" w:rsidP="00680604"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>1
+</w:tcPr><w:p w14:paraId="05DE39E5" w14:textId="77777777" w:rsidR="00C57D83" w:rsidRDefault="00C57D83" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Raichur Uma Maheswari,
+W/o K Veerabhadra Achari
+</w:tcPr><w:p w14:paraId="6FA49C78" w14:textId="56CA448F" w:rsidR="001F4B7E" w:rsidRDefault="00A65399" w:rsidP="00680604"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>President
+</w:tcPr><w:p w14:paraId="1913A8EC" w14:textId="1D5B78D9" w:rsidR="001F4B7E" w:rsidRDefault="001F4B7E" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="2C7EDC26" w14:textId="3423A4D2" w:rsidR="00C57D83" w:rsidRDefault="00C57D83" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>2
+</w:tcPr><w:p w14:paraId="05B46D73" w14:textId="77777777" w:rsidR="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>K Veerabhadra Achari
+S/o K Manohara Achari
+</w:tcPr><w:p w14:paraId="6B689F2F" w14:textId="233EB2AB" w:rsidR="00C57D83" w:rsidRDefault="00504747" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00504747"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Vice President
+</w:tcPr><w:p w14:paraId="27AFB733" w14:textId="77777777" w:rsidR="00C57D83" w:rsidRDefault="00C57D83" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="676C672A" w14:textId="53A07C1F" w:rsidR="00C57D83" w:rsidRDefault="00C57D83" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>3
+</w:tcPr><w:p w14:paraId="3D0AEE8A" w14:textId="77777777" w:rsidR="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00C57D83"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>N Tejashree
+D/o:
+ 
+N Sreenivasa Reddy
+</w:tcPr><w:p w14:paraId="61037A37" w14:textId="77B1D368" w:rsidR="00C57D83" w:rsidRDefault="00504747" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00504747"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Secretary
+</w:tcPr><w:p w14:paraId="5D7468EB" w14:textId="77777777" w:rsidR="00C57D83" w:rsidRDefault="00C57D83" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="0ABCB612" w14:textId="0C20A1CF" w:rsidR="00C57D83" w:rsidRDefault="00C57D83" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>4
+</w:tcPr><w:p w14:paraId="04A19A46" w14:textId="4E50B6AC" w:rsidR="00C57D83" w:rsidRDefault="00504747" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00504747"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>R Deva 
+raju
+S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="46A818B7" w14:textId="75EDCB4E" w:rsidR="00C57D83" w:rsidRDefault="00504747" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00504747"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Treasurer
+</w:tcPr><w:p w14:paraId="39C9018B" w14:textId="77777777" w:rsidR="00C57D83" w:rsidRDefault="00C57D83" w:rsidP="00C57D83"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:tbl><w:p w14:paraId="143DDC40" w14:textId="77777777" w:rsidR="000756AD" w:rsidRDefault="000756AD" w:rsidP="00F50777"><w:pPr><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tblPr><w:gridCol w:w="864"/><w:gridCol w:w="3817"/><w:gridCol w:w="2290"/><w:gridCol w:w="3217"/></w:tblGrid></w:trPr></w:tcPr><w:p w14:paraId="3927566E" w14:textId="38891FF6" w:rsidR="007708EE" w:rsidRDefault="007708EE" w:rsidP="007708EE"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>5
+</w:tcPr><w:p w14:paraId="352B92C0" w14:textId="77390546" w:rsidR="007708EE" w:rsidRDefault="00504747" w:rsidP="007708EE"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r w:rsidRPr="00504747"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>R Siva 
+raju
+S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="63A9B2F4" w14:textId="7AA90ABD" w:rsidR="007708EE" w:rsidRDefault="007708EE" w:rsidP="007708EE"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="0043275E" w14:textId="77777777" w:rsidR="007708EE" w:rsidRDefault="007708EE" w:rsidP="007708EE"><w:pPr><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="4CB3ACE5" w14:textId="75D72F91" w:rsidR="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>6
+</w:tcPr><w:p w14:paraId="44703DB1" w14:textId="77777777" w:rsidR="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:proofErr w:type="spellStart"/><w:r w:rsidRPr="00C57D83"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Udaykiran
+ K
+C/O: 
+Anjinappa
+ K
+</w:tcPr><w:p w14:paraId="31B16C46" w14:textId="77D226A1" w:rsidR="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="7E93864D" w14:textId="77777777" w:rsidR="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="5F52900A" w14:textId="22152677" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="002B7444"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>7
+</w:tcPr><w:p w14:paraId="6E327B4F" w14:textId="77777777" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="00B65BBE"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="002B7444"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Laxmi Devi
+W/o Late R Gundappa
+</w:tcPr><w:p w14:paraId="4DC80BF4" w14:textId="11E50E99" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="002B7444"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="0E7F7B2B" w14:textId="77777777" w:rsidR="002B7444" w:rsidRDefault="002B7444" w:rsidP="002B7444"><w:pPr><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:tbl><w:p w14:paraId="2437523B" w14:textId="77777777" w:rsidR="000756AD" w:rsidRDefault="000756AD" w:rsidP="00F50777"><w:pPr><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/></w:rPr></w:pPr></w:p><w:p w14:paraId="5692D14B" w14:textId="4CBD0053" w:rsidR="00F50777" w:rsidRPr="00F50777" w:rsidRDefault="00F50777" w:rsidP="00F50777"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:bookmarkStart w:id="4" w:name="_Hlk193447290"/></w:p><w:p w14:paraId="563DC442" w14:textId="50EC1E15" w:rsidR="0094195D" w:rsidRPr="006F1F38" w:rsidRDefault="0094195D" w:rsidP="00F50777"><w:pPr><w:pStyle w:val="ListParagraph"/></w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="500"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="1A64538B" w14:textId="77777777" w:rsidR="003A6F20" w:rsidRPr="00D43C57" w:rsidRDefault="003A6F20" w:rsidP="00D43C57"><w:pPr></w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="10CF02C7" w14:textId="34BC4E7C" w:rsidR="003A6F20" w:rsidRPr="003A6F20" w:rsidRDefault="003A6F20" w:rsidP="003A6F20"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="003A6F20"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:lastRenderedPageBreak/>Witnesses with their address &amp; signatures:
+<w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/><w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/><w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/><w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000"/><w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000"/></w:tblBorders></w:tblPr><w:gridCol w:w="1023"/><w:gridCol w:w="2780"/><w:gridCol w:w="3293"/><w:gridCol w:w="3267"/></w:tblGrid></w:trPr></w:tcPr><w:p w14:paraId="4B80D940" w14:textId="1BAB0A0C" w:rsidR="00AB0C2B" w:rsidRPr="003A6F20" w:rsidRDefault="00AB0C2B" w:rsidP="002209F2"><w:pPr><w:ind w:left="360"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="003A6F20"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>S.
+no
+</w:tcPr><w:p w14:paraId="291B4A96" w14:textId="77777777" w:rsidR="00AB0C2B" w:rsidRPr="003A6F20" w:rsidRDefault="00AB0C2B" w:rsidP="002209F2"><w:pPr><w:ind w:left="360"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="003A6F20"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>NAME &amp; ADDRESS
+</w:tcPr><w:p w14:paraId="0612B062" w14:textId="29C38961" w:rsidR="00AB0C2B" w:rsidRPr="003A6F20" w:rsidRDefault="00AB0C2B" w:rsidP="002209F2"><w:pPr><w:ind w:left="360"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>WITNESS SIGNATURE
+</w:tcPr><w:p w14:paraId="17092A45" w14:textId="45917355" w:rsidR="00AB0C2B" w:rsidRPr="003A6F20" w:rsidRDefault="00AB0C2B" w:rsidP="002209F2"><w:pPr><w:ind w:left="360"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>WITNESS PHOTO
+</w:trPr></w:tcPr><w:p w14:paraId="114F5E38" w14:textId="77777777" w:rsidR="00504747" w:rsidRPr="003A6F20" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:ind w:left="360"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="003A6F20"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>1
+</w:tcPr><w:p w14:paraId="0E10A009" w14:textId="6F6483D5" w:rsidR="00504747" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>Boya Uma Maheswari 
+W/o Saginala Raja Pradeep
+H.no. 15-9N /12/1, Hazi Nagar, 
+Nandikotkur
+, Kurnool, Andhra Pradesh -518401.
+</w:tcPr><w:p w14:paraId="66790A9D" w14:textId="77777777" w:rsidR="00504747" w:rsidRPr="003A6F20" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:ind w:left="360"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p></w:tc></w:tcPr><w:p w14:paraId="65AE6AAF" w14:textId="16055ACC" w:rsidR="00504747" w:rsidRPr="003A6F20" w:rsidRDefault="00504747" w:rsidP="00504747"><w:pPr><w:ind w:left="360"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="75FA8DAD" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRPr="003A6F20" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:ind w:left="360"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="003A6F20"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>2
+</w:tcPr><w:p w14:paraId="281A1CC3" w14:textId="484A7849" w:rsidR="00B65BBE" w:rsidRPr="003A6F20" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:ind w:left="360"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>K Naga Lakshmi
+D/o K 
+Anjinappa
+, Mane Number -390, Ward 
+Number-14
+, Gulbarga Colony, 
+Siruguppa
+, Bellary, Karnataka – 583121.
+</w:tcPr><w:p w14:paraId="2A5FBFE1" w14:textId="0B0D0B06" w:rsidR="00B65BBE" w:rsidRPr="003A6F20" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:ind w:left="360"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p></w:tc></w:tcPr><w:p w14:paraId="0CCE2282" w14:textId="4C992651" w:rsidR="00B65BBE" w:rsidRPr="003A6F20" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:ind w:left="360"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:tbl><w:p w14:paraId="27709864" w14:textId="77777777" w:rsidR="003A6F20" w:rsidRPr="00A92714" w:rsidRDefault="003A6F20" w:rsidP="003A6F20"><w:pPr><w:pStyle w:val="ListParagraph"/></w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:ind w:left="0"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="6AE06EB7" w14:textId="77777777" w:rsidR="00A92714" w:rsidRDefault="00A92714" w:rsidP="00A92714"><w:pPr></w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="0D8E9E1E" w14:textId="5634A1B3" w:rsidR="003A6F20" w:rsidRDefault="003A6F20" w:rsidP="00A92714"><w:pPr></w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr>Place: 
+Kurnool
+</w:tabs><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:b/><w:bCs/></w:rPr>Date: 
+02
+-0
+4
+-2
+6
+</w:tabs><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr></w:pPr></w:p><w:p w14:paraId="4A5069A5" w14:textId="77777777" w:rsidR="00FC53F2" w:rsidRPr="00FC53F2" w:rsidRDefault="00FC53F2" w:rsidP="00A92714"><w:pPr><w:pStyle w:val="NoSpacing"/></w:tabs><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:eastAsia="Times New Roman" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:lang w:val="en-US" w:eastAsia="en-US"/></w:rPr></w:pPr></w:p><w:p w14:paraId="17AB7121" w14:textId="77777777" w:rsidR="00B42334" w:rsidRPr="009B23DE" w:rsidRDefault="00B42334" w:rsidP="00A65399"><w:pPr><w:pStyle w:val="BodyTextIndent"/></w:tabs><w:ind w:hanging="1575"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="61E4B949" w14:textId="77777777" w:rsidR="009B23DE" w:rsidRPr="009B23DE" w:rsidRDefault="009B23DE" w:rsidP="00A92714"><w:pPr><w:pStyle w:val="BodyTextIndent"/><w:ind w:left="2070" w:hanging="360"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Arial"/><w:sz w:val="22"/><w:szCs w:val="22"/></w:rPr></w:pPr></w:p><w:p w14:paraId="495E8294" w14:textId="77777777" w:rsidR="00C86783" w:rsidRPr="009B23DE" w:rsidRDefault="00C86783" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="0B51AF40" w14:textId="77777777" w:rsidR="00C86783" w:rsidRPr="009B23DE" w:rsidRDefault="00C86783" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="0156F3FB" w14:textId="77777777" w:rsidR="00C86783" w:rsidRDefault="00C86783" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="675E279B" w14:textId="77777777" w:rsidR="003A6F20" w:rsidRDefault="003A6F20" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="1C80658F" w14:textId="77777777" w:rsidR="003A6F20" w:rsidRDefault="003A6F20" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="0E256D22" w14:textId="77777777" w:rsidR="003A6F20" w:rsidRDefault="003A6F20" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="78E9942E" w14:textId="77777777" w:rsidR="00147A5C" w:rsidRDefault="00147A5C" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="31867ACB" w14:textId="77777777" w:rsidR="00147A5C" w:rsidRDefault="00147A5C" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="13D2E8EC" w14:textId="77777777" w:rsidR="00147A5C" w:rsidRDefault="00147A5C" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="27CB8638" w14:textId="77777777" w:rsidR="003A6F20" w:rsidRDefault="003A6F20" w:rsidP="00A92714"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="2070" w:hanging="360"/><w:jc w:val="right"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/></w:rPr></w:pPr></w:p><w:p w14:paraId="11F92CED" w14:textId="745B5E35" w:rsidR="003A6F20" w:rsidRPr="003A6F20" w:rsidRDefault="003A6F20" w:rsidP="003A6F20"><w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:ind w:left="90" w:hanging="90"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/><w:u w:val="single"/></w:rPr></w:pPr><w:r w:rsidRPr="003A6F20"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/><w:u w:val="single"/></w:rPr>AFFIDAVIT
+</w:tabs><w:ind w:left="0" w:right="-43"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="003A6F20"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>I, 
+Raichur 
+Umamaheswari
+ , 
+W/O K Veerabhadra Achari
+ 
+aged about 4
+3
+ years,  H.no.
+ 50/753/1A1, Tagore Nagar, 
+Maddur
+ Nagar, 
+Kallur
+ Mandal, Kurnool, Andhra Pradesh 
+–
+ 518002
+ 
+ 
+Solemnly affirm and sincerely state as follows:
+</w:tabs><w:ind w:left="0" w:right="-43"/><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="3288D15E" w14:textId="3BB8BDEB" w:rsidR="000F0548" w:rsidRDefault="007B6F9A" w:rsidP="000F0548"><w:pPr><w:pStyle w:val="ListParagraph"/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="43"/></w:numPr><w:jc w:val="both"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr><w:r w:rsidRPr="007B6F9A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr>I am the President of 
+LAKSHMI NARASIMHA
+ SOCIAL SERVICE SOCIETY
+, 
+and I know the facts and swear this affidavit on behalf of me and on behalf of other executive members.
+The below persons are the members of the society and formed as a society namely 
+LAKSHMI NARASIMHA
+ SOCIAL SERVICE SOCIETY
+ 
+D.no: 24/407, 
+Kowdal
+ Pet, Revenue Ward No. 24, Adoni, Kurnool, Andhra Pradesh- 518301
+List of Executive Members along with their Address:
+</w:tblPr><w:gridCol w:w="672"/><w:gridCol w:w="1625"/><w:gridCol w:w="1845"/><w:gridCol w:w="2512"/><w:gridCol w:w="1023"/><w:gridCol w:w="1641"/><w:gridCol w:w="2097"/></w:tblGrid></w:trPr></w:tcPr><w:p w14:paraId="5F6F0671" w14:textId="77777777" w:rsidR="007B6F9A" w:rsidRPr="00922DB1" w:rsidRDefault="007B6F9A" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00922DB1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>S.no
+</w:tcPr><w:p w14:paraId="4156FE3C" w14:textId="77777777" w:rsidR="007B6F9A" w:rsidRPr="00922DB1" w:rsidRDefault="007B6F9A" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00922DB1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Name
+</w:tcPr><w:p w14:paraId="41640DD4" w14:textId="77777777" w:rsidR="007B6F9A" w:rsidRPr="00922DB1" w:rsidRDefault="007B6F9A" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00922DB1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Father /Husband Name
+</w:tcPr><w:p w14:paraId="3673432D" w14:textId="77777777" w:rsidR="007B6F9A" w:rsidRPr="00922DB1" w:rsidRDefault="007B6F9A" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00922DB1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Address
+</w:tcPr><w:p w14:paraId="7EE4E1EC" w14:textId="77777777" w:rsidR="007B6F9A" w:rsidRPr="00922DB1" w:rsidRDefault="007B6F9A" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00922DB1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Age
+</w:tcPr><w:p w14:paraId="2DBC0D00" w14:textId="77777777" w:rsidR="007B6F9A" w:rsidRPr="00922DB1" w:rsidRDefault="007B6F9A" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r w:rsidRPr="00922DB1"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Designation
+</w:tcPr><w:p w14:paraId="224B92FE" w14:textId="77777777" w:rsidR="007B6F9A" w:rsidRPr="00922DB1" w:rsidRDefault="007B6F9A" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/></w:rPr>Signature
+</w:trPr></w:tcPr><w:p w14:paraId="2C896677" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr>1
+</w:tcPr><w:p w14:paraId="2E2CB235" w14:textId="7ABFCFD0" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Uma Maheswari
+</w:tcPr><w:p w14:paraId="03BD5FF8" w14:textId="75B6BA5D" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>W/o 
+K.Veerabhadra
+ Achari
+</w:tcPr><w:p w14:paraId="13174FDD" w14:textId="0C9BC01B" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 50/753/1A1, Tagore Nagar, 
+Maddur
+ Nagar, 
+Kallur
+ Mandal, Kurnool,
+ 
+Andhrapradesh
+- 518002
+</w:tcPr><w:p w14:paraId="005F8F8E" w14:textId="44C0953F" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>43 Years
+</w:tcPr><w:p w14:paraId="6D12EBE3" w14:textId="168783D4" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>President
+</w:tcPr><w:p w14:paraId="09F0513D" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="5B3E1312" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr>2
+</w:tcPr><w:p w14:paraId="776E88F4" w14:textId="218AFE1C" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>K 
+Veerabhadra Achari
+</w:tcPr><w:p w14:paraId="6688FCAA" w14:textId="22413181" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o K Manohara Achari
+</w:tcPr><w:p w14:paraId="3051E1B2" w14:textId="4DA22CC2" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 50/753/1A1, Tagore Nagar, 
+Maddur
+ Nagar, 
+Kallur
+ Mandal, 
+Kurnool,Andhrapradesh
+- 518002
+</w:tcPr><w:p w14:paraId="504C3EA2" w14:textId="1116B9B4" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>39 Years
+</w:tcPr><w:p w14:paraId="180BA5F2" w14:textId="13835F39" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Vice President
+</w:tcPr><w:p w14:paraId="11E9E745" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="7789A307" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr>3
+</w:tcPr><w:p w14:paraId="35BBF6A2" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRPr="008B52EF" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>N Tejashree
+</w:tcPr><w:p w14:paraId="17DEA5E2" w14:textId="7762B751" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>D/O N Sreenivasa Reddy
+</w:tcPr><w:p w14:paraId="538E7DEE" w14:textId="4CB314A2" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:proofErr w:type="spellStart"/><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.No
+. 3-188, 
+Mudumala
+, C 
+Belagal
+ Mandal, Po: 
+Mudumala
+,
+ Kurnool, Andhra Pradesh
+</w:tcPr><w:p w14:paraId="1C820175" w14:textId="488A4248" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>27 Years
+</w:tcPr><w:p w14:paraId="427EB1DB" w14:textId="0CA29AEB" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Secretary
+</w:tcPr><w:p w14:paraId="1179FBEC" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="2C0353D3" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr><w:lastRenderedPageBreak/>4
+</w:tcPr><w:p w14:paraId="16B37F20" w14:textId="5C82F5D9" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Deva 
+R
+aju
+</w:tcPr><w:p w14:paraId="7F20AE4F" w14:textId="55C17EB4" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="0088534A"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="23CC1C0A" w14:textId="14DC6692" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301.
+</w:tcPr><w:p w14:paraId="685C718A" w14:textId="4D8656A8" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>35 Years
+</w:tcPr><w:p w14:paraId="3D7CA708" w14:textId="2F7F8B1F" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Treasurer
+</w:tcPr><w:p w14:paraId="7220A6F5" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="6E112D7A" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:bookmarkStart w:id="5" w:name="_Hlk208673414"/><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr>5
+</w:tcPr><w:p w14:paraId="240A9CA8" w14:textId="2F2949BC" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Siva 
+R
+aju
+</w:tcPr><w:p w14:paraId="46288BE8" w14:textId="09746C28" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>S/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="1C8C29EF" w14:textId="2D26205B" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301.
+</w:tcPr><w:p w14:paraId="483189D2" w14:textId="56F70111" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>41 Years
+</w:tcPr><w:p w14:paraId="2F810885" w14:textId="1DC9475B" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="043097E2" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr><w:bookmarkEnd w:id="5"/></w:trPr></w:tcPr><w:p w14:paraId="36D65FB5" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr>6
+</w:tcPr><w:p w14:paraId="59226AAF" w14:textId="563D04A6" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>K Uday
+ 
+kiran
+</w:tcPr><w:p w14:paraId="1863A3CD" w14:textId="52DF8957" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:ind w:right="-180"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>C/O: K 
+Anjinappa
+</w:tcPr><w:p w14:paraId="418FBC59" w14:textId="1D8E1BB0" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/><w:highlight w:val="yellow"/></w:rPr>H.no
+ 390, 14th Ward, Gulbarga Colony, VTC: 
+Siruguppa
+, PO: 
+Siruguppa
+, Ballari, Karnataka
+- 
+583121
+</w:tcPr><w:p w14:paraId="42398A1C" w14:textId="0DAA943F" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="008B52EF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>22 Years
+</w:tcPr><w:p w14:paraId="34741D9A" w14:textId="50EC9240" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="65A07715" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:trPr></w:tcPr><w:p w14:paraId="5E94DD40" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr>7
+</w:tcPr><w:p w14:paraId="0FF8D657" w14:textId="68351FA0" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="002B7444"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>R Laxmi Devi
+</w:tcPr><w:p w14:paraId="58438545" w14:textId="1E849977" w:rsidR="00B65BBE" w:rsidRPr="00E63A00" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:highlight w:val="yellow"/></w:rPr></w:pPr><w:r w:rsidRPr="002B7444"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>W/o R 
+Gundanna
+</w:tcPr><w:p w14:paraId="315C94B7" w14:textId="04770145" w:rsidR="00B65BBE" w:rsidRPr="00E63A00" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:highlight w:val="yellow"/></w:rPr></w:pPr><w:r w:rsidRPr="00EF7EDF"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301
+</w:tcPr><w:p w14:paraId="47C1F27E" w14:textId="7754B1C1" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>69 Years
+</w:tcPr><w:p w14:paraId="7680A695" w14:textId="79DDE64A" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00D43C57"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr>Member
+</w:tcPr><w:p w14:paraId="4083A807" w14:textId="77777777" w:rsidR="00B65BBE" w:rsidRDefault="00B65BBE" w:rsidP="00B65BBE"><w:pPr><w:ind w:right="2000"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:bCs/></w:rPr></w:pPr></w:p></w:tc></w:tr></w:tbl><w:p w14:paraId="12285164" w14:textId="288520C5" w:rsidR="00C86783" w:rsidRDefault="00C86783" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="1FBBF569" w14:textId="77777777" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="292A759F" w14:textId="77777777" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="5C57B896" w14:textId="77777777" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="41694730" w14:textId="77777777" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="7A34A687" w14:textId="77777777" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="123EF715" w14:textId="77777777" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="653DA5AC" w14:textId="77777777" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="003A6F20"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/></w:rPr></w:pPr></w:p><w:p w14:paraId="22F1AEAE" w14:textId="77777777" w:rsidR="00A65399" w:rsidRDefault="00A65399" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="6A2BEE59" w14:textId="77777777" w:rsidR="00A65399" w:rsidRDefault="00A65399" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="35B6A2F7" w14:textId="77777777" w:rsidR="00A65399" w:rsidRDefault="00A65399" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="41E7FAE7" w14:textId="77777777" w:rsidR="00A65399" w:rsidRDefault="00A65399" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="0F3C2C7A" w14:textId="77777777" w:rsidR="00B95055" w:rsidRDefault="00B95055" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="4720EAFF" w14:textId="77777777" w:rsidR="00B95055" w:rsidRDefault="00B95055" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="4A13619C" w14:textId="77777777" w:rsidR="00B95055" w:rsidRDefault="00B95055" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="2C5B298D" w14:textId="77777777" w:rsidR="00B95055" w:rsidRDefault="00B95055" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="787CEA46" w14:textId="649467B3" w:rsidR="00921393" w:rsidRDefault="00921393" w:rsidP="00B445A8"><w:pPr><w:spacing w:line="240" w:lineRule="auto"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr><w:bookmarkStart w:id="6" w:name="_Hlk210987337"/><w:r w:rsidRPr="00921393"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr>AFFIDAVIT
+I, 
+R Laxmi Devi
+, 
+W
+/o 
+R 
+Gundanna
+, aged about 6
+9
+ years, residing at 
+H.No
+. 
+H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301
+, do hereby state as follows:
+I am the owner of the premises situated at 
+H.no. 24/407, Karvanpeta, Adoni, Kurnool, Andhra Pradesh -518301
+.
+I have no objection to Mrs. Raichur 
+Umamaheswari
+ establishing and operating a society under the name and style of 
+“
+LAKSHMI NARASIMHA SOCIAL SERVICE SOCIETY
+” at the above said premises.
+I further state that Mr
+s
+. 
+Raichur Umamaheswari
+, who is my 
+Daughter
+, is a 
+President
+ of the said society, and in view of our family relationship, I have permitted the society to use my premises free of cost for its office purposes. No rent or any other consideration has been collected or will be collected for the same.
+This No Objection Letter is issued willingly for official and registration purposes.
+</w:r></w:p><w:p w14:paraId="464DCB49" w14:textId="146AC8D0" w:rsidR="00921393" w:rsidRPr="00921393" w:rsidRDefault="00921393" w:rsidP="00921393"><w:pPr><w:widowControl w:val="0"/><w:overflowPunct w:val="0"/><w:autoSpaceDE w:val="0"/><w:autoSpaceDN w:val="0"/><w:adjustRightInd w:val="0"/><w:spacing w:after="0" w:line="251" w:lineRule="auto"/><w:ind w:left="720"/><w:jc w:val="right"/><w:outlineLvl w:val="0"/><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:pPr><w:r w:rsidRPr="00921393"><w:rPr><w:rFonts w:ascii="Book Antiqua" w:hAnsi="Book Antiqua" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr>DEPONENT
