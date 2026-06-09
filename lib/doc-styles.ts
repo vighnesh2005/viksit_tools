@@ -28,7 +28,7 @@ h3 {
   margin: 14pt 0 6pt;
 }
 p {
-  text-align: justify;
+  text-align: left;
   margin-bottom: 6pt;
   line-height: 1.5;
   mso-line-height-rule: exactly;
@@ -69,6 +69,11 @@ p {
   height: 125pt;
   text-align: center;
   vertical-align: middle;
+}
+.page-break {
+  page-break-before: always;
+  mso-break-type: section-break;
+  clear: both;
 }
 @page {
   margin: 1in;
@@ -119,14 +124,14 @@ ul {
 }
 ul li {
   margin-bottom: 4pt;
-  text-align: justify;
+  text-align: left;
 }
 ol {
   margin: 4pt 0 4pt 26pt;
 }
 ol li {
   margin-bottom: 4pt;
-  text-align: justify;
+  text-align: left;
 }
 .initials-row {
   display: flex;
@@ -147,7 +152,7 @@ ol li {
 }
 .deed-place {
   margin-top: 16pt;
-  text-align: justify;
+  text-align: left;
   font-style: italic;
 }
 .deed-ol {
@@ -281,15 +286,15 @@ export const DOC_PREVIEW_STYLES = `
 }
 .doc-content h1 { text-align: center; font-weight: bold; font-size: 15pt; margin: 0 0 6pt; }
 .doc-content h2 { text-align: center; font-weight: bold; font-size: 14pt; margin: 16pt 0 8pt; }
-.doc-content p { text-align: justify; margin-bottom: 6pt; line-height: 1.5; }
+.doc-content p { text-align: left; margin-bottom: 6pt; line-height: 1.5; }
 .doc-content table { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 8pt auto; font-size: 10pt; }
 .doc-content tr { page-break-inside: avoid; }
 .doc-content th { font-weight: bold; padding: 4pt 6pt; text-align: left; border: 0.5pt solid #000; font-size: 10pt; }
 .doc-content td { padding: 4pt 6pt; border: 0.5pt solid #000; vertical-align: top; font-size: 10pt; word-break: break-word; }
 .doc-content ul { margin: 4pt 0 4pt 24pt; }
-.doc-content ul li { margin-bottom: 4pt; text-align: justify; }
+.doc-content ul li { margin-bottom: 4pt; text-align: left; }
 .doc-content ol { margin: 4pt 0 4pt 26pt; }
-.doc-content ol li { margin-bottom: 4pt; text-align: justify; }
+.doc-content ol li { margin-bottom: 4pt; text-align: left; }
 .doc-content .section-hdr { text-align: center; font-weight: bold; font-size: 15pt; text-transform: uppercase; margin: 18pt 0 10pt; border-bottom: 1pt solid #000; padding-bottom: 4pt; }
 .doc-content .section-sub { font-weight: bold; font-size: 14pt; margin: 14pt 0 8pt; text-decoration: underline; }
 .doc-content .firm-hdr { text-align: center; font-size: 14pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5pt; margin-bottom: 2pt; }
@@ -298,7 +303,7 @@ export const DOC_PREVIEW_STYLES = `
 .doc-content .station-row { display: flex; justify-content: space-between; margin-top: 10pt; font-size: 11pt; }
 .doc-content .initials-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4pt; margin: 10pt 0; font-size: 10pt; }
 .doc-content .and-sep { text-align: center; font-weight: bold; margin: 6pt 0; font-size: 11pt; text-transform: uppercase; letter-spacing: 1pt; }
-.doc-content .deed-place { margin-top: 16pt; text-align: justify; font-style: italic; }
+.doc-content .deed-place { margin-top: 16pt; text-align: left; font-style: italic; }
 .doc-content .deed-ol { margin: 4pt 0 4pt 26pt; }
 .doc-content .deed-ol > li { margin-bottom: 8pt; }
 .doc-content .photo-cell { width: 105pt; height: 125pt; text-align: center; vertical-align: middle; }
@@ -319,3 +324,4 @@ export const DOC_PREVIEW_STYLES = `
   .no-print { display: none !important; }
 }
 `;
+

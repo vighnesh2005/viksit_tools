@@ -175,13 +175,13 @@ export default function PartnershipDeedPage() {
     const allOrd = ps.map((_, i) => ordinal(i)).join(', ');
 
     const html = `<div><div class="deed-title">PARTNERSHIP DEED</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">This Partnership Deed is entered and executed on this ${dateCommSup} out of free will and mutual consent by and between:</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin-bottom:6pt;">This Partnership Deed is entered and executed on this ${dateCommSup} out of free will and mutual consent by and between:</p>
 ${partyParas}
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">All ${numWords(n)} Parties herein called parties of the ${allOrd} as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"${firmName}"</b> to ${bizNature}.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin-bottom:6pt;">All ${numWords(n)} Parties herein called parties of the ${allOrd} as <b>PARTNERS</b> which term shall mean and include their Heirs, Legal Representatives, Executors, Administrators and Assignees. And whereas the partners have expressed their intention to operate the business in the name and style of <b>"${firmName}"</b> to ${bizNature}.</p>
 <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4pt;margin:10pt 0;font-size:13pt;">${initRow}</div>
 
 <div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin:16pt 0 6pt;"><b>Now this deed witness is as follows: —</b></p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin:16pt 0 6pt;"><b>Now this deed witness is as follows: —</b></p>
 <ol style="font-family:'Bookman Old Style',serif;font-size:13pt;margin:4pt 0 4pt 26pt;">
 <li style="margin-bottom:8pt;"><b>Name and Nature of the Firm:</b> That the business of the Partnership Shall be to ${bizNature}. The name of the firm shall be <b>${firmName}</b>.</li>
 <li style="margin-bottom:8pt;"><b>Place of Business:</b> The registered office is situated at ${placeOfBiz}.</li>
@@ -210,7 +210,7 @@ ${partyParas}
 </ol></div>
 
 <div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;font-style:italic;margin-top:16pt;">In witness whereof the said partners put their hands to this deed of partnership at ${placeExecution}.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;font-style:italic;margin-top:16pt;">In witness whereof the said partners put their hands to this deed of partnership at ${placeExecution}.</p>
 <table style="margin-top:16pt;font-size:13pt;"><tr>
   <td style="width:50%;font-size:13pt;"><b>Signature of the Witnesses:</b><br><br>${witBlock}</td>
   <td style="width:50%;font-size:13pt;"><b>Signature of the Partners:</b><br><br>${ps.map((p, i) => `<div style="margin-bottom:22pt;">${i+1}. <span style="margin-left:8pt;">${p.name}</span><br><span style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></span></div>`).join('')}</td>
@@ -229,14 +229,14 @@ ${partyParas}
     if (!affData.officeAddr || !affData.signDate) { alert('Fill Office Address and Sign Date.'); return; }
     const cpList = ps.slice(1).filter(p => p.name);
     const html = `<div><div class="affidavit-title">AFFIDAVIT</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>${deponent.name}</b>, <b>${deponent.rel} ${deponent.father}</b>, aged <b>${deponent.age} years</b> residing at ${deponent.address} do hereby affirm and state as follows:</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin-bottom:6pt;"><b>${deponent.name}</b>, <b>${deponent.rel} ${deponent.father}</b>, aged <b>${deponent.age} years</b> residing at ${deponent.address} do hereby affirm and state as follows:</p>
 <ol style="font-family:'Bookman Old Style',serif;font-size:13pt;margin:4pt 0 4pt 24pt;">
   <li style="margin-bottom:4pt;">I, <b>${deponent.name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm.firmName}"</b>.</li>
   <li style="margin-bottom:4pt;">The said Firm commenced the business from ${formatDateLong(firm.dateCommencement)} and the office of the firm is situated at ${affData.officeAddr} and the said premises belong to me.</li>
   ${affData.reg === 'yes' ? `<li style="margin-bottom:4pt;">The said firm has applied for Registration to the Registrar of Firms, ${firm.placeExecution}.</li>` : ''}
   ${affData.premises === 'owner' ? `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
 </ol>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin:10pt 0 6pt;">Solemnly affirmed at ${firm.placeExecution} on this day ${formatDateShort(affData.signDate)}.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin:10pt 0 6pt;">Solemnly affirmed at ${firm.placeExecution} on this day ${formatDateShort(affData.signDate)}.</p>
 <div style="margin-top:18pt;text-align:right;"><b>DEPONENT</b><br><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div></div>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${firm.placeExecution}</span><span>Date: ${formatDateShort(affData.signDate)}</span></div></div>`;
     downloadDoc(html, 'Affidavit_' + firm.firmName);
@@ -252,8 +252,8 @@ ${partyParas}
     const sn = ps2.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
     const html = `<div><div class="form1-title">FORM NO.1</div>
 <div style="text-align:center;font-size:13pt;font-weight:bold;margin-bottom:10pt;">THE INDIAN PARTNERSHIP ACT, 1932<br>Registration u/s 58</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm.firmName}"</b> presented to the Registrar of Firms by <b>${f1Data.presentedBy}</b>.</p>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm.firmName}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm.firmName}"</b> presented to the Registrar of Firms by <b>${f1Data.presentedBy}</b>.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm.firmName}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
 <div style="font-weight:bold;font-size:13pt;margin:14pt 0 8pt;">Firm Particulars</div>
 <table style="border:none;margin:6pt 0;font-size:13pt;">
   <tr><td style="border:none;width:220pt;"><b>The Firm's Name</b></td><td style="border:none;">:&nbsp;&nbsp;<b>${firm.firmName}</b></td></tr>
@@ -267,7 +267,7 @@ ${partyParas}
 <div style="font-weight:bold;font-size:13pt;margin:14pt 0 8pt;">Partners Details</div>
 <table style="font-size:13pt;"><thead><tr><th style="width:45pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Name of Partners in full</th><th style="width:120pt;font-size:13pt;">Date of joining the firm</th><th style="font-size:13pt;">Permanent address in full</th></tr></thead><tbody>${tRows}</tbody></table>
 <div style="margin-top:16pt;"><div style="text-align:center;font-size:13pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;">DECLARATION</div>
-<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:left;margin-bottom:6pt;">We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><div><p style="font-size:13pt;">Station: ${firm.placeExecution}</p><p style="font-size:13pt;">Date: ${formatDateShort(f1Data.date)}</p></div><div><b style="font-size:13pt;">Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
 <div style="margin-top:20pt;font-size:13pt;">${decls}</div></div></div>`;
     downloadDoc(html, 'Form_No_1_' + firm.firmName);
@@ -283,7 +283,7 @@ ${partyParas}
 <div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 24pt;font-family:'Bookman Old Style',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;width:100%;"><thead><tr><th style="width:28pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Partners Name &amp; Father Name</th><th style="font-size:13pt;">Address</th><th style="width:120pt;font-size:13pt;">Photo</th><th style="width:130pt;font-size:13pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
 </div>
-<br clear="all" style="page-break-before:always" />
+<div style="page-break-before:always">&nbsp;</div>
 <div><div style="text-align:center;font-size:15pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Bookman Old Style',serif;">${firm.firmName}</div><div style="text-align:center;font-size:15pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${firm.placeOfBiz}</div>
 <div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 24pt;font-family:'Bookman Old Style',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;width:100%;"><thead><tr><th style="width:28pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Witness Name</th><th style="font-size:13pt;">Address</th><th style="width:120pt;font-size:13pt;">Photo</th><th style="width:130pt;font-size:13pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
@@ -655,3 +655,5 @@ function SummaryItem({ label, value }: { label: string; value: string }) {
     </div>
   );
 }
+
+
