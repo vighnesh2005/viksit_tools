@@ -420,7 +420,7 @@ function SocietyModule() {
     `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}</td><td>${m.rel} ${m.father}</td><td>${m.desig}</td><td></td></tr>`
   ).join('');
   const witTableRows = (ws: SocWitness[]) => ws.map((w, i) =>
-    `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b><br>${w.rel} ${w.father}<br>${w.addr}</td><td></td></tr>`
+    `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.rel} ${w.father}<br>${w.addr}</td><td></td></tr>`
   ).join('');
 
   const generateCover = () => {
@@ -441,7 +441,7 @@ function SocietyModule() {
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;"><b>PRESIDENT</b></p>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Enclosures</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;"><li>All members I.D Proofs with photos</li><li>Affidavits – attested by the Notary</li></ul></div>`;
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;"><li>All members I.D Proofs with photos</li><li>Affidavits – attested by the Notary</li></ul></div>`;
     downloadDoc(html, 'Cover_Letter_' + common.name);
   };
 
@@ -456,7 +456,7 @@ function SocietyModule() {
 <p style="margin-top:18pt;font-family:'Bookman Old Style',serif;font-size:13pt;"><b>PRESIDENT</b></p>
 <div style="margin-top:24pt;">Signature<br><span style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></span></div>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Annexures</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;"><li>Bye Laws</li><li>ID Proofs</li><li>Affidavit</li></ul></div>`;
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;"><li>Bye Laws</li><li>ID Proofs</li><li>Affidavit</li></ul></div>`;
     downloadDoc(html, 'Resolution_' + common.name);
   };
 
@@ -470,7 +470,7 @@ function SocietyModule() {
     const dRows = declTableRows(ms);
     const wRows = witTableRows(ws);
     const finalSigRows = ms.map((m, i) =>
-      `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}, ${m.rel} ${m.father}</td><td>${m.desig}</td><td></td></tr>`
+      `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}, ${m.rel} ${m.father}</td><td>${m.desig}</td><td style="height:120pt; width:150pt;"></td></tr>`
     ).join('');
     const html = `<div><div style="text-align:center;font-size:13pt;font-weight:bold;font-family:'Bookman Old Style',serif;">MEMORANDUM OF ASSOCIATION OF</div>
 <div style="text-align:center;font-size:15pt;font-weight:bold;margin-bottom:2pt;font-family:'Bookman Old Style',serif;">${common.name}</div>
@@ -478,13 +478,13 @@ function SocietyModule() {
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;margin-bottom:6pt;"><b>Name of the Society:</b> ${common.name}</p>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;margin-bottom:6pt;"><b>Office Address:</b> ${common.addr}</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Aims And Objectives:</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${aimItems}</ul>
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;">${aimItems}</ul>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>Governing Body:</b> We the following mentioned persons in memorandum of Society have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under, the Societies Registration Act 35 of 2001.</p>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father / Husband Name</th><th style="font-size:13pt;">Address</th><th style="font-size:13pt;">Age</th><th style="font-size:13pt;">Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
 <div><div style="text-align:center;font-size:15pt;font-weight:bold;text-decoration:underline;margin:16pt 0 8pt;font-family:'Bookman Old Style',serif;">DECLARATION</div>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father / Husband Name</th><th style="font-size:13pt;">Designation</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${dRows}</tbody></table>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Signatures Of Witnesses and Their Addresses</div>
-<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="width:46pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Name, Father/Husband Name &amp; Address</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${wRows}</tbody></table>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father/Husband Name &amp; Address</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${wRows}</tbody></table>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
 <div><div style="text-align:center;font-size:13pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Bookman Old Style',serif;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
@@ -493,14 +493,14 @@ function SocietyModule() {
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>Office Address:</b> ${common.addr}</p>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>Area of Operation:</b> The area of operation of this ${common.name} shall be ${common.area}.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">4.1. Membership of the Society</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">All the persons who are Indian Nationals and above the Age of 18 Years and are of sound Mind and are eligible to the Members of the Society. Their Membership shall be approved By the Executive Committee on acceptance of Rs.${common.admissionFee}/- as an admission Fee and a Monthly Subscription of Rs.${common.monthlySub}/- each. All subscriptions shall be paid every year i.e., before closing the financial year.</li>
 <li style="margin-bottom:4pt;">Every member shall contribute a monthly subscription of Rs.${common.monthlySub}/- if any member fails to pay the subscriptions for 3 continuous months his  name  will be deleted from  the  list  of  members  of  the  society and all members shall be loyal and   faith full to the society.</li>
 <li style="margin-bottom:4pt;">The membership of the society shall be opened to all and shall not be restricted to any caste, religion, caste, creed, sex etc.,</li>
 <li style="margin-bottom:4pt;">The Society shall maintain an up-to-date Membership register, records and addresses of all the members with the date of admission and date of termination if any.</li>
 </ul>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">4.2. Cessation of Membership</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">Any member shall cease to be a member</li>
 <li style="margin-bottom:4pt;">On  the  acceptance  of  his  resignation  approved  by  Governing  body.</li>
 <li style="margin-bottom:4pt;">On his/her becoming unsound, mad and suffering from Chronic diseases as per Medical Reports and on his/her death.</li>
@@ -512,7 +512,7 @@ function SocietyModule() {
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Resignation by any  member  shall  be  through  a  notice  served  to  the  President at least one month in advance, the same shall be placed in the next Managing Committee  meeting  and acceptance  of  the  same  shall  be  intimated  within  10 days  of  the  meeting.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">General  Body  and  Function</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  General  Body  shall  consist  of  the  founders  and  Co-Op.,  members  only. They  must  meet  at  least  once  in  a  year, in  the  month  of  January. A  Quorum  of  the  General  Body  shall  be  3/5th  of  the  membership. The  adjourned  meeting  of  the  General  Body  need  not  have  Quorum. The  annual  general   body  meeting  shall  be  convened  for  the  following  purposes :</p>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">The General Body shall review and approve the annual statement of receipts and expenditure and the audited Balance Sheet of the previous completed year.</li>
 <li style="margin-bottom:4pt;">It shall appoint an auditor or auditors for next year to hold office till the conclusion of the next Annual General Body meeting to be fixed by the Board of Trustees from time to time.  The retiring auditor is eligible for re-appointment.</li>
 <li style="margin-bottom:4pt;">To set up guidelines for the achievement of the objectives of the Trust.</li>
@@ -520,7 +520,7 @@ function SocietyModule() {
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Managing Committee</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  complete  Management  and  control  of  the Society shall  rest  on  the Management Committee  of  the  Society. The  Managing  Committee of  the  Society  shall  consist  of  a  President ,a  Secretary , treasurer , and 5 members  total   in  10  members . The  members  of  the  managing  committee  shall be  elected  at  a  General  Body  meeting. The members  of  the  managing  committee shall  hold  the  office  for  a  period  of  5  years  at  a  time  and  that  period  shall  and  always  with  the  conclusion  of  an   Annual  General  Body  Meeting. The  executive committee  shall  be the  authority  for  the  Society  for all  its  functions. The  executive body shall  consist of  not  less than  and  not    more than  9  members. The  managing  committee  shall   meet  at least  4  times  in  a  year  by  a   notice specifying the venue, Agenda, Time  of  meeting, the  notice  shall  be  given  to  all members  at least  10  days in  advance.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Functions of Managing Committee</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">It shall  have  powers  to  employ  persons.</li>
 <li style="margin-bottom:4pt;">It  is  responsible  for  the  smooth  running  and  management  of  funds  for advancement  of  the  Society.</li>
 <li style="margin-bottom:4pt;">It  shall  receive  Donations either in cash or in kind  ,Grants, Contributions , raise  loans ,etc.</li>
@@ -528,7 +528,7 @@ function SocietyModule() {
 <li style="margin-bottom:4pt;">It  shall  make  rules  and  regulations  as  it  thinks  fit  for  the  efficient  management  of  the  affairs  of  the  Society.</li>
 <li style="margin-bottom:4pt;">It  shall  give  notice  to  all  General  Body  members  15  days  in  advance  specifying  the  Venue, Agenda, and  time  of  meeting  of  the  General  Body  Meeting .</li>
 <li style="margin-bottom:4pt;">It  shall  exercise  direct  control  over  the  following:
-<ul style="padding-left:16pt;margin-top:4pt;">
+<ul style="list-style-type: disc; padding-left:16pt;margin-top:4pt;">
 <li style="margin-bottom:4pt;">Personal working in Society administration and discipline.</li>
 <li style="margin-bottom:4pt;">Finance, Establishment and Records.</li>
 <li style="margin-bottom:4pt;">Transport, Equipment, Machinery and stores.</li>
@@ -540,14 +540,14 @@ function SocietyModule() {
 <li style="margin-bottom:4pt;">The  Managing  Committee  can  reserve  for  itself  the   right  to  admit  or   not  to  admit  a  person  who  applies  for  membership.</li>
 </ul>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Meeting of the Executive Committee</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">The  Executive  Committee  shall  meet  ordinarily  once  in  a  year  and  meet  often   for  any  special  purpose  which  may be  fixed,  by  the  Secretary  in consultation  with  the  president  Society.</li>
 <li style="margin-bottom:4pt;">The  meeting    shall  be  presided  over  by  the  president  or  in  the  absence  of  the  president,  by  the  Secretary  or  in  the  absence  of  the  President  and  Secretary  by  a  member  elected  from  among  the  member  presents.</li>
 <li style="margin-bottom:4pt;">Any  member  of  the  Executive  Committee  who absent  himself  without  Permission  of  the  committee  for  any  three  Executive  meetings   shall  cease  to  be  member  thereof.   But  he  may  for  sufficient  cause,  be  restored  as  a  member  by  the  Executive  Committee.</li>
 <li style="margin-bottom:4pt;">Any    vacancy  caused  in  the Executive  Committee  by  the resignation  or  otherwise  shall  be  filled  up  by  co-option  by  the  other members  of  the  Executive  Committee.</li>
 </ul>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Quorum of Executive Committee</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">The  quorum  for  the  meeting  of  the  Executive  Committee shall  by  3/5th  of  the  members.</li>
 <li style="margin-bottom:4pt;">All  the  matters and resolutions  of  the  Executive  Committee  shall  be  decided  and  carried  by  a  majority  vote.</li>
 <li style="margin-bottom:4pt;">In  case  of  vitas bear  equal  on  both sides, the  president  of  the  meeting shall  exercise  his casting  vote.</li>
@@ -560,7 +560,7 @@ function SocietyModule() {
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">President</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  President  shall  be  the  overall  in charge  of  the  Society  and  shall  preside  overall  meetings  of  the  Society. He  can  also  advice  the  Secretary  to  call  for  emergency  meetings  of  the  managing  committee  at least  by  giving  3  days  prior  notice.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Secretary</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">In  the  absence  of  the  President  or  on  the  authorization  of  President  the  Secretary can  act  as  President.</li>
 <li style="margin-bottom:4pt;">The  secretary  can  convene  the  meetings  of  the  executive  committee  as  well  as  meetings  of  general  body</li>
 <li style="margin-bottom:4pt;">He or She  shall  maintain  all  the  records  of  the   Society  and   issue  notices  for  all  the  meetings  in  the  end   with consultation of the  President</li>
@@ -572,14 +572,14 @@ function SocietyModule() {
 <li style="margin-bottom:4pt;">The  Secretary   of  the  Society  shall  be  entitled  to  raise  loans  and  advances from  any  commercial  banks  or  financial  institutions  on  behalf  of  the  Society and  such  funds  should  be  exclusively  used  for  the  purpose  of  achieving  the  main  objects  and  aims  of  the  Society.  He or she  shall  present  the  annual  report  of  the  Society to  general  body .He or she  shall  be  responsible  for  all  kinds  of  activities  that  are  sponsored  by  the  Society.</li>
 </ul>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Treasurer</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">The  treasurer  shall  be  responsible  for  the  maintaining  all  the  accounts  for  the  finances  received  from  the  governing  body</li>
 <li style="margin-bottom:4pt;">He or She  shall  attend  to  the  Annual  Audit  and  preparation  of  financial  reports  in  close  association  with  the  secretary</li>
 <li style="margin-bottom:4pt;">He or She shall  be  responsible  for  maintenance  of  all  accounts  books  and  shall  represent  the  same  to  all  proper  authorities.</li>
 </ul>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Funds</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Funds  for  the  execution  of  aims  and  objects  of  Society shall  be collected  by  way  of:</p>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">Donations either in cash or in kind</li>
 <li style="margin-bottom:4pt;">Contributions</li>
 <li style="margin-bottom:4pt;">Gifts  either  in  cash  or  in  kind</li>
@@ -598,7 +598,7 @@ function SocietyModule() {
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Investments</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  surplus  money  of  Society  shall  be  invested  only  in  securities  referred  to  in  Sec  11 ( 5 ) of  Income  Tax   Act  1961.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Property How Deal With</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">All documents relating to the immovable properties that may be endowed to the society through purchase, gift or lease shall be executed in favour of the society represented by its president for the time being.</li>
 <li style="margin-bottom:4pt;">All the society properties are vested in the name of the society who shall hold the same for the use and benefit of the Society.</li>
 <li style="margin-bottom:4pt;">The Governing Body does not have any power to alienate or to transfer or to mortgage or to pledge any of the properties standing in the name of the Society that are acquired and in peaceful possession of the Society as held today. The properties that are conveyed in the name of the Society either by way of acquisition or by gift or in kind or in any other mode shall not be transferred during the tenure of the Society either by the Governing Body or their members or by the Board of Members or by any others who hold interest in the Society.</li>
@@ -607,7 +607,7 @@ function SocietyModule() {
 </ul>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Disqualifications</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Any member who has been appointed to the General Body shall cease his membership by any of the reasons stated below or any eventual situations that makes him incapable to continue as the Board member or to act as the Council.</p>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">If he or she dies.</li>
 <li style="margin-bottom:4pt;">If he or she becomes bankrupt.</li>
 <li style="margin-bottom:4pt;">If he or she is found to be lunatic or of an unsound mind.</li>
@@ -618,13 +618,13 @@ function SocietyModule() {
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Financial Year</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The society shall follow financial year for preparation of annual accounts (i.e 1st April to 31st March).  The trust shall prepare receipts and payments, Income-Expenditure and Balance Sheet on the financial year ending on 31st March every year.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Audit & Accounts</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">The Society shall follow financial year for the preparation of financial statements.</li>
 <li style="margin-bottom:4pt;">The Society shall prepare Receipts and Payments, Income & Expenditure account, Balance Sheet every year.</li>
 <li style="margin-bottom:4pt;">The accounts  of the society shall be   audited by a Qualified  Auditor/Chartered Accountant every  year  to  be appointed  by the  Society at  every  annual  general  meeting.</li>
 </ul>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Proxy</div>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">There shall be no voting by proxy.</li>
 <li style="margin-bottom:4pt;">The Society   shall not undertake any activity outside India.</li>
 <li style="margin-bottom:4pt;">The  Society  formed  by  us  is  a public charitable  one  and  it is  an irrevocable society.</li>
@@ -633,7 +633,7 @@ function SocietyModule() {
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The society shall sue or be sued in the name of the president.</p>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Property</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Any  Judgment  for  the  recovery of  the property  shall  be  enforced against  the   property of the society only.</p>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
 <li style="margin-bottom:4pt;">All other provisions  of  the ap society  registration  act 35 of 2001 not  specially   mentioned  therein  shall  apply  to this  society.</li>
 </ul></div>
 <div><div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Registration Undertaking</div>
@@ -641,7 +641,7 @@ function SocietyModule() {
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name &amp; Father / Husband Name</th><th style="font-size:13pt;">Designation</th><th style="font-size:13pt;">Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
 <div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Witnesses with their Address &amp; Signatures</div>
 <table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name &amp; Address</th><th style="font-size:13pt;">Witness Signature</th><th style="font-size:13pt;">Witness Photo</th></tr></thead>
-<tbody>${ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b> ${w.rel} ${w.father}<br>${w.addr}</td><td></td><td></td></tr>`).join('')}</tbody></table>
+<tbody>${ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b> ${w.rel} ${w.father}<br>${w.addr}</td><td style="height:120pt; width:120pt;"></td><td style="height:120pt; width:120pt;"></td></tr>`).join('')}</tbody></table>
 <div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div></div></div>`;
     downloadDoc(html, 'Memorandum_of_Association_' + common.name);
   };
@@ -657,7 +657,7 @@ function SocietyModule() {
     const html = `<div><div class="affidavit-title">AFFIDAVIT — 1</div>
 <div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">President's Affidavit</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">I, ${pres.name}, ${pres.rel} ${pres.father}, aged about ${pres.age} years, ${pres.addr}, solemnly affirm and sincerely state as follows:</p>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;">
   <li>I am the President of <b>${common.name}</b>, and I know the facts and swear this affidavit on behalf of me and on behalf of other executive members.</li>
   <li>The below persons are the members of the society and formed as a society namely <b>${common.name}</b>, ${common.addr}.</li>
 </ul>
@@ -669,7 +669,7 @@ function SocietyModule() {
 <div><div style="text-align:center;font-size:15pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Bookman Old Style',serif;">AFFIDAVIT — 2</div>
 <div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Premises No Objection Certificate (NOC)</div>
 <p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">I, ${owner.name}, ${owner.rel} ${owner.father}${owner.age ? ', aged about ' + owner.age + ' years' : ''},${owner.addr ? ` residing at ${owner.addr},` : ''} do hereby state as follows:</p>
-<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">
+<ul style="list-style-type: disc; font-family:'Bookman Old Style',serif;font-size:13pt;">
   <li>I am the owner of the premises situated at ${owner.addr || common.addr}.</li>
   <li>I have no objection to ${pres.name} establishing and operating a society under the name and style of <b>"${common.name}"</b> at the above said premises.</li>
   ${owner.relToPres ? `<li>I further state that ${pres.name}, who is my ${owner.relToPres}, is the President of the said society, and in view of our relationship, I have permitted the society to use my premises free of cost for its office purposes. No rent or any other consideration has been collected or will be collected for the same.</li>` : '<li>I have permitted the society to use the said premises free of cost for its office purposes.</li>'}
