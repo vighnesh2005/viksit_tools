@@ -70,6 +70,10 @@ p {
   text-align: center;
   vertical-align: middle;
 }
+@page {
+  margin: 1in;
+  mso-header-margin: 0.5in;
+  mso-footer-margin: 0.5in;
 }
 .section-hdr {
   text-align: center;
