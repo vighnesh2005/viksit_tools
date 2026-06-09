@@ -8,21 +8,21 @@ import { DATA } from './dummy-data.mjs';
 const PORT = 3456;
 const BASE = `http://localhost:${PORT}`;
 const OUT = join(process.cwd(), 'samples');
-const BASE_STYLES = `body{font-family:'Book Antiqua',serif;font-size:12pt;margin:1in;color:#000;line-height:1.5;}
+const BASE_STYLES = `body{font-family:'Bookman Old Style',serif;font-size:13pt;margin:1in;color:#000;line-height:1.5;}
 h1,h2{text-align:center;font-weight:bold;}
 h1{margin:0 0 6pt;}h2{font-size:13pt;margin:16pt 0 8pt;}
 h3{font-weight:bold;margin:14pt 0 6pt;}
 p{text-align:justify;margin-bottom:6pt;line-height:1.5;}
 .sig-line{border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;}
-.station-row{display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;}
+.station-row{display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;}
 .decl-block{margin:12pt 0;border-left:3pt solid #b8860b;padding:8pt 12pt;}
-.deed-title{text-align:center;font-size:16pt;font-weight:bold;text-decoration:underline;margin-bottom:14pt;}
-.affidavit-title{text-align:center;font-size:14pt;font-weight:bold;margin-bottom:14pt;}
-.form1-title{text-align:center;font-size:14pt;font-weight:bold;margin-bottom:4pt;}
+.deed-title{text-align:center;font-size:15pt;font-weight:bold;text-decoration:underline;margin-bottom:14pt;}
+.affidavit-title{text-align:center;font-size:15pt;font-weight:bold;margin-bottom:14pt;}
+.form1-title{text-align:center;font-size:15pt;font-weight:bold;margin-bottom:4pt;}
 .doc-party{margin-bottom:6pt;}.and-sep{text-align:center;font-weight:bold;margin:4pt 0;}
 .photo-cell{text-align:center;vertical-align:middle;}
 table{width:100%;border-collapse:collapse;margin:8pt 0;}
-td,th{border:1pt solid #000;padding:4pt 6pt;text-align:left;font-size:11pt;}
+td,th{border:1pt solid #000;padding:4pt 6pt;text-align:left;font-size:13pt;}
 th{font-weight:bold;text-align:center;background:#f0e8d0;}
 `;
 

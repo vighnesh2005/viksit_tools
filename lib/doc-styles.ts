@@ -3,8 +3,8 @@ const DOC_STYLES = `
   margin: 0.4in;
 }
 body {
-  font-family: 'Book Antiqua', serif;
-  font-size: 12pt;
+  font-family: 'Bookman Old Style', serif;
+  font-size: 13pt;
   margin: 0.4in;
   color: #000;
   line-height: 1.5;
@@ -12,16 +12,18 @@ body {
 h1 {
   text-align: center;
   font-weight: bold;
+  font-size: 15pt;
   margin: 0 0 6pt;
 }
 h2 {
   text-align: center;
   font-weight: bold;
-  font-size: 13pt;
+  font-size: 14pt;
   margin: 16pt 0 8pt;
 }
 h3 {
   font-weight: bold;
+  font-size: 14pt;
   margin: 14pt 0 6pt;
 }
 p {
@@ -70,18 +72,18 @@ p {
 .section-hdr {
   text-align: center;
   font-weight: bold;
-  font-size: 11pt;
+  font-size: 15pt;
   text-transform: uppercase;
   margin: 18pt 0 10pt;
 }
 .section-sub {
   font-weight: bold;
-  font-size: 11pt;
+  font-size: 14pt;
   margin: 14pt 0 8pt;
 }
 table {
-  width: 95%;
-  max-width: 100%;
+  width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   margin: 8pt auto;
   font-size: 10pt;
@@ -157,7 +159,7 @@ ol li {
   border-left: 2pt solid #000;
 }
 .rules-section h3 {
-  font-size: 11pt;
+  font-size: 14pt;
   font-weight: bold;
   margin-top: 12pt;
   margin-bottom: 4pt;
@@ -262,16 +264,16 @@ export default DOC_STYLES;
 
 export const DOC_PREVIEW_STYLES = `
 .doc-content {
-  font-family: 'Book Antiqua', serif;
-  font-size: 12pt;
+  font-family: 'Bookman Old Style', serif;
+  font-size: 13pt;
   line-height: 1.5;
   color: #000;
   padding: 0.4in;
 }
-.doc-content h1 { text-align: center; font-weight: bold; margin: 0 0 6pt; }
-.doc-content h2 { text-align: center; font-weight: bold; font-size: 13pt; margin: 16pt 0 8pt; }
+.doc-content h1 { text-align: center; font-weight: bold; font-size: 15pt; margin: 0 0 6pt; }
+.doc-content h2 { text-align: center; font-weight: bold; font-size: 14pt; margin: 16pt 0 8pt; }
 .doc-content p { text-align: justify; margin-bottom: 6pt; line-height: 1.5; }
-.doc-content table { width: 95%; max-width: 100%; border-collapse: collapse; margin: 8pt auto; font-size: 10pt; }
+.doc-content table { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 8pt auto; font-size: 10pt; }
 .doc-content tr { page-break-inside: avoid; }
 .doc-content th { font-weight: bold; padding: 4pt 6pt; text-align: left; border: 0.5pt solid #000; font-size: 10pt; }
 .doc-content td { padding: 4pt 6pt; border: 0.5pt solid #000; vertical-align: top; font-size: 10pt; word-break: break-word; }
@@ -279,8 +281,8 @@ export const DOC_PREVIEW_STYLES = `
 .doc-content ul li { margin-bottom: 4pt; text-align: justify; }
 .doc-content ol { margin: 4pt 0 4pt 26pt; }
 .doc-content ol li { margin-bottom: 4pt; text-align: justify; }
-.doc-content .section-hdr { text-align: center; font-weight: bold; font-size: 12pt; text-transform: uppercase; margin: 18pt 0 10pt; border-bottom: 1pt solid #000; padding-bottom: 4pt; }
-.doc-content .section-sub { font-weight: bold; font-size: 11pt; margin: 14pt 0 8pt; text-decoration: underline; }
+.doc-content .section-hdr { text-align: center; font-weight: bold; font-size: 15pt; text-transform: uppercase; margin: 18pt 0 10pt; border-bottom: 1pt solid #000; padding-bottom: 4pt; }
+.doc-content .section-sub { font-weight: bold; font-size: 14pt; margin: 14pt 0 8pt; text-decoration: underline; }
 .doc-content .firm-hdr { text-align: center; font-size: 14pt; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5pt; margin-bottom: 2pt; }
 .doc-content .firm-addr { text-align: center; font-size: 11pt; margin-bottom: 10pt; }
 .doc-content .sig-line { border-bottom: 1pt solid #000; display: inline-block; width: 160pt; margin-top: 8pt; }

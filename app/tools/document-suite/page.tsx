@@ -106,16 +106,16 @@ function AffidavitPanel({ cpCount, setCpCount, showDoc }: { cpCount: number; set
     const isOwner = premises === 'owner';
     const hasReg = reg === 'yes';
     const html = `<div><div class="affidavit-title">AFFIDAVIT</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin-bottom:6pt;"><b>${name}</b>, <b>${rel} ${father}</b>, aged <b>${age} years</b> residing at ${address} do hereby affirm and state as follows:</p>
-<ol style="font-family:'Book Antiqua',serif;font-size:12pt;margin:4pt 0 4pt 24pt;">
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;"><b>${name}</b>, <b>${rel} ${father}</b>, aged <b>${age} years</b> residing at ${address} do hereby affirm and state as follows:</p>
+<ol style="font-family:'Bookman Old Style',serif;font-size:13pt;margin:4pt 0 4pt 24pt;">
   <li style="margin-bottom:4pt;">I, <b>${name}</b> have floated a Partnership Firm with ${cpList.map(p => `<b>${p.name}</b>`).join(' , ')} as the partner${cpList.length > 1 ? 's' : ''} to carry on the business under the name and style of <b>"${firm}"</b>.</li>
   <li style="margin-bottom:4pt;">The said Firm commenced the business from ${formatDateLong(dateComm)} and the office of the firm is situated at ${officeAddr} and the said premises belong to me.</li>
   ${hasReg ? `<li style="margin-bottom:4pt;">The said firm has applied for Registration to the Registrar of Firms, ${station}.</li>` : ''}
   ${isOwner ? `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in my building and I am not collecting any rent from the said firm because I am also one of the partners in the firm.</li>` : `<li style="margin-bottom:4pt;">I have no objection and give my consent and acceptance for running the said firm in the said premises.</li>`}
 </ol>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;margin:10pt 0 6pt;">Solemnly affirmed at ${station} on this day ${formatDateShort(signDate)}.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin:10pt 0 6pt;">Solemnly affirmed at ${station} on this day ${formatDateShort(signDate)}.</p>
 <div style="margin-top:18pt;text-align:right;"><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div><br><b>DEPONENT</b></div>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${station}</span><span>Date: ${formatDateShort(signDate)}</span></div></div>`;
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${station}</span><span>Date: ${formatDateShort(signDate)}</span></div></div>`;
     showDoc('Affidavit_' + firm, html);
   };
 
@@ -211,11 +211,11 @@ function Form1Panel({ f1Count, setF1Count, showDoc }: { f1Count: number; setF1Co
     const decls = ps.map(p => `<div class="decl-block"><p>I, <b>${p.name}</b>, <b>${p.rel || 'S/o'} ${p.father}</b>, aged <b>${p.age} Years</b> do hereby declare that the above statement is true and correct to the best of my knowledge and belief.</p><div class="station-row"><span>Date: ${formatDateShort(date)}</span><span>Signature: <span class="sign-line" style="width:130pt;"></span></span></div></div>`).join('');
     const sn = ps.map((p, i) => `${i + 1}. ${p.name.split(' ').map((w, j) => j === 0 ? w[0] + '.' : w).join(' ')}`).join('&nbsp;&nbsp;&nbsp;&nbsp;');
     const html = `<div><div class="form1-title">FORM NO.1</div>
-<div style="text-align:center;font-size:10pt;font-weight:bold;margin-bottom:10pt;">THE INDIAN PARTNERSHIP ACT, 1932<br>Registration u/s 58</div>
-<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm}"</b> presented to the Registrar of Firms by <b>${presentedBy}</b>.</p>
-<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
-<div style="font-weight:bold;font-size:10pt;margin:14pt 0 8pt;">Firm Particulars</div>
-<table style="border:none;margin:6pt 0;font-size:10pt;">
+<div style="text-align:center;font-size:13pt;font-weight:bold;margin-bottom:10pt;">THE INDIAN PARTNERSHIP ACT, 1932<br>Registration u/s 58</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Application for the registration of firm by the name <b>"${firm}"</b> presented to the Registrar of Firms by <b>${presentedBy}</b>.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">We, the undersigned, being the partners of the firm "<b>${firm}</b>", hereby apply for registration of the said firm pursuant to Section 58 of the Indian Partnership Act, 1932.</p>
+<div style="font-weight:bold;font-size:13pt;margin:14pt 0 8pt;">Firm Particulars</div>
+<table style="border:none;margin:6pt 0;font-size:13pt;">
   <tr><td style="border:none;width:220pt;"><b>The Firm's Name</b></td><td style="border:none;">:&nbsp;&nbsp;<b>${firm}</b></td></tr>
   <tr><td style="border:none;" colspan="2"><b>Place of Business:</b></td></tr>
   <tr><td style="border:none;padding-left:22pt;">(a) Principal Place:</td><td style="border:none;">:&nbsp;&nbsp;${principalPlace}</td></tr>
@@ -223,13 +223,13 @@ function Form1Panel({ f1Count, setF1Count, showDoc }: { f1Count: number; setF1Co
   <tr><td style="border:none;"><b>Nature of Business</b></td><td style="border:none;">:&nbsp;&nbsp;${nature}</td></tr>
   <tr><td style="border:none;"><b>Duration of the Firm</b></td><td style="border:none;">:&nbsp;&nbsp;${data.duration}</td></tr>
 </table>
-<p style="margin-left:24pt;font-size:10pt;">${sn}</p>
-<div style="font-weight:bold;font-size:10pt;margin:14pt 0 8pt;">Partners Details</div>
-<table style="font-size:10pt;"><thead><tr><th style="width:45pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Name of Partners in full</th><th style="width:120pt;font-size:10pt;">Date of joining the firm</th><th style="font-size:10pt;">Permanent address in full</th></tr></thead><tbody>${tRows}</tbody></table>
-<div style="margin-top:16pt;"><div style="text-align:center;font-size:10pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;">DECLARATION</div>
-<p style="font-family:'Book Antiqua',serif;font-size:10pt;text-align:justify;margin-bottom:6pt;">We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:10pt;"><div><p style="font-size:10pt;">Station: ${station}</p><p style="font-size:10pt;">Date: ${formatDateShort(date)}</p></div><div><b style="font-size:10pt;">Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
-<div style="margin-top:20pt;font-size:10pt;">${decls}</div></div></div>`;
+<p style="margin-left:24pt;font-size:13pt;">${sn}</p>
+<div style="font-weight:bold;font-size:13pt;margin:14pt 0 8pt;">Partners Details</div>
+<table style="font-size:13pt;"><thead><tr><th style="width:45pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Name of Partners in full</th><th style="width:120pt;font-size:13pt;">Date of joining the firm</th><th style="font-size:13pt;">Permanent address in full</th></tr></thead><tbody>${tRows}</tbody></table>
+<div style="margin-top:16pt;"><div style="text-align:center;font-size:13pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;">DECLARATION</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">We solemnly and sincerely affirm and state that we, either individually or jointly, are not involved in any activity that offends any rule of law or carrying out any business in contravention of any state or central laws for the time being in force.</p>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><div><p style="font-size:13pt;">Station: ${station}</p><p style="font-size:13pt;">Date: ${formatDateShort(date)}</p></div><div><b style="font-size:13pt;">Signature of the Partners:</b><ul style="list-style:none;margin-top:8pt;">${sigs}</ul></div></div>
+<div style="margin-top:20pt;font-size:13pt;">${decls}</div></div></div>`;
     showDoc('Form_No_1_' + firm, html);
   };
 
@@ -302,14 +302,14 @@ function PhotoFormPanel({ pfPC, setPfPC, pfWC, setPfWC, showDoc }: { pfPC: numbe
     for (let i = 0; i < ws.length; i++) { if (!ws[i].name || !ws[i].address) { alert(`Fill all fields for Witness ${i + 1}.`); return; } }
     const pRows = ps.map((p, i) => `<tr><td style="text-align:center;">${i + 1}.</td><td><b>${p.name}, ${p.rel || 'S/o'} ${p.father}</b></td><td>${p.address}</td><td class="photo-cell" style="vertical-align:middle;"><table style="width:105pt;height:135pt;margin:0 auto;border:1pt dashed #bbb;border-collapse:collapse;"><tr><td style="text-align:center;vertical-align:middle;font-size:8pt;color:#bbb;border:none;padding:0;">Photo (Passport)</td></tr></table></td><td class="photo-cell" style="vertical-align:middle;"><table style="width:120pt;height:60pt;margin:0 auto;border:1pt dashed #bbb;border-collapse:collapse;"><tr><td style="text-align:center;vertical-align:middle;font-size:8pt;color:#bbb;border:none;padding:0;">Sign &amp; Thumb</td></tr></table></td></tr>`).join('');
     const wRows = ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b></td><td>${w.address}</td><td class="photo-cell" style="vertical-align:middle;"><table style="width:105pt;height:135pt;margin:0 auto;border:1pt dashed #bbb;border-collapse:collapse;"><tr><td style="text-align:center;vertical-align:middle;font-size:8pt;color:#bbb;border:none;padding:0;">Photo (Passport)</td></tr></table></td><td class="photo-cell" style="vertical-align:middle;"><table style="width:120pt;height:60pt;margin:0 auto;border:1pt dashed #bbb;border-collapse:collapse;"><tr><td style="text-align:center;vertical-align:middle;font-size:8pt;color:#bbb;border:none;padding:0;">Sign &amp; Thumb</td></tr></table></td></tr>`).join('');
-    const html = `<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 24pt;font-family:'Book Antiqua',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;width:100%;"><thead><tr><th style="width:28pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Partners Name &amp; Father Name</th><th style="font-size:10pt;">Address</th><th style="width:120pt;font-size:10pt;">Photo</th><th style="width:130pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
+    const html = `<div><div style="text-align:center;font-size:15pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Bookman Old Style',serif;">${data.firm}</div><div style="text-align:center;font-size:15pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${data.addr}</div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 24pt;font-family:'Bookman Old Style',serif;">Partners List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;width:100%;"><thead><tr><th style="width:28pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Partners Name &amp; Father Name</th><th style="font-size:13pt;">Address</th><th style="width:120pt;font-size:13pt;">Photo</th><th style="width:130pt;font-size:13pt;">Signature &amp; Thumb</th></tr></thead><tbody>${pRows}</tbody></table>
 </div>
 <br clear="all" style="page-break-before:always" />
-<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${data.firm}</div><div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${data.addr}</div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 24pt;font-family:'Book Antiqua',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;width:100%;"><thead><tr><th style="width:28pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Witness Name</th><th style="font-size:10pt;">Address</th><th style="width:120pt;font-size:10pt;">Photo</th><th style="width:130pt;font-size:10pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
+<div><div style="text-align:center;font-size:15pt;font-weight:bold;text-transform:uppercase;letter-spacing:0.5pt;margin-bottom:2pt;font-family:'Bookman Old Style',serif;">${data.firm}</div><div style="text-align:center;font-size:15pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${data.addr}</div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 24pt;font-family:'Bookman Old Style',serif;">Witness List with Photo, Signature &amp; Left Thumb Impression</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;width:100%;"><thead><tr><th style="width:28pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Witness Name</th><th style="font-size:13pt;">Address</th><th style="width:120pt;font-size:13pt;">Photo</th><th style="width:130pt;font-size:13pt;">Signature &amp; Thumb</th></tr></thead><tbody>${wRows}</tbody></table></div>`;
     showDoc('Photo_Form_' + data.firm, html);
   };
 
@@ -427,21 +427,21 @@ function SocietyModule() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<div><div style="text-align:center;font-size:18pt;font-weight:bold;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${common.name}</div>
-<div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
-<div style="text-align:center;font-size:16pt;font-weight:bold;margin-bottom:10pt;font-family:'Book Antiqua',serif;">(Registered under Societies Registration Act 35 of 2001)</div>
-<div style="margin-top:18pt;font-family:'Book Antiqua',serif;font-size:12pt;"><b>President</b><br>${pres.name}<br>${pres.rel} ${pres.father},<br>${pres.addr}</div>
-<p style="margin-top:18pt;font-family:'Book Antiqua',serif;font-size:12pt;">To,</p>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;">The District Registrar of Assurances,<br>The District Registrar Office,<br>${common.place}.</p>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Respected Sir,</p>
-<p style="text-indent:36pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I am here with enclosing a Memorandum and of the Rules and Regulations of <b>"${common.name}"</b>, Office Address: ${common.addr}, for registration under the Societies Registration Act 35 of 2001. I request that this may kindly be registered under the above said act and issue a necessary certificate of Registration to me. The necessary fee for its registration will be paid in person.</p>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Submitted for necessary action.</p>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Thanking you Sir,</p>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;">Yours faithfully,</p>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>PRESIDENT</b></p>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Enclosures</div>
-<ul style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>All members I.D Proofs with photos</li><li>Affidavits – attested by the Notary</li></ul></div>`;
+    const html = `<div><div style="text-align:center;font-size:15pt;font-weight:bold;margin-bottom:2pt;font-family:'Bookman Old Style',serif;">${common.name}</div>
+<div style="text-align:center;font-size:13pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${common.addr}</div>
+<div style="text-align:center;font-size:15pt;font-weight:bold;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">(Registered under Societies Registration Act 35 of 2001)</div>
+<div style="margin-top:18pt;font-family:'Bookman Old Style',serif;font-size:13pt;"><b>President</b><br>${pres.name}<br>${pres.rel} ${pres.father},<br>${pres.addr}</div>
+<p style="margin-top:18pt;font-family:'Bookman Old Style',serif;font-size:13pt;">To,</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;">The District Registrar of Assurances,<br>The District Registrar Office,<br>${common.place}.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;">Respected Sir,</p>
+<p style="text-indent:36pt;font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">I am here with enclosing a Memorandum and of the Rules and Regulations of <b>"${common.name}"</b>, Office Address: ${common.addr}, for registration under the Societies Registration Act 35 of 2001. I request that this may kindly be registered under the above said act and issue a necessary certificate of Registration to me. The necessary fee for its registration will be paid in person.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;">Submitted for necessary action.</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;">Thanking you Sir,</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;">Yours faithfully,</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;"><b>PRESIDENT</b></p>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Enclosures</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;"><li>All members I.D Proofs with photos</li><li>Affidavits – attested by the Notary</li></ul></div>`;
     downloadDoc(html, 'Cover_Letter_' + common.name);
   };
 
@@ -449,14 +449,14 @@ function SocietyModule() {
     if (!validateCommon()) return;
     const ms = getMembers();
     const pres = ms.find(m => m.desig === 'President') || ms[0];
-    const html = `<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">Copy of Resolution</div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Resolution to Form and Register the Society</div>
-<p style="text-indent:36pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We the undersigned resolved to form a Society by name <b>"${common.name}"</b>, Office Address ${common.addr} and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorize the <b>PRESIDENT — ${pres.name} ${pres.rel} ${pres.father}</b> of the said Association to present the document in the Registrar's Office, ${common.place} and get it registered under the above said Act and receive the necessary certificate.</p>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<p style="margin-top:18pt;font-family:'Book Antiqua',serif;font-size:12pt;"><b>PRESIDENT</b></p>
+    const html = `<div><div style="text-align:center;font-size:15pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Bookman Old Style',serif;">Copy of Resolution</div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Resolution to Form and Register the Society</div>
+<p style="text-indent:36pt;font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">We the undersigned resolved to form a Society by name <b>"${common.name}"</b>, Office Address ${common.addr} and get it registered under the Societies Registration Act 35 of 2001 and also resolved to authorize the <b>PRESIDENT — ${pres.name} ${pres.rel} ${pres.father}</b> of the said Association to present the document in the Registrar's Office, ${common.place} and get it registered under the above said Act and receive the necessary certificate.</p>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<p style="margin-top:18pt;font-family:'Bookman Old Style',serif;font-size:13pt;"><b>PRESIDENT</b></p>
 <div style="margin-top:24pt;">Signature<br><span style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></span></div>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Annexures</div>
-<ul style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>Bye Laws</li><li>ID Proofs</li><li>Affidavit</li></ul></div>`;
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Annexures</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;"><li>Bye Laws</li><li>ID Proofs</li><li>Affidavit</li></ul></div>`;
     downloadDoc(html, 'Resolution_' + common.name);
   };
 
@@ -472,57 +472,181 @@ function SocietyModule() {
     const finalSigRows = ms.map((m, i) =>
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}, ${m.rel} ${m.father}</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
-    const html = `<div><div style="text-align:center;font-size:13pt;font-weight:bold;font-family:'Book Antiqua',serif;">MEMORANDUM OF ASSOCIATION OF</div>
-<div style="text-align:center;font-size:18pt;font-weight:bold;margin-bottom:2pt;font-family:'Book Antiqua',serif;">${common.name}</div>
-<div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">1. Name of the Society</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">${common.name}</p>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">2. Office Address</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">${common.addr}</p>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">3. Aims and Objectives</div>
-<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${aimItems}</ul>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">4. Governing Body</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</p>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name</th><th style="font-size:10pt;">Father / Husband Name</th><th style="font-size:10pt;">Address</th><th style="font-size:10pt;">Age</th><th style="font-size:10pt;">Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
-<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin:16pt 0 8pt;font-family:'Book Antiqua',serif;">DECLARATION</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We the undersigned desirous to form a committee and get it registered under the society's registration act 35 of 2001.</p>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name</th><th style="font-size:10pt;">Father / Husband Name</th><th style="font-size:10pt;">Designation</th><th style="font-size:10pt;">Signature</th></tr></thead><tbody>${dRows}</tbody></table>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Signatures of Witnesses and Their Addresses</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="width:46pt;font-size:10pt;">S.No</th><th style="font-size:10pt;">Name, Father/Husband Name &amp; Address</th><th style="font-size:10pt;">Signature</th></tr></thead><tbody>${wRows}</tbody></table>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
+    const html = `<div><div style="text-align:center;font-size:13pt;font-weight:bold;font-family:'Bookman Old Style',serif;">MEMORANDUM OF ASSOCIATION OF</div>
+<div style="text-align:center;font-size:15pt;font-weight:bold;margin-bottom:2pt;font-family:'Bookman Old Style',serif;">${common.name}</div>
+<div style="text-align:center;font-size:13pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${common.addr}</div>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">1. Name of the Society</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.name}</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">2. Office Address</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.addr}</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">3. Aims and Objectives</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${aimItems}</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">4. Governing Body</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">We the following mentioned persons have formed into a society and are responsible to run the affairs of the society and are desirous of getting the same registered under the Societies Registration Act 35 of 2001.</p>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father / Husband Name</th><th style="font-size:13pt;">Address</th><th style="font-size:13pt;">Age</th><th style="font-size:13pt;">Designation</th></tr></thead><tbody>${govTableRows}</tbody></table>
+<div><div style="text-align:center;font-size:15pt;font-weight:bold;text-decoration:underline;margin:16pt 0 8pt;font-family:'Bookman Old Style',serif;">DECLARATION</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">We the undersigned desirous to form a committee and get it registered under the society's registration act 35 of 2001.</p>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father / Husband Name</th><th style="font-size:13pt;">Designation</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${dRows}</tbody></table>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Signatures of Witnesses and Their Addresses</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="width:46pt;font-size:13pt;">S.No</th><th style="font-size:13pt;">Name, Father/Husband Name &amp; Address</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${wRows}</tbody></table>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div><div style="text-align:center;font-size:12pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
-<div style="text-align:center;font-size:11pt;margin-bottom:10pt;font-family:'Book Antiqua',serif;">${common.addr}</div>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">1. Name of the Society</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">${common.name}</p>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">2. Office Address</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">${common.addr}</p>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">3. Area of Operation</div><p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The area of operation of this ${common.name} shall be ${common.area}.</p>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">4. Membership</div>
-<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">
-  <li>All persons who are Indian Nationals and above the Age of 18 Years and of sound mind are eligible to be Members. Their Membership shall be approved by the Executive Committee on acceptance of Rs.${common.admissionFee}/- as admission fee and a Monthly Subscription of Rs.${common.monthlySub}/- each.</li>
-  <li>Every member shall contribute a monthly subscription of Rs.${common.monthlySub}/-. If any member fails to pay for 3 continuous months, their name will be deleted from the list of members.</li>
-  <li>The membership shall be open to all and shall not be restricted to any caste, religion, creed, sex etc.</li>
-  <li>The Society shall maintain an up-to-date Membership register with addresses and dates of admission and termination.</li>
+<div><div style="text-align:center;font-size:13pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Bookman Old Style',serif;">RULES AND REGULATIONS OF THE ASSOCIATION</div>
+<div style="text-align:center;font-size:13pt;margin-bottom:10pt;font-family:'Bookman Old Style',serif;">${common.addr}</div>
+<div style="font-weight:bold;font-size:14pt;margin:12pt 0 4pt;font-family:'Bookman Old Style',serif;">Name of the Society</div><p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.name}</p>
+<div style="font-weight:bold;font-size:14pt;margin:12pt 0 4pt;font-family:'Bookman Old Style',serif;">Office Address</div><p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">${common.addr}</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Area of Operation</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The area of operation of this ${common.name} shall be ${common.area}.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">4.1. Membership of the Society</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">All the persons who are Indian Nationals and above the Age of 18 Years and are of sound Mind and are eligible to the Members of the Society. Their Membership shall be approved By the Executive Committee on acceptance of Rs.${common.admissionFee}/- as an admission Fee and a Monthly Subscription of Rs.${common.monthlySub}/- each. All subscriptions shall be paid every year i.e., before closing the financial year.</li>
+<li style="margin-bottom:4pt;">Every member shall contribute a monthly subscription of Rs.${common.monthlySub}/- if any member fails to pay the subscriptions for 3 continuous months his  name  will be deleted from  the  list  of  members  of  the  society and all members shall be loyal and   faith full to the society.</li>
+<li style="margin-bottom:4pt;">The membership of the society shall be opened to all and shall not be restricted to any caste, religion, caste, creed, sex etc.,</li>
+<li style="margin-bottom:4pt;">The Society shall maintain an up-to-date Membership register, records and addresses of all the members with the date of admission and date of termination if any.</li>
 </ul>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">5. Cessation of Membership</div>
-<ul style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>On acceptance of resignation approved by the Governing Body.</li><li>On becoming unsound, suffering from chronic diseases, or on death.</li><li>On termination by the Society with approval of 3/5th of the Executive Body majority on proof of violation of Rules and Regulations.</li></ul>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">6. Managing Committee</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The Managing Committee shall consist of a President, Secretary, Treasurer and members. Members shall be elected at a General Body meeting and shall hold office for 5 years. The Committee shall meet at least 4 times a year with 10 days' notice specifying venue, agenda and time.</p>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">7. Financial Year</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The Society shall follow the financial year (1st April to 31st March) for preparation of annual accounts, receipts &amp; payments, Income-Expenditure and Balance Sheet.</p>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">8. Audit &amp; Accounts</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">The accounts shall be audited by a Qualified Auditor / Chartered Accountant every year, appointed at the Annual General Meeting.</p>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">9. Amendments</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">No amendments shall be made unless voted by 3/5th of the members present at a General Body meeting and confirmed by 3/5th at a second special meeting after one month. Amendments to Byelaws require prior approval of the Commissioner/Director of Income Tax (Exemptions), Hyderabad.</p>
-<div style="font-weight:bold;font-size:11pt;margin:12pt 0 4pt;font-family:'Book Antiqua',serif;">10. Winding Up</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;padding-left:8pt;">In the event of dissolution, all remaining funds and assets after satisfying liabilities shall be given to a Society having similar aims and objects registered under Sec 12AA of the Income Tax Act 1961.</p>
-</div>
-<div><div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Registration Undertaking</div>
-<p style="margin-top:14pt;font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">We, the several members whose signatures are subscribed below desire to bring the above-named society into being within the meaning of Section 35 of 2001 of Societies Registration and we are desirous of getting the above society registered.</p>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name &amp; Father / Husband Name</th><th style="font-size:10pt;">Designation</th><th style="font-size:10pt;">Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Witnesses with their Address &amp; Signatures</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name &amp; Address</th><th style="font-size:10pt;">Witness Signature</th><th style="font-size:10pt;">Witness Photo</th></tr></thead>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">4.2. Cessation of Membership</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">Any member shall cease to be a member</li>
+<li style="margin-bottom:4pt;">On  the  acceptance  of  his  resignation  approved  by  Governing  body.</li>
+<li style="margin-bottom:4pt;">On his/her becoming unsound, mad and suffering from Chronic diseases as per Medical Reports and on his/her death.</li>
+<li style="margin-bottom:4pt;">On termination of his/her membership by the Society as provided in the Rules and Regulations or on conviction of  any  Court  of  Law  and  shall  expel  any  member  with  the  approval  of  3/5th of  the  majority  of  the  Executive  Body  on  the  proof   of  the  violation  of  the  Rules  and  Regulations  of  the  Society.</li>
+<li style="margin-bottom:4pt;">No person shall be entitled to vote or be counted as a member whose subscription at the relevant time has been in arrears for a period exceeding  three  months. In such cases he or she will automatically cease to be a member and will lose his/her right  to  be  as  a member.</li>
+<li style="margin-bottom:4pt;">If  any  member acts  against  the  wishes  of  the  Society  or  fraudulently  indulges  or  violates the aims  and  objects  of  the  Society  his  membership  shall  be  terminated.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">4.3.   Resignation</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Resignation by any  member  shall  be  through  a  notice  served  to  the  President at least one month in advance, the same shall be placed in the next Managing Committee  meeting  and acceptance  of  the  same  shall  be  intimated  within  10 days  of  the  meeting.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">General  Body  and  Function</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  General  Body  shall  consist  of  the  founders  and  Co-Op.,  members  only. They  must  meet  at  least  once  in  a  year, in  the  month  of  January. A  Quorum  of  the  General  Body  shall  be  3/5th  of  the  membership. The  adjourned  meeting  of  the  General  Body  need  not  have  Quorum. The  annual  general   body  meeting  shall  be  convened  for  the  following  purposes :</p>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">The General Body shall review and approve the annual statement of receipts and expenditure and the audited Balance Sheet of the previous completed year.</li>
+<li style="margin-bottom:4pt;">It shall appoint an auditor or auditors for next year to hold office till the conclusion of the next Annual General Body meeting to be fixed by the Board of Trustees from time to time.  The retiring auditor is eligible for re-appointment.</li>
+<li style="margin-bottom:4pt;">To set up guidelines for the achievement of the objectives of the Trust.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Managing Committee</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  complete  Management  and  control  of  the Society shall  rest  on  the Management Committee  of  the  Society. The  Managing  Committee of  the  Society  shall  consist  of  a  President ,a  Secretary , treasurer , and 5 members  total   in  10  members . The  members  of  the  managing  committee  shall be  elected  at  a  General  Body  meeting. The members  of  the  managing  committee shall  hold  the  office  for  a  period  of  5  years  at  a  time  and  that  period  shall  and  always  with  the  conclusion  of  an   Annual  General  Body  Meeting. The  executive committee  shall  be the  authority  for  the  Society  for all  its  functions. The  executive body shall  consist of  not  less than  and  not    more than  9  members. The  managing  committee  shall   meet  at least  4  times  in  a  year  by  a   notice specifying the venue, Agenda, Time  of  meeting, the  notice  shall  be  given  to  all members  at least  10  days in  advance.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Functions of Managing Committee</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">It shall  have  powers  to  employ  persons.</li>
+<li style="margin-bottom:4pt;">It  is  responsible  for  the  smooth  running  and  management  of  funds  for advancement  of  the  Society.</li>
+<li style="margin-bottom:4pt;">It  shall  receive  Donations either in cash or in kind  ,Grants, Contributions , raise  loans ,etc.</li>
+<li style="margin-bottom:4pt;">It  shall  do  such  other  things  as  to  promote  the  cause  of  development  of  people.</li>
+<li style="margin-bottom:4pt;">It  shall  make  rules  and  regulations  as  it  thinks  fit  for  the  efficient  management  of  the  affairs  of  the  Society.</li>
+<li style="margin-bottom:4pt;">It  shall  give  notice  to  all  General  Body  members  15  days  in  advance  specifying  the  Venue, Agenda, and  time  of  meeting  of  the  General  Body  Meeting .</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">It  shall  exercise  direct  control  over  the  following</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">Personal working in Society administration and discipline.</li>
+<li style="margin-bottom:4pt;">Finance, Establishment and Records.</li>
+<li style="margin-bottom:4pt;">Transport, Equipment, Machinery and stores.</li>
+<li style="margin-bottom:4pt;">Buildings and Contributions.</li>
+<li style="margin-bottom:4pt;">All movable and Immovable properties.</li>
+<li style="margin-bottom:4pt;">The  Executive  body  may  appoint  from  among  themselves  or from outsiders  other  officers  for  the  efficient  better  management  of  the  organization  and  fix  their  remuneration.</li>
+<li style="margin-bottom:4pt;">The  Managing  Committee  can  reserve  for  itself  the   right  to  admit  or   not  to  admit  a  person  who  applies  for  membership.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Meeting of the Executive Committee</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">The  Executive  Committee  shall  meet  ordinarily  once  in  a  year  and  meet  often   for  any  special  purpose  which  may be  fixed,  by  the  Secretary  in consultation  with  the  president  Society.</li>
+<li style="margin-bottom:4pt;">The  meeting    shall  be  presided  over  by  the  president  or  in  the  absence  of  the  president,  by  the  Secretary  or  in  the  absence  of  the  President  and  Secretary  by  a  member  elected  from  among  the  member  presents.</li>
+<li style="margin-bottom:4pt;">Any  member  of  the  Executive  Committee  who absent  himself  without  Permission  of  the  committee  for  any  three  Executive  meetings   shall  cease  to  be  member  thereof.   But  he  may  for  sufficient  cause,  be  restored  as  a  member  by  the  Executive  Committee.</li>
+<li style="margin-bottom:4pt;">Any    vacancy  caused  in  the Executive  Committee  by  the resignation  or  otherwise  shall  be  filled  up  by  co-option  by  the  other members  of  the  Executive  Committee.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Quorum of Executive Committee</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">The  quorum  for  the  meeting  of  the  Executive  Committee shall  by  3/5th  of  the  members.</li>
+<li style="margin-bottom:4pt;">All  the  matters and resolutions  of  the  Executive  Committee  shall  be  decided  and  carried  by  a  majority  vote.</li>
+<li style="margin-bottom:4pt;">In  case  of  vitas bear  equal  on  both sides, the  president  of  the  meeting shall  exercise  his casting  vote.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Filling The Vacancies</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Vacancies  either  permanent  or  casual  caused in  the Society  can  be  filled  by  the  governing  body  by  Co-option  for  the  unexpired  portion of  the  term  of  the  office.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Budget</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  managing  committee  shall  present  the  budget  of  Income    and Expenditure  of  the  Society  prepared  by  the  secretary  on  the  aims  and  objects  of  the  Society once  in  a  year  and  get  it  approved  and  adopted.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Functions of the Office Bearers</div>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">President</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  President  shall  be  the  overall  in charge  of  the  Society  and  shall  preside  overall  meetings  of  the  Society. He  can  also  advice  the  Secretary  to  call  for  emergency  meetings  of  the  managing  committee  at least  by  giving  3  days  prior  notice.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Secretary</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">In  the  absence  of  the  President  or  on  the  authorization  of  President  the  Secretary can  act  as  President.</li>
+<li style="margin-bottom:4pt;">The  secretary  can  convene  the  meetings  of  the  executive  committee  as  well  as  meetings  of  general  body</li>
+<li style="margin-bottom:4pt;">He or She  shall  maintain  all  the  records  of  the   Society  and   issue  notices  for  all  the  meetings  in  the  end   with consultation of the  President</li>
+<li style="margin-bottom:4pt;">The  secretary  shall  also  be  the  member  of  the  governing  body  of the Society. He  shall  present  the  accounts  and  reports  to  the  executive  body  periodically  and  shall  cause  maintenance  of  accounts  and  records  in  close  association  with  the  treasurer. He  shall  be  responsible  for  the  selection  of  staff  of  the  Society  and  shall be  responsible  for  any  disciplinary  action  if  necessary.</li>
+<li style="margin-bottom:4pt;">He or she  shall  prepare  the  plans  and  programs  basing  on  the  objectives  of  Society</li>
+<li style="margin-bottom:4pt;">He or she shall  be  responsible  for  overall  day  to  day  administration  for  the  smooth  running  of  the  Society</li>
+<li style="margin-bottom:4pt;">He or she shall  function  as  the  main  executive  of  the  Society</li>
+<li style="margin-bottom:4pt;">The  Secretary   shall  be  entitled  to  borrow  loans  or  take  advances  or  accept either  in  kind  or  cash  on  behalf  of  the  Society for  the  purpose  of  aims  and objects  of  the  Society</li>
+<li style="margin-bottom:4pt;">The  Secretary   of  the  Society  shall  be  entitled  to  raise  loans  and  advances from  any  commercial  banks  or  financial  institutions  on  behalf  of  the  Society and  such  funds  should  be  exclusively  used  for  the  purpose  of  achieving  the  main  objects  and  aims  of  the  Society.  He or she  shall  present  the  annual  report  of  the  Society to  general  body .He or she  shall  be  responsible  for  all  kinds  of  activities  that  are  sponsored  by  the  Society.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Treasurer</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">The  treasurer  shall  be  responsible  for  the  maintaining  all  the  accounts  for  the  finances  received  from  the  governing  body</li>
+<li style="margin-bottom:4pt;">He or She  shall  attend  to  the  Annual  Audit  and  preparation  of  financial  reports  in  close  association  with  the  secretary</li>
+<li style="margin-bottom:4pt;">He or She shall  be  responsible  for  maintenance  of  all  accounts  books  and  shall  represent  the  same  to  all  proper  authorities.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Funds</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Funds  for  the  execution  of  aims  and  objects  of  Society shall  be collected  by  way  of:</p>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">Donations either in cash or in kind</li>
+<li style="margin-bottom:4pt;">Contributions</li>
+<li style="margin-bottom:4pt;">Gifts  either  in  cash  or  in  kind</li>
+<li style="margin-bottom:4pt;">Any  other  funds  raised  or  received  from  the  well-wishers  and such other institutions registered under sec 12 AA of the Income tax Act.</li>
+<li style="margin-bottom:4pt;">Any amounts in the form loans and advances from the financial institutions, Nationalized  Banks or such other institutions or from the individuals or concerns.</li>
+<li style="margin-bottom:4pt;">The  funds  of  the  Society  so  collected or raised  shall  be  spent  only  for  the  purpose  of  attaining  the  main  objects  and  aims  of the  Society  and  no  portion  thereof  shall  be  paid  or  transferred   either  directly  or  indirectly  to  any  of  its  members  by  any  means.</li>
+<li style="margin-bottom:4pt;">The  Society  will  endeavor  to  raise  more  funds  needed  for  the  attainment   of  main  objects  by  other  enterprises  which  may  generate  more  resources to  the  Society, which  can  yield  a  surplus  income  to  be  used  for  the public charitable  purposes  of  the  Society.</li>
+<li style="margin-bottom:4pt;">All  the  funds  negotiable  instruments, bank  accounts  and  operations  shall  be  jointly  by  the  President  and  treasurer.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Voting</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Each   member  shall  have  one  vote,  and  the  co-opted  members  do  not have  any  voting  power. However,  they  can  participate  in discussions on invitation.  In  case  of  a  tie, the  President  shall  have  a  casting  vote.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Amendments</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">No  amendments  or  alterations  shall  be  made  for  the purpose  as  mentioned  in  the   Memorandum  of  Association  unless  it  is  voted  by  3/5th  of   the  members  present  at  a  meeting  of  the  general  body  convened   for  the  purpose  and  confirmed  by  3/5th  of  the  members  present  at  a  second  special   meeting  after  an  interval   of  one  month. Any  amendments  to  the  Byelaws  of  the  Society  will  be  carried  out  only  with the prior  approval  of  the  Commissioner/ Director    of  Income  Tax [ Exemptions ] , Hyderabad.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Winding Up</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">In  the  event  of  dissolution  of  the  Society all  the  remaining  funds and  assets  after  the  full  satisfaction  of  the  liabilities  of  the  Society  shall be given to the Society having  similar aims  and  objects and having  Registration  under  Sec 12 AA  of  the  Income  Tax  Act  1961.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Investments</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The  surplus  money  of  Society  shall  be  invested  only  in  securities  referred  to  in  Sec  11 ( 5 ) of  Income  Tax   Act  1961.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Property How Deal With</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">All documents relating to the immovable properties that may be endowed to the society through purchase, gift or lease shall be executed in favour of the society represented by its president for the time being.</li>
+<li style="margin-bottom:4pt;">All the society properties are vested in the name of the society who shall hold the same for the use and benefit of the Society.</li>
+<li style="margin-bottom:4pt;">The Governing Body does not have any power to alienate or to transfer or to mortgage or to pledge any of the properties standing in the name of the Society that are acquired and in peaceful possession of the Society as held today. The properties that are conveyed in the name of the Society either by way of acquisition or by gift or in kind or in any other mode shall not be transferred during the tenure of the Society either by the Governing Body or their members or by the Board of Members or by any others who hold interest in the Society.</li>
+<li style="margin-bottom:4pt;">Further the General Body may accept any immovable / movable properties by way of Gift or in Kind and if such properties are located and if in the opinion of the Board such properties are not manageable because of their location, may and if deem such of those properties may be disposed of by obtaining the approval of majority of the trustees on the board and also duly notifying the Act of Sale in local vernacular language or in a daily English newspaper.</li>
+<li style="margin-bottom:4pt;">The conveyance deed or deeds relating to alienation of disposal of the Society property shall be executed by the President of the Society for the time being for and on behalf of the Society.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Disqualifications</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Any member who has been appointed to the General Body shall cease his membership by any of the reasons stated below or any eventual situations that makes him incapable to continue as the Board member or to act as the Council.</p>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">If he or she dies.</li>
+<li style="margin-bottom:4pt;">If he or she becomes bankrupt.</li>
+<li style="margin-bottom:4pt;">If he or she is found to be lunatic or of an unsound mind.</li>
+<li style="margin-bottom:4pt;">If he  or she resign his office.</li>
+<li style="margin-bottom:4pt;">If he acts in contravention of the objects of the Society or in a manner determined to the interest of the Society or guilty of misconduct in the opinion of the Society called for the purpose by the three-fourth of the members present.</li>
+<li style="margin-bottom:4pt;">If any member in the board of the society fails to attend 3 consecutive meetings irrespective of any factual circumstances, he shall be disqualified to continue or to act as the member of the General Body.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Financial Year</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The society shall follow financial year for preparation of annual accounts (i.e 1st April to 31st March).  The trust shall prepare receipts and payments, Income-Expenditure and Balance Sheet on the financial year ending on 31st March every year.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Audit & Accounts</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">The Society shall follow financial year for the preparation of financial statements.</li>
+<li style="margin-bottom:4pt;">The Society shall prepare Receipts and Payments, Income & Expenditure account, Balance Sheet every year.</li>
+<li style="margin-bottom:4pt;">The accounts  of the society shall be   audited by a Qualified  Auditor/Chartered Accountant every  year  to  be appointed  by the  Society at  every  annual  general  meeting.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Proxy</div>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">There shall be no voting by proxy.</li>
+<li style="margin-bottom:4pt;">The Society   shall not undertake any activity outside India.</li>
+<li style="margin-bottom:4pt;">The  Society  formed  by  us  is  a public charitable  one  and  it is  an irrevocable society.</li>
+</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Suit</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">The society shall sue or be sued in the name of the president.</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 6pt;font-family:'Bookman Old Style',serif;">Property</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;margin-bottom:6pt;">Any  Judgment  for  the  recovery of  the property  shall  be  enforced against  the   property of the society only.</p>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;padding-left:24pt;text-align:justify;">
+<li style="margin-bottom:4pt;">All other provisions  of  the ap society  registration  act 35 of 2001 not  specially   mentioned  therein  shall  apply  to this  society.</li>
+</ul></div>
+<div><div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Registration Undertaking</div>
+<p style="margin-top:14pt;font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">We, the several members whose signatures are subscribed below desire to bring the above-named society into being within the meaning of Section 35 of 2001 of Societies Registration and we are desirous of getting the above society registered.</p>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name &amp; Father / Husband Name</th><th style="font-size:13pt;">Designation</th><th style="font-size:13pt;">Signature &amp; Photo</th></tr></thead><tbody>${finalSigRows}</tbody></table>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Witnesses with their Address &amp; Signatures</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name &amp; Address</th><th style="font-size:13pt;">Witness Signature</th><th style="font-size:13pt;">Witness Photo</th></tr></thead>
 <tbody>${ws.map((w, i) => `<tr><td style="text-align:center;">${i + 1}</td><td><b>${w.name}</b> ${w.rel} ${w.father}<br>${w.addr}</td><td></td><td></td></tr>`).join('')}</tbody></table>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div></div></div>`;
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div></div></div>`;
     downloadDoc(html, 'Memorandum_of_Association_' + common.name);
   };
 
@@ -535,29 +659,29 @@ function SocietyModule() {
       `<tr><td style="text-align:center;">${i + 1}</td><td>${m.name}</td><td>${m.rel} ${m.father}</td><td>${m.addr}</td><td>${m.age} Years</td><td>${m.desig}</td><td></td></tr>`
     ).join('');
     const html = `<div><div class="affidavit-title">AFFIDAVIT — 1</div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">President's Affidavit</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I, ${pres.name}, ${pres.rel} ${pres.father}, aged about ${pres.age} years, ${pres.addr}, solemnly affirm and sincerely state as follows:</p>
-<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">President's Affidavit</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">I, ${pres.name}, ${pres.rel} ${pres.father}, aged about ${pres.age} years, ${pres.addr}, solemnly affirm and sincerely state as follows:</p>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">
   <li>I am the President of <b>${common.name}</b>, and I know the facts and swear this affidavit on behalf of me and on behalf of other executive members.</li>
   <li>The below persons are the members of the society and formed as a society namely <b>${common.name}</b>, ${common.addr}.</li>
 </ul>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>List of Executive Members along with their Address:</b></p>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><thead><tr><th style="font-size:10pt;">S.No</th><th style="font-size:10pt;">Name</th><th style="font-size:10pt;">Father / Husband Name</th><th style="font-size:10pt;">Address</th><th style="font-size:10pt;">Age</th><th style="font-size:10pt;">Designation</th><th style="font-size:10pt;">Signature</th></tr></thead><tbody>${memberTableRows2}</tbody></table>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;"><b>List of Executive Members along with their Address:</b></p>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><thead><tr><th style="font-size:13pt;">S.No</th><th style="font-size:13pt;">Name</th><th style="font-size:13pt;">Father / Husband Name</th><th style="font-size:13pt;">Address</th><th style="font-size:13pt;">Age</th><th style="font-size:13pt;">Designation</th><th style="font-size:13pt;">Signature</th></tr></thead><tbody>${memberTableRows2}</tbody></table>
 <div style="margin-top:24pt;text-align:right;"><b>DEPONENT</b><br><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div><br><br><b>President</b><br>${pres.name}</div>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div></div>
 
-<div><div style="text-align:center;font-size:14pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Book Antiqua',serif;">AFFIDAVIT — 2</div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Premises No Objection Certificate (NOC)</div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;text-align:justify;">I, ${owner.name}, ${owner.rel} ${owner.father}${owner.age ? ', aged about ' + owner.age + ' years' : ''},${owner.addr ? ` residing at ${owner.addr},` : ''} do hereby state as follows:</p>
-<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">
+<div><div style="text-align:center;font-size:15pt;font-weight:bold;text-decoration:underline;margin-bottom:8pt;font-family:'Bookman Old Style',serif;">AFFIDAVIT — 2</div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Premises No Objection Certificate (NOC)</div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;text-align:justify;">I, ${owner.name}, ${owner.rel} ${owner.father}${owner.age ? ', aged about ' + owner.age + ' years' : ''},${owner.addr ? ` residing at ${owner.addr},` : ''} do hereby state as follows:</p>
+<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">
   <li>I am the owner of the premises situated at ${owner.addr || common.addr}.</li>
   <li>I have no objection to ${pres.name} establishing and operating a society under the name and style of <b>"${common.name}"</b> at the above said premises.</li>
   ${owner.relToPres ? `<li>I further state that ${pres.name}, who is my ${owner.relToPres}, is the President of the said society, and in view of our relationship, I have permitted the society to use my premises free of cost for its office purposes. No rent or any other consideration has been collected or will be collected for the same.</li>` : '<li>I have permitted the society to use the said premises free of cost for its office purposes.</li>'}
   <li>This No Objection Letter is issued willingly for official and registration purposes.</li>
 </ul>
 <div style="margin-top:24pt;text-align:right;"><b>DEPONENT</b><br>${owner.name}<br><div style="border-bottom:1pt solid #000;display:inline-block;width:160pt;margin-top:8pt;"></div></div>
-<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:11pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
-<div style="margin-top:16pt;text-align:right;font-family:'Book Antiqua',serif;font-size:12pt;"><b>President</b><br>${pres.name}</div></div>`;
+<div style="display:flex;justify-content:space-between;margin-top:10pt;font-size:13pt;"><span>Place: ${common.place}</span><span>Date: ${formatDateShort(common.date)}</span></div>
+<div style="margin-top:16pt;text-align:right;font-family:'Bookman Old Style',serif;font-size:13pt;"><b>President</b><br>${pres.name}</div></div>`;
     downloadDoc(html, 'Affidavits_' + common.name);
   };
 

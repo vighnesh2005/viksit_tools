@@ -108,10 +108,10 @@ export default function BDMQualificationPage() {
     const pkg = PACKAGES[pkgNum];
     const modLabels = ['A · Financial Profile', 'B · Compliance Status', 'C · Accounting & Technology', 'D · Business Complexity', 'E · Growth Intent'];
     const modKeys = ['a','b','c','d','e'];
-    const html = `<div><div style="text-align:center;font-size:16pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:2pt;">Viksit Management Consultancy</div>
-<div style="text-align:center;font-size:12pt;font-family:'Book Antiqua',serif;margin-bottom:8pt;">Kurnool Delivery Centre</div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Client Qualification Report</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><tr><th colspan="2" style="font-size:10pt;">Assessment Summary</th></tr>
+    const html = `<div><div style="text-align:center;font-size:15pt;font-weight:bold;font-family:'Bookman Old Style',serif;margin-bottom:2pt;">Viksit Management Consultancy</div>
+<div style="text-align:center;font-size:13pt;font-family:'Bookman Old Style',serif;margin-bottom:8pt;">Kurnool Delivery Centre</div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Client Qualification Report</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><tr><th colspan="2" style="font-size:13pt;">Assessment Summary</th></tr>
 <tr><td style="width:200pt;">Client Name</td><td><b>${cName}</b></td></tr>
 <tr><td>BDM</td><td>${client.bdmName || '—'}</td></tr>
 <tr><td>Date</td><td>${client.date || new Date().toLocaleDateString('en-IN')}</td></tr>
@@ -123,24 +123,24 @@ export default function BDMQualificationPage() {
 </table></div>
 
 <div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Module-wise Score Breakdown</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><tr><th style="font-size:10pt;">Module</th><th style="width:120pt;font-size:10pt;">Score</th></tr>${modKeys.map((k, i) => `<tr><td>${modLabels[i]}</td><td>${scores[k as keyof typeof scores]} / 6</td></tr>`).join('')}<tr style="font-weight:bold;"><td>Total</td><td>${totalScore} / 30</td></tr></table></div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Module-wise Score Breakdown</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><tr><th style="font-size:13pt;">Module</th><th style="width:120pt;font-size:13pt;">Score</th></tr>${modKeys.map((k, i) => `<tr><td>${modLabels[i]}</td><td>${scores[k as keyof typeof scores]} / 6</td></tr>`).join('')}<tr style="font-weight:bold;"><td>Total</td><td>${totalScore} / 30</td></tr></table></div>
 
 <div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Recommended Engagement Package</div>
-<div style="text-align:center;font-size:14pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:4pt;">${pkg.name}</div>
-<div style="border:1pt solid #d6c9a0;padding:10pt 14pt;margin:8pt 0;"><p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>Ideal For:</b> ${pkg.ideal}</p>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;"><b>Monthly Retainer:</b> ${pkg.price}</p></div>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Services Included</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${pkg.services.map(s => `<li>${s}</li>`).join('')}</ul>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Monthly Deliverables</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${pkg.deliverables.map(d => `<li>${d}</li>`).join('')}</ul>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Recommended Add-ons</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${pkg.addons.map(a => `<li>${a}</li>`).join('')}</ul></div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Recommended Engagement Package</div>
+<div style="text-align:center;font-size:15pt;font-weight:bold;font-family:'Bookman Old Style',serif;margin-bottom:4pt;">${pkg.name}</div>
+<div style="border:1pt solid #d6c9a0;padding:10pt 14pt;margin:8pt 0;"><p style="font-family:'Bookman Old Style',serif;font-size:13pt;"><b>Ideal For:</b> ${pkg.ideal}</p>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;"><b>Monthly Retainer:</b> ${pkg.price}</p></div>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Services Included</div><ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${pkg.services.map(s => `<li>${s}</li>`).join('')}</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Monthly Deliverables</div><ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${pkg.deliverables.map(d => `<li>${d}</li>`).join('')}</ul>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Recommended Add-ons</div><ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${pkg.addons.map(a => `<li>${a}</li>`).join('')}</ul></div>
 
 <div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Engagement Flags &amp; Opportunities</div>
-${flags.length ? `<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${flags.map(f => `<li>${f.icon} ${f.text}</li>`).join('')}</ul>` : '<p style="font-family:\'Book Antiqua\',serif;font-size:12pt;">No flags identified.</p>'}
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Recommended Next Steps</div>
-<ol style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>Log this assessment in CRM. Attach this report.</li><li>Prepare proposal using ${pkg.name} template.</li><li>Route draft proposal for internal review.</li><li>Dispatch within 24 hours. Follow up on Day 3.</li></ol>
-<p style="margin-top:24pt;text-align:center;font-size:10pt;font-family:'Book Antiqua',serif;"><i>Confidential — For Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Engagement Flags &amp; Opportunities</div>
+${flags.length ? `<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${flags.map(f => `<li>${f.icon} ${f.text}</li>`).join('')}</ul>` : '<p style="font-family:\'Bookman Old Style\',serif;font-size:13pt;">No flags identified.</p>'}
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Recommended Next Steps</div>
+<ol style="font-family:'Bookman Old Style',serif;font-size:13pt;"><li>Log this assessment in CRM. Attach this report.</li><li>Prepare proposal using ${pkg.name} template.</li><li>Route draft proposal for internal review.</li><li>Dispatch within 24 hours. Follow up on Day 3.</li></ol>
+<p style="margin-top:24pt;text-align:center;font-size:13pt;font-family:'Bookman Old Style',serif;"><i>Confidential — For Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
     downloadDoc(html, `BDM_Qualification_${cName.replace(/\s+/g, '_')}`);
   };
 

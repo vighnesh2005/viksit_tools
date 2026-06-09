@@ -167,11 +167,11 @@ export default function ITRAssessmentPage() {
   }, [answers, client]);
 
   const downloadReport = () => {
-    const html = `<div><div style="text-align:center;font-size:16pt;font-weight:bold;font-family:'Book Antiqua',serif;margin-bottom:2pt;">Viksit Consulting</div>
-<div style="text-align:center;font-size:12pt;font-family:'Book Antiqua',serif;margin-bottom:8pt;">Kurnool Delivery Centre — Internal Tax Assessment Tool</div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">ITR Assessment Report — AY 2026-27</div>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Document Control</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><tr><th colspan="2" style="font-size:10pt;">Assessment Details</th></tr>
+    const html = `<div><div style="text-align:center;font-size:15pt;font-weight:bold;font-family:'Bookman Old Style',serif;margin-bottom:2pt;">Viksit Consulting</div>
+<div style="text-align:center;font-size:13pt;font-family:'Bookman Old Style',serif;margin-bottom:8pt;">Kurnool Delivery Centre — Internal Tax Assessment Tool</div>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">ITR Assessment Report — AY 2026-27</div>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Document Control</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><tr><th colspan="2" style="font-size:13pt;">Assessment Details</th></tr>
 <tr><td style="width:180pt;">Client Name</td><td>${client.name || '—'}</td></tr>
 <tr><td>PAN</td><td>${client.pan || '—'}</td></tr>
 <tr><td>Entity Type</td><td>${client.entityType || '—'}</td></tr>
@@ -180,11 +180,11 @@ export default function ITRAssessmentPage() {
 </table></div>
 
 <div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">ITR Form Determination</div>
-<div style="background:#1a1209;color:#faf7f0;text-align:center;padding:24pt;margin:14pt 0;"><div style="font-size:24pt;font-weight:bold;font-family:'Book Antiqua',serif;">${itrResult || '—'}</div></div>
-<p style="font-family:'Book Antiqua',serif;font-size:12pt;">${itrReason}</p>
-<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Assessment Scores</div>
-<table style="font-size:10pt;font-family:'Book Antiqua',serif;"><tr><th style="font-size:10pt;">Indicator</th><th style="width:100pt;font-size:10pt;">Value</th></tr>
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">ITR Form Determination</div>
+<div style="background:#1a1209;color:#faf7f0;text-align:center;padding:24pt;margin:14pt 0;"><div style="font-size:15pt;font-weight:bold;font-family:'Bookman Old Style',serif;">${itrResult || '—'}</div></div>
+<p style="font-family:'Bookman Old Style',serif;font-size:13pt;">${itrReason}</p>
+<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Assessment Scores</div>
+<table style="font-size:13pt;font-family:'Bookman Old Style',serif;"><tr><th style="font-size:13pt;">Indicator</th><th style="width:100pt;font-size:13pt;">Value</th></tr>
 <tr><td>Filing Readiness</td><td><b>${readiness}%</b></td></tr>
 <tr><td>Risk Score</td><td><b>${riskScore}/10</b></td></tr>
 <tr><td>Escalation Alerts</td><td>${escalations.length}</td></tr>
@@ -192,22 +192,22 @@ export default function ITRAssessmentPage() {
 </table></div>
 
 <div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Income Heads Identified</div>
-${heads.length ? `<ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${heads.map(h => `<li>${h}</li>`).join('')}</ul>` : '<p style="font-family:\'Book Antiqua\',serif;font-size:12pt;">None identified.</p>'}
-${escalations.length ? `<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Escalation Alerts</div>${escalations.map(e => `<div style="background:#fdf0f0;border-left:4pt solid #8b2020;padding:6pt 10pt;margin:4pt 0;font-size:10.5pt;"><b>ESCALATION:</b> ${e}</div>`).join('')}` : ''}
-${risks.length ? `<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Risk Flags</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${risks.map(r => `<li>${r}</li>`).join('')}</ul>` : ''}
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Income Heads Identified</div>
+${heads.length ? `<ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${heads.map(h => `<li>${h}</li>`).join('')}</ul>` : '<p style="font-family:\'Bookman Old Style\',serif;font-size:13pt;">None identified.</p>'}
+${escalations.length ? `<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Escalation Alerts</div>${escalations.map(e => `<div style="background:#fdf0f0;border-left:4pt solid #8b2020;padding:6pt 10pt;margin:4pt 0;font-size:10.5pt;"><b>ESCALATION:</b> ${e}</div>`).join('')}` : ''}
+${risks.length ? `<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Risk Flags</div><ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${risks.map(r => `<li>${r}</li>`).join('')}</ul>` : ''}
 </div>
 
 <div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Document Requirement List</div>
-${mandatoryDocs.length ? `<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Mandatory Documents</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${mandatoryDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
-${conditionalDocs.length ? `<div style="font-weight:bold;font-size:11pt;margin:14pt 0 8pt;font-family:'Book Antiqua',serif;">Conditional / Situation-Specific</div><ul style="font-family:'Book Antiqua',serif;font-size:12pt;">${conditionalDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Document Requirement List</div>
+${mandatoryDocs.length ? `<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Mandatory Documents</div><ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${mandatoryDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
+${conditionalDocs.length ? `<div style="font-weight:bold;font-size:14pt;margin:14pt 0 8pt;font-family:'Bookman Old Style',serif;">Conditional / Situation-Specific</div><ul style="font-family:'Bookman Old Style',serif;font-size:13pt;">${conditionalDocs.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
 </div>
 
 <div>
-<div style="text-align:center;font-weight:bold;font-size:11pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Book Antiqua',serif;">Filing Action Plan</div>
-<ol style="font-family:'Book Antiqua',serif;font-size:12pt;"><li>Collect all mandatory documents</li><li>Download AIS + Form 26AS</li><li>Reconcile AIS with all documents</li><li>Compute income head-by-head</li><li>Verify TDS against 26AS</li><li>Prepare ITR draft on portal</li><li>Submit to Checker (L2) with complete file</li><li>Obtain client written approval</li><li>Pay outstanding tax via Challan 280</li><li>File and e-verify via Aadhaar OTP</li></ol>
-<p style="margin-top:24pt;text-align:center;font-size:10pt;font-family:'Book Antiqua',serif;"><i>Confidential — Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
+<div style="text-align:center;font-weight:bold;font-size:15pt;text-transform:uppercase;margin:18pt 0 10pt;font-family:'Bookman Old Style',serif;">Filing Action Plan</div>
+<ol style="font-family:'Bookman Old Style',serif;font-size:13pt;"><li>Collect all mandatory documents</li><li>Download AIS + Form 26AS</li><li>Reconcile AIS with all documents</li><li>Compute income head-by-head</li><li>Verify TDS against 26AS</li><li>Prepare ITR draft on portal</li><li>Submit to Checker (L2) with complete file</li><li>Obtain client written approval</li><li>Pay outstanding tax via Challan 280</li><li>File and e-verify via Aadhaar OTP</li></ol>
+<p style="margin-top:24pt;text-align:center;font-size:13pt;font-family:'Bookman Old Style',serif;"><i>Confidential — Internal Use Only | Viksit Management Consultancy | Kurnool Delivery Centre</i></p></div>`;
     downloadDoc(html, `ITR_Assessment_${client.name.replace(/\s+/g, '_')}_AY2627`);
   };
 
